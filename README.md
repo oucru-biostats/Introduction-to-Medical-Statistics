@@ -10,8 +10,12 @@ The course main webpage is here: https://oucru-modelling.github.io/R-training-20
 ## For instructors
 
 - Make sure you are using `renv` for R package version control
-- Test **locally** with `quarto render`
-    - Resulting main page is `_render/index.html`
+    - Always start your session with `renv::restore()`
+    - Before commit and push, run `renv::snapshot()`
+- Test **locally** with
+    - `quarto preview`: live preview and continuously render on save
+    - `quarto render`: one-time render; resulting main page is `_render/index.html`
 - **Publish** by:
     - simply push your commits to the `main` branch, GitHub Actions should handle the rendering and publishing (desired)
     - `quarto publish gh-pages` (undesired)
+- Project metadata is in `_quarto.yml`. You can control the metadata in your specific `.qmd` files with its YAML header, which will override the project metadata. 
