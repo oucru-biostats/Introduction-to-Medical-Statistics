@@ -30,7 +30,7 @@ What will be covered:
 
 - R has a *conditional* logic: depending on the outcome of a test, execute one or another statement
 
-```{.r }
+```{.r}
 if (logical statement) {
     do this
 } else {
@@ -56,7 +56,7 @@ if (x == 10) {
 
 - You can infinitely* add more "branches" to if-else with `else if`
 
-```{.r }
+```{.r}
 if (logical statement 1) {
     do this
 } else if (logical statement 2) {
