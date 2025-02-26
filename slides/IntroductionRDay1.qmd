@@ -5,7 +5,7 @@ engine: knitr
 format-links: 
   - html
 toc: false
-number-section: false
+number-sections: false
 webr:
   channel-type: "shared-array-buffer"
   cell-options:
