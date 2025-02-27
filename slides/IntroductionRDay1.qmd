@@ -1,6 +1,6 @@
 ---
 title: Introduction to R 2025, Day 1
-author: "Ronald Geskus and Thinh Onh Phuc"
+author: "Ronald Geskus and Thinh Ong Phuc"
 engine: knitr
 format-links: 
   - html
@@ -9,17 +9,18 @@ number-sections: false
 webr:
   channel-type: "shared-array-buffer"
   cell-options:
-    autorun: true
+    autorun: false
     message: true
     warning: true
-    eval: false
+    eval: true
     echo: false
 format:
   revealjs:
     slide-number: true
     logo: "Figures/OUCRU.jpg"
-    preview-links: auto
+    preview-links: true
     theme: solarized
+    transition: fade
     show-slide-number: print
     embed-resources: true
     include-in-header: 
@@ -34,30 +35,29 @@ profile:
 
 ## Learning goals {.smaller} 
 
-Become familiar and confident with the R program, using RStudio. 
+Become familiar and confident with the R program, using RStudio
 
-It is not a course on using R for statistics or bioinformatics
+Not a course on using R for statistics or bioinformatics
 
 ::: {.fragment}
 - Day 1
-  - Basic structure of the R language
-  - Manage and summarize a data set
+  - Basic structure of the R program and language
+  - Import, manage and summarize a data set
     - Select variables (columns) and rows (observations)
   - Use the RStudio working environment	
-  - Modes, factors, missing data, dates
+  - Modes, missing data, factors, dates
 :::
 
 ::: {.fragment}
 - Day 2
   - Functions
-  - Visualisations using base graphics
+  - Visualisations using graphics in base R
   - Object specific functions
   - Finding further information
-:::  
+::: 
 
 
-	
-# Basics of the R Language
+# The R program
 
 ## R: What is it and why use it? 
 
@@ -75,7 +75,7 @@ It is not a course on using R for statistics or bioinformatics
 - R program: very basic functionality via menus
 
 ::: {.fragment .fig-rm-on-exit}
-![](Figures/RConsole.png){width=80%}
+![](Figures/RConsole.png){width=60%}
 :::
 
 ::: {.fragment}
@@ -95,10 +95,11 @@ It is not a course on using R for statistics or bioinformatics
             e.g. BlueSky, R-Instat, R-Commander
 :::
 
+# Basics of the R Language
 
 ## R as a pocket calculator I {.smaller}
 
-Many mathematical operations (`+`, `-`, `*`, `/`,`^` or `**`) pre-defined
+Many mathematical operations (`+`,  `-`,  `*`,  `/`,  `^`/`**`) pre-defined
 
 Add numbers 2 and 7:
 ```{webr-r}
@@ -120,7 +121,7 @@ Compute $2^7$:
 
 ```
 
-## R as a pocket calculator II {.smaller}
+## R as a pocket calculator II 
 
 Some operations based on functions: `sqrt`, `log`, `log2`, `log10`, `sum`, `prod`
 
@@ -142,22 +143,23 @@ Some constants ($\pi$, ...) pre-defined:
 
 ## Assignment 
 
+Assign value 2 to object x and show content of x
 ```{webr-r}
-x <- sqrt(2)   # assign value 2 to object x
-print(x) # show value
-x        # shortcut for print(x)
-print(x, 10)
+x <- sqrt(2) 
+print(x)     # show value
+x            # shortcut for print(x)
+print(x, 10) # more digits
 ```
 
-
+Without assignment, x keeps old value
 ```{webr-r}
 x^2
-x        # Without assignment, x keeps old value
+x 
 x <- x^2 # overwrite value
 x
 ```
 
-## Datasets {.smaller}
+## Datasets {.smaller .scrollable}
 
 - Most often rectangular format
   - Columns: variables
@@ -177,7 +179,7 @@ titanic <- data.frame(
 	fare=c(151.55,29.7,51.8625,34.0208,13.8583,19.5,20.25,8.6625,7.75,23.4))
 ```
 
-Subset of titanic data set:
+For now, work with subset of titanic data set:
 ```{webr-r}
 #| label: "Example: titanic data"
 titanic 
@@ -189,31 +191,50 @@ titanic
 - Single column from data set selected via "`$`", e.g. `titanic$age`
 - Elements of vector selected via numbers within square brackets `[ ]`
 
-Select age of passengers 5 to 15. 
+Select age of passengers 6 and 10
 ```{webr-r}
-#| label: "select age 5 to 10"
+#| label: "age selections 6 and 10"
+titanic$age[6,10]    # gives an error
+titanic$age[c(6,10)] # c is function to combine values
+
 5:10               # numbers 5 to 10 
 seq(5,10,by=1)     # same
-                   # 
+
 ```
 
+Select age of passengers 6 to 10
+```{webr-r}
+#| label: "selection of range in age column"
+titanic$age[c(6,7,8,9,10)] # c is function to combine values
+## faster way:
+5:10               # numbers 5 to 10 
+seq(5,10,by=1)     # same
+titanic$age[6:10] 
+```
 
-
+Flexibility of `seq` function
 ```{webr-r}
 #| label: "more selections in age column"
 seq(1,10,by=2)     # only odd numbers
-titanic$age[c(6,10)] # 6th and 10th passenger
+## select the odd rows:
 ```
 
 ## Data: selection of rows and columns
 
 - Via square brackets `dataset[rows, cols]`
 
+  (That's why `titanic[6,10]` is not allowed)
+
 ```{webr-r}
 #| label: "selections in data"
 ## first 6 rows and columns 2 and 4
 titanic[1:6, c(2,4)]
 ```
+
+Columns: selection by name
+ ```{webr-r}
+ titanic[c(2,3), c("name","age")]
+ ```
 
 
 ## Exercise 1 {.smaller}
@@ -222,16 +243,18 @@ titanic[1:6, c(2,4)]
 - Select the 7th element of the vector
 - Select all elements except the 15th. Hint: use a minus sign
 - Select the 2nd and 5th element of the vector
-- Select only the odd valued elements of `vec`. 
-
-  *Remark: This last one is not an easy exercise. We advise you to do this is in two
-  steps. First create a vector that selects the odd numbers in `vec`, using the
-  function `seq`. You may need to consult the help page of `seq` via `help(seq)`.*
-  
-
 ``` {webr-r}
 ## vec <- 
 
+## vec[...]
+
+```
+- Select only the odd valued elements of `vec`. 
+
+  *Remark: This last one is not an easy exercise. We advise you to do this is in two
+  steps. First create a vector `index` that selects the odd numbers in `vec`, using the
+  function `seq`. You may need to consult the help page of `seq` via `help(seq)`.*
+``` {webr-r}
 ## select position of odd numbers in 11 to 30
 ## index <- 
 
@@ -246,7 +269,7 @@ titanic[1:6, c(2,4)]
 - Select the 7th element of the vector
 - Select all elements except the 15th. Hint: use a minus sign
 - Select the 2nd and 5th element of the vector
-- Select only the odd valued elements of `vec`. 
+- Select only the odd valued elements of `vec`.
 
 ```
 vec <- seq(11,30)
@@ -259,34 +282,33 @@ vec[c(2,5)]
 index <- seq(1,length(vec),by=2)
 vec[index]
 ```
-:::	
+:::
 
 ## Exercise 2 {.smaller}
 
-Use the elementary functions `/`, `-`, `^` and the functions `sum` and `length` to
-    calculate the mean $$\bar{x}=\sum_i x_i/n$$ and the standard deviation
-    $$\sqrt{\sum_i(x_i-\bar{x})^2/(n-1)}$$ of the fare paid by the titanic
-    passengers.  You can verify your answer by using the built-in R functions `mean`
+Use the elementary functions `/`, `-`, `^` and the function `sum` to
+    calculate the mean $$\bar{x}=\sum_{i=1}^n x_i/n$$ and the standard deviation
+    $$\sqrt{\sum_{i=1}^{n}(x_i-\bar{x})^2/(n-1)}$$ of the fare paid by the titanic
+    passengers. Note: $n=10$. Verify your answer by using the built-in R functions `mean`
     and `sd`.
 ```{webr-r}
 ## mean:
 
 ## sd:
 
-## check:
+## verify:
 
 ```
 
 ::: sol
-## Exercise 2 (answer) {.smaller}
+## Exercise 2 (with answer) {.smaller}
 
-Use the elementary functions `/`, `-`, `^` and the functions `sum` and `length` to
-    calculate the mean $$\bar{x}=\sum_i x_i/n$$ and the standard deviation
-    $$\sqrt{\sum_i(x_i-\bar{x})^2/(n-1)}$$ of the fare paid by the titanic
-    passengers.  You can verify your answer by using the built-in R functions `mean`
+Use the elementary functions `/`, `-`, `^` and the function `sum` to
+    calculate the mean $$\bar{x}=\sum_{i=1}^n x_i/n$$ and the standard deviation
+    $$\sqrt{ \sum_{i=1}^n (x_i-\bar{x})^2/(n-1)}$$ of the fare paid by the titanic
+    passengers. Note: $n=10$. Verify your answer by using the built-in R functions `mean`
     and `sd`.
-
-```
+```{.r}
 fare <- titanic$fare
 MeanFare <- sum(fare)/length(fare)
 MeanFare
@@ -305,14 +327,15 @@ sd(fare)
 ## Functions {.smaller}
 
 ::: {.incremental}
-- Everything we do in R boils down to running a function. Generate some output given
-  some input:
+- Everything we do in R boils down to running a function:
+ 
+  Generates some output given some input:
   
   `goal( input1, input2, ...)`
-  - **goal**: what do we want
+  - **goal**: what do we want; function name
   - **input**: what information does R need for this; <span
     style="color:red;">arguments</span> of the function
-- Output: a value (assigned to an object); a figure; a help page, ...
+- Output: a value (often assigned to an object for further use); a figure; a help page, ...
  
   E.g. `help(mean)`: `mean` is argument of function `help`. Output is the appearance
   of a page with information on the `mean` function
@@ -321,7 +344,7 @@ sd(fare)
 - Change unit of age to decade (10 years)
   ```{webr-r}
   #| label: "vectorized calculations"
-  titanic$age[1:5]/10 # age per 10 years:
+  titanic$age/10 # age per 10 years for each 
   
   ```
 :::
@@ -331,18 +354,24 @@ sd(fare)
 - Everything in R is an object (data, functions, results from analysis, ...)
 - Names for user created objects:
     `patients, Data, abc, LetsHaveFun`
+- Names are case-sensitive: `Data` is not the same as `data`
+
+::: {.fragment .fade-in .highlight-current-red}
 - Not allowed:
   - space
   - characters with special meaning in R: "`@`", "`$`", "`+`" etc.
   - numbers allowed but not as first character
   - specific R programming constructs: `for, if, while` ...
-- "`_`" and "`.`" are allowed (e.g. `sorted.results_file`)
-
-  Many prefer "`_`" over "`.`" to subdivide names
 - Better avoid names that are R functions:
 
   `sort, c, mean, t, data, q`
-- Names are case-sensitive: `Data` is not the same as `data`
+:::
+
+::: {.fragment .fade-in .highlight-green}
+- "`_`" and "`.`" are allowed (e.g. `sorted.results_file`)
+
+  Many prefer "`_`" over "`.`" to subdivide names
+:::
 
 ## Remember
 
