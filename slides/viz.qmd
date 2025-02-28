@@ -552,7 +552,7 @@ Histogram and bar charts
 ```{r}
 library(dplyr)
 library(lubridate)
-simulated_covid <- readRDS("../data/simulated_covid.rds") |> mutate_if(is.Date, ymd)
+simulated_covid <- readRDS("data/simulated_covid.rds") |> mutate_if(is.Date, ymd)
 head(simulated_covid)
 ```
 
