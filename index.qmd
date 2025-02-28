@@ -17,6 +17,20 @@ date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 - There will be a **lunch break between 12:30 – 13:30 (UTC +7)**
 - Lunch will be provided for in-person attendees
 
+## Contributors {.unnumbered}
+
+- Prof. Ronald Geskus, Biostatistics group, OUCRU HCM
+- Dr. Thinh Ong Phuc, Mathematical Modeling group, OUCRU HCM
+- Tuyen Huynh, Mathematical Modeling group, OUCRU HCM
+- Dr. Tran Thai Hung, Biostatistics group, OUCRU HCM
+- Anh Phan Truong Quynh, Mathematical Modeling group, OUCRU HCM
+- Dr. Hai Ho Bich, Emerging Infections group, OUCRU HCM
+- Dr. Marc Choisy, Mathematical Modeling group, OUCRU HCM
+- Dr. Duc Du Hong, Biostatistics group, OUCRU HCM
+- Dr. Dung Vu Tien Viet, Biostatistician, OUCRU Hanoi
+- Dr. Trinh Dong Huu Khanh, previously: Biostatistics group, OUCRU HCM
+
+
 # Pre-course setups and requirements
 
 Please follow [this handout](handouts/precourse_setup.qmd) before joining the course.
