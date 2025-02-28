@@ -9,8 +9,10 @@ website:
       - href: index.qmd
         text: Home
       - href: slides/IntroductionRDay1.qmd
-        text: Introduction to R
-      - href: slides/data_viz.qmd
+        text: Intro to R (day 1)
+      - href: slides/IntroductionRDay2.qmd
+        text: Intro to R (day 2)
+      - href: slides/viz.qmd
         text: Principles of data visualisation
       - href: slides/advance_r.qmd
         text: Advance R topics
