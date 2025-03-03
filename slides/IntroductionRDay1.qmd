@@ -1,5 +1,5 @@
 ---
-title: Introduction to R 2025, Day 1
+title: Introduction to R, Day 1
 author: "Ronald Geskus and Thinh Ong Phuc"
 engine: knitr
 format-links: 
@@ -36,7 +36,7 @@ profile:
 
 Become familiar and confident with the R program, using RStudio
 
-Not a course on using R for statistics or bioinformatics
+Not: using R for statistics, bioinformatics or mathematical modeling
 
 ::: {.fragment}
 - Day 1
@@ -64,7 +64,7 @@ Not a course on using R for statistics or bioinformatics
 - Free: no money charged and open source
 - Runs on all major operating systems
 - Very flexible and powerful
-  -   **Reproducibility**: see Friday
+  -   **Reproducibility**: see Friday course
   -   **Community**: large, collaborative user base
 - Steep learning curve(?)
 
@@ -96,7 +96,7 @@ Not a course on using R for statistics or bioinformatics
 
 ## R as a pocket calculator I {.scrollable}
 
-Many mathematical operations (`+`,  `-`,  `*`,  `/`,  `^`/`**`) pre-defined
+Many mathematical operations (`+`,  `-`,  `*`,  `/`,  `^` or `**`) pre-defined
 
 Add numbers 2 and 7:
 ```{webr-r}
@@ -127,7 +127,12 @@ Compute the square root of 2:
 sqrt(2)
 ```
 
-Take the 10-log of 1000 ($10^x=1000$):
+Sum of numbers 1 to 5:
+```{webr-r}
+sum(1:5)
+```
+
+Take the 10-log of 1000 (y with $10^y=1000$):
 ```{webr-r}
 
 ```
@@ -162,7 +167,7 @@ x
   - Columns: variables
   - Rows: observations
 - Example: [titanic3](https://hbiostat.org/data/repo/ctitanic3){target="_blank"} data set; passenger
-  characteristics and survival status after disaster with the Titanic cruise ship
+  characteristics and survival status after disaster with the [Titanic cruise ship](https://www.encyclopedia-titanica.org/)
 
 
 ```{webr-r}
@@ -176,13 +181,13 @@ titanic <- data.frame(
 	fare=c(151.55,29.7,51.8625,34.0208,13.8583,19.5,20.25,8.6625,7.75,23.4))
 ```
 
-For now, work with subset of titanic data set:
+For now, we work with subset of titanic data set:
 ```{webr-r}
 #| label: "Example: titanic data"
 titanic 
 ```
 
-## Data: columns and selections within a single column {.smaller .scrollable}
+## Data: selections within a single column {.smaller .scrollable}
 
 - Each column is a <span style="color:red;">vector</span> of values
 - Single column from data set selected via "`$`", e.g. `titanic$age`
@@ -199,7 +204,7 @@ Select age of passengers 6 to 10
 ```{webr-r}
 #| label: "selection of range in age column"
 titanic$age[c(6,7,8,9,10)] 
-6:10               # faster way
+6:10               # short notation for c(6,7,8,9,10)
 seq(6,10,by=1)     # same as 6:10
 titanic$age[6:10] 
 ```
@@ -209,18 +214,19 @@ Flexibility of `seq` function
 #| label: "more selections in age column"
 seq(1,10,by=2)     # only odd numbers
 ## select age in the odd rows:
+
 ```
 
 ## Data: selection of rows and columns {.smaller}
 
 - Via square brackets `dataset[rows, cols]`
 
-  (That's why `titanic[6,10]` is not allowed)
-
 ```{webr-r}
 #| label: "selections in data"
 ## 2 rows and columns 3 and 1
 titanic[2:3, c(3,1)]
+titanic[6,10]
+## That's why titanic$age[6,10] is not allowed
 ```
 
 Columns: selection by name
@@ -236,9 +242,9 @@ b. Select the 7th element of the vector
 c. Select all elements except the 15th. Hint: use a minus sign
 d. Select the 2nd and 5th element of the vector
 ```{webr-r}
-## vec <- 
+## assign numbers to vec
 
-## vec[...]
+## make selections within vec
 
 ```
 e. Select only the odd valued elements of `vec`. 
@@ -248,8 +254,8 @@ e. Select only the odd valued elements of `vec`.
   function `seq`. You may need to consult the help page of `seq` via `help(seq)`.*
 
 ```{webr-r}
-## select position of odd numbers in 11 to 30
-## index <- 
+## first select position of odd numbers in 11:30
+## assign this to index
 
 ```
 
@@ -287,11 +293,11 @@ Use the elementary functions `/`, `-`, `^` and the function `sum` to
     passengers. Note: $n=10$. Verify your answer by using the built-in R functions `mean`
     and `sd`.
 ```{webr-r}
-## mean:
+## compute mean:
 
-## sd:
+## compute sd:
 
-## verify:
+## verify by comparing with functions mean and sd:
 
 ```
 
@@ -317,7 +323,7 @@ sd(fare)
 ```
 :::
 
-## Functions
+## Functions (I)
 
 ::: {.fragment fragment-index=1}
 
@@ -339,7 +345,7 @@ give_feedback(type = "manuscript", which = "measles model", deadline = "next Fri
 ```
 :::
 
-## Functions {.smaller}
+## Functions (II) {.smaller}
 
 ::: {.incremental}
 - Everything we do in R boils down to running a function:
@@ -356,12 +362,16 @@ give_feedback(type = "manuscript", which = "measles model", deadline = "next Fri
   of a page with information on the `mean` function
 - Many calculation functions are vectorized
 
-- Change unit of age to decade (10 years)
+  Example: change unit of age to decade (10 years)
   ```{webr-r}
   #| label: "vectorized calculations"
-  titanic$age/10 # age per 10 years for each 
-  
+  titanic$age/10 # age per 10 years for each person  
   ```
+  What does this give:
+  ```{webr-r}
+  c(2, 15) + c(10, -3)
+  ```
+
 :::
 
 ## Objects {.smaller}
@@ -390,10 +400,10 @@ give_feedback(type = "manuscript", which = "measles model", deadline = "next Fri
 
 ## Remember
 
-::: {.callout-note title="Objects"}
-1. Everything that exists in R is an object (data, functions, ...)
+::: {.callout-note title="Objects and functions"}
+1. Everything that exists in R is an **object** (data, functions, ...)
 
-2. Everything that happens in R is a function call
+2. Everything that happens in R is a **function** call
 :::
 
 
@@ -404,17 +414,19 @@ give_feedback(type = "manuscript", which = "measles model", deadline = "next Fri
 ```{webr-r}
 seq(0,2,by=0.25)
 ```
-  - *logical*: logical values `TRUE`, `FALSE`
+  - *logical*: values `TRUE` and `FALSE`
 ```{webr-r}
 -2 < 2
 ```
   - *character*: 
 ```{webr-r}
+c("Thinh", "Ronald")
 letters
 ```
-  - You can change the mode of many data objects
+  - You can change the mode of some data objects
 ```{webr-r}
 as.character(seq(0,2,by=0.25))
+as.numeric(c(FALSE,TRUE))
 ```
 
 ## Modes: logical (I) {.smaller .scrollable}
@@ -426,7 +438,7 @@ titanic$fare
 titanic$fare[c(TRUE,FALSE,TRUE,TRUE, FALSE, TRUE,FALSE,TRUE,TRUE, FALSE)] 
 ```
 
-- Logical statements arise from comparing numbers:
+- Logical statements arise from comparing values:
   - Smaller/larger than: `<`, `>`, `<=`, `>=`
   - Exact equality: `==`
   - Not equal to: `!=`
@@ -434,6 +446,7 @@ titanic$fare[c(TRUE,FALSE,TRUE,TRUE, FALSE, TRUE,FALSE,TRUE,TRUE, FALSE)]
 #| label: logical mode Ib
 titanic$fare>40
 titanic$pclass[titanic$fare>40]
+"Thinh" > "Ronald"
 ```
 - Converted to integer if a numeric value is required:
 
@@ -441,19 +454,19 @@ titanic$pclass[titanic$fare>40]
   
 ```{webr-r}
 #| label: logical mode Ic
+titanic$pclass=="1st"
 sum(titanic$pclass=="1st")
 ```
 
 
 ## Modes: logical (II) {.smaller .scrollable}
 
-You can calculate with logicals. Main operators are:
+We can calculate with logicals. Main operators are:
 
 - `&`: all must be true "AND"
 - `|`: at least one must be true "OR"
 - `!`: negation "NOT"
 
-Logical calculations:
 ```{webr-r}
 TRUE & FALSE
 TRUE | FALSE
@@ -463,8 +476,8 @@ TRUE | FALSE
 Logical statements about fare
 ```{webr-r}
 titanic$fare
-titanic$fare >10 & titanic$fare < 40
-!(titanic$fare >10 | titanic$fare < 40)
+titanic$fare > 10 & titanic$fare < 40
+!(titanic$fare < 10 | titanic$fare > 40)
 ```
 
 Select fares between 10 and 40
@@ -577,7 +590,7 @@ Consists of 4 main panes
 
 - Can make it into a <span style="color:red;">package</span>, i.e. a collection of
     functions (and data):
-  - [survival](https://github.com/therneau/survival){target="_blank"}
+  - [survival](https://cran.r-project.org/web/packages/survival){preview-link="true"}
   - [ggplot2](https://ggplot2.tidyverse.org/index.html){preview-link="true"}
   - [tidyverse](https://www.tidyverse.org){preview-link="true"}
   - [WHO TB data](https://github.com/seabbs/getTBinR){target="_blank"}
@@ -591,10 +604,12 @@ Consists of 4 main panes
 	
 ## Packages, where to find them?
 
-- Objects created by others 
-  - [Comprehensive R Archive Network](https://cloud.r-project.org/web/packages/available_packages_by_name.html){preview-link="true"}:
-    1000's of extra packages
-  - Many more on [GitHub](https://rdrr.io/find/?repos=cran%2Cbioc%2Crforge%2Cgithub&page=0&fuzzy_slug=){target="_blank"} and [Bioconductor](https://www.bioconductor.org/packages/release/BiocViews.html#___Software){preview-link="true"}
+
+- [Comprehensive R Archive Network](https://cloud.r-project.org/web/packages/available_packages_by_name.html){preview-link="true"}
+    (22127 packages on March 3, 2025)
+- [GitHub](https://rdrr.io/find/?repos=cran%2Cbioc%2Crforge%2Cgithub&page=0&fuzzy_slug=){target="_blank"} (31311 packages on March 3, 2025)
+- [Bioconductor](https://www.bioconductor.org/packages/release/BiocViews.html#___Software){preview-link="true"}
+- Need to be installed on your computer
 - R program itself also based on packages. Some loaded at startup 
     *base*, *graphics*, *stats*, *utils* ...
 
@@ -621,7 +636,7 @@ Consists of 4 main panes
 x: an R <span style="color:red;">object</span>. Currently there are <span style="color:red;">methods</span> for <span style="color:red;">numeric/logical vectors</span> and
 date, date-time and time interval objects.
 
-trim: ...
+trim: 
 
 na.rm: a logical evaluating to 'TRUE' or 'FALSE' indicating whether `NA` values should be stripped before the computation proceeds.
 
@@ -637,7 +652,7 @@ computed, as a numeric or complex vector of length one.
   - **Usage**: what arguments/input  does the function expect
   - **Arguments**: description of the individual arguments
   - **Value**: what is the result of a function call
-  - **Details**, **References**, **See Also**
+  - often: **Details**, **References**, **See Also**
   - **Examples**. You can use the `example` function to run the  examples: `example(mean)`
 
 
@@ -648,10 +663,8 @@ computed, as a numeric or complex vector of length one.
 
 1. R: see [R Data Import/Export](https://cran.r-project.org/manuals.html){preview-link="true"}
 
-2. RStudio:
-  - **Environment** pane: **Import Dataset**
-  -  via `File` menu, followed by the `Import Dataset` submenu
-  - ASCII text file (`base` or `readr` package)
+2. RStudio: **Environment** pane: **Import Dataset**; or via **File** menu: **Import Dataset** 
+  - text and csv (`base` or `readr` package)
   - Excel (`readxl` package)
     ```{.r}
    library(readxl)
@@ -666,28 +679,32 @@ computed, as a numeric or complex vector of length one.
 
 -   Database: [MS Access, SQLite, ...](https://solutions.posit.co/connections/db/databases/){preview-link="true"}
 	
-## Missing data {.smaller}
+## Missing data {.smaller .scrollable}
 
 - Special value: `NA` (short for "not available")
   The function `is.na` checks for missingness
 
 ```{webr-r}
-table(titanic$age==NA) # not correct
-3==NA # NA value gives missing as output
+titanic$age==NA # not correct
+3==NA # NA is NA, whatever the comparison value
 is.na(3)
+is.na(titanic$age)
 table(is.na(titanic$age))
 ```
 
-- Within functions, missings are often excluded by default, *but not always*
-  - `quantile` and `mean` give error if there are missings; specify argument
+- Most functions exclude missings by default
+
+  Not always what you want
+  - `table` excludes missings; we can include them via argument `useNA="always"`
+
+- `quantile` and `mean` (and some others) give error if there are missings; specify argument
     `na.rm=TRUE` 
-  - `table` excludes missings, include them via argument `useNA="always"`
   
 ## Data inspection and basic variable summaries {.smaller}
 
 - `View`: opens a spreadsheet-style data viewer
 
-   In RStudio: click on the name of an object in the **Environment** tab
+   In RStudio: click on the name of a data object in the **Environment** tab
 - `dim`: gives the number of rows and columns
 - `head`: shows the first rows of a data frame
 - `tail`: similar to `head` but shows the last rows
@@ -700,7 +717,7 @@ Variable summaries
 - `quantile`: quantiles
 - `IQR`: inter-quartile range
 
-## Make exercises 6, 7, 8, 9 and 10 {.scrollable}
+## Make exercises 3 to 7 {.scrollable}
 
 Package readxl needs to be installed (not sure whether it comes with RStudio)
 
