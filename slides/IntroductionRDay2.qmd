@@ -110,17 +110,25 @@ good.morning()
 
 ## R graphics systems:
 
-- Base graphics (package *grDevices*)
+- Base graphics (package *graphics*)
   - Simple to use
   - Always loaded when R is started
   - See Ch.\ 12 of manual [An Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf)
-- lattice} package. Less popular nowadays. Not covered here. 
-- ggplot2 package (Wednesday morning)
+- lattice package. Less popular nowadays. Not covered here. 
+- ggplot2 package: Wednesday morning
 - Note: these systems cannot be mixed
 - Each of these systems has many extension packages
 
+## Basic plot
 
+Plot fare paid as function of age
+```{.r}
+plot(titanic$age, titanic$fare)
+```
 
+- Formula
+- refcard (other links?)
+- look at graphics environment
 
 ## Lists {.smaller}
 
