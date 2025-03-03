@@ -11,7 +11,7 @@ date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 # Welcome to the OUCRU R training course - 2025 {.unnumbered}
 
 ## Course structure {.unnumbered}
-![](imgs/R_course_schedule.png)
+![](site_imgs/R_course_schedule.png)
 
 - The training will be **09:00 – 17:00 (UTC +7)** for everyday
 - There will be a **lunch break between 12:30 – 13:30 (UTC +7)**
