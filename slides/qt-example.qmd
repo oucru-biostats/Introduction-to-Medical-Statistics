@@ -63,7 +63,7 @@ To create an ordered list, use numbers before each item:
 
 [linked phrase](http://example.com)
 
-![optional caption text](Figures/OUCRU.jpg)
+![optional caption text](figures/OUCRU.jpg)
 
 ## Tables
 

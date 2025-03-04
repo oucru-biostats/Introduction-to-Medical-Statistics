@@ -17,7 +17,7 @@ webr:
 format:
   revealjs:
     slide-number: true
-    logo: "Figures/OUCRU.jpg"
+    logo: "figures/OUCRU.jpg"
     theme: solarized
     transition: fade
     show-slide-number: print
@@ -73,7 +73,7 @@ Not: using R for statistics, bioinformatics or mathematical modeling
 - R program: very basic functionality via menus
 
 ::: {.fragment .fig-rm-on-exit}
-![](Figures/RConsole.png){width=60%}
+![](figures/RConsole.png){width=60%}
 :::
 
 ::: {.fragment}
@@ -538,7 +538,7 @@ Where
 
 ## RStudio interface 
 
-![](Figures/rstudio_components.png)
+![](figures/rstudio_components.png)
 
 ## RStudio interface 
 

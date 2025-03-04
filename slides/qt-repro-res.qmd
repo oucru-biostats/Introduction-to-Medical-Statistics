@@ -4,7 +4,7 @@ author: "Thinh Ong and Tuyen Huynh"
 format:
   revealjs:
     slide-number: true
-    logo: "Figures/OUCRU.jpg"
+    logo: "figures/OUCRU.jpg"
 revealjs-plugins:
   - codewindow
 toc: false
@@ -23,13 +23,13 @@ number-sections: false
 
 ## How does Quarto work?
 
-![](Figures/qt/qt-flow.png)
+![](figures/qt/qt-flow.png)
 
 # What can Quarto do?
 
 ## Website
 
-![](Figures/qt/qt-website.png)
+![](figures/qt/qt-website.png)
 
 ## Report/Manuscript
 
@@ -37,7 +37,7 @@ number-sections: false
 
 ## Dashboard
 
-![](Figures/qt/qt-dashboard.png)
+![](figures/qt/qt-dashboard.png)
 
 ## More examples
 
@@ -45,7 +45,7 @@ number-sections: false
 
 ::: {.column width="70%"}
 
-![](Figures/qt/qt-gallery.png)
+![](figures/qt/qt-gallery.png)
 
 :::
 
@@ -63,7 +63,7 @@ Or click [here](https://quarto.org/docs/gallery/)
 
 :::::: columns
 ::: {.column width="50%"}
-![](Figures/qt/create-quarto-file.png)
+![](figures/qt/create-quarto-file.png)
 :::
 
 ::: {.column width="5%"}
@@ -216,7 +216,7 @@ To create an ordered list, use numbers before each item:
 
 [linked phrase](http://example.com)
 
-![optional caption text](Figures/OUCRU.jpg)
+![optional caption text](figures/OUCRU.jpg)
 
 ## Tables
 
@@ -255,22 +255,22 @@ index.html <iframe class="slide-deck" src="qt-example.html" style="width: 100%; 
 
 ## MS Word-like interface
 
-![](Figures/qt/qt-visual.png)
+![](figures/qt/qt-visual.png)
 
 ## Rendering output
 
 1.  Save your Quarto file.
 2.  Render it using the "Render" button in RStudio or by pressing `Ctrl+Shift+K`.
 
-![](Figures/qt/render.png)
+![](figures/qt/render.png)
 
 ## Exploring Quarto
 
-![](Figures/qt/qt-search.png)
+![](figures/qt/qt-search.png)
 
 ## Exploring Quarto
 
-![](Figures/qt/qt-search-2.png)
+![](figures/qt/qt-search-2.png)
 
 # Let's write a manuscript
 
