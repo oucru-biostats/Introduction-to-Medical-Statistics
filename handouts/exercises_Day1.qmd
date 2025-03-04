@@ -1,9 +1,9 @@
 ---
 title: "Exercises Day 1"
 author: 
-- name: Tran Thai Hung
+  name: Tran Thai Hung
   affiliations:
-    - OUCRU biostat
+    OUCRU biostat
 date: 'last-modified'
 date-format: '[Last version:] MMMM DD, YYYY'
 format: 
