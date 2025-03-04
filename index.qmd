@@ -48,6 +48,8 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
   - Perform basic data exploration, including calculating summaries and identifying missing values
   - Navigate RStudio with confidence
 
+- Day 1 [exercises](handouts/exercises_Day1.qmd){target="_blank"}
+
 - Day 2 contents ([slides](slides/IntroductionRDay2.qmd)):
 
   - Write simple functions to automate tasks
