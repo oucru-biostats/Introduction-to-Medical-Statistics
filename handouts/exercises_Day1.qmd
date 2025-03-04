@@ -18,7 +18,7 @@ execute:
   eval: false
 ---
 
-### Exercise 1: selection within a vector ###
+## Exercise 1: selection within a vector
 
 a. Create a vector named `vec` that consists of the numbers from 11 to 30
 b. Select the 7th element of the vector
@@ -30,7 +30,7 @@ e. Select only the odd valued elements of `vec`.
   steps. First create a vector `index` that selects the odd numbers in `vec`, using the
   function `seq`. You may need to consult the help page of `seq` via `help(seq)`.*
 
-### Exercise 2: some calculations ###
+## Exercise 2: some calculations
 
 a. Use the elementary functions `/`, `-`, `^` and the function `sum` to calculate the
 mean $$\bar{x}=\sum_{i=1}^n x_i/n$$ and the standard deviation
@@ -90,7 +90,7 @@ help**. More shortcuts and tips can be found on the
 
 On the Mac... (**Hung please add the difference to Windows**)
 
-### Exercise 3: importing data from Excel and first check
+## Exercise 3: importing data from Excel and first check
 
 Import the dataset by clicking on **Import Dataset** from the **Environment**
 pane. Browse for the Excel file. Assign the R object name `titanic` to the dataset
@@ -109,7 +109,7 @@ variable. Have a look at the columns for `survived` and `age`. Do they have the 
 that you expect?  (You can also use the `mode` function to check their modes.)
 
 
-### Exercise 4: some columns summarized
+## Exercise 4: some columns summarized
 A problem with the mode for age is that missing values are coded as a character value
 `"NA"` in our Excel file; it is not recognized as an R type NA value. In the
 future, you may encounter other representations of missing values, such as `missing`,
@@ -179,7 +179,6 @@ sex.
 proportions(table(titanic$sex, titanic$survived),margin=2)
 ```
 
-### Exercise 5: data selections ###
 
 a. Take a look at the name, and the home town/destination of all
   passengers who were older than 70 years. Use the appropriate selection functions.
@@ -192,7 +191,7 @@ b. Make a table of survivor status by sex, but only for the first class passenge
   passengers.
 
 
-### Exercise 6: make factor variables ###
+## Exercise 6: make factor variables
 
 a. Make passenger class and sex into factor variables. 
 
@@ -203,7 +202,7 @@ individuals survived. Make the value "no" the first level.
 c. Run the `summary` function again. What change do you observe compared to Exercise
 4? 
 
-### Exercise 7: working with dates ###
+## Exercise 7: working with dates
 
 a. The variable `dob` gives the date of birth, using days since January 1st, 1960 (this
  is the time origin used by Stata). Transform this to a true date value using the
