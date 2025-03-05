@@ -11,6 +11,8 @@ code-annotations: hover
 format:
   revealjs:
     slide-number: true
+    theme: serif
+    code-copy: true
     logo: "figures/OUCRU.jpg"
     preview-links: auto
     show-slide-number: print
@@ -535,10 +537,9 @@ Histogram and bar charts
 **Example:** For the following examples, we will use the following `simulated_covid` dataset
 
 ```{r}
-library(dplyr)
-library(lubridate)
-simulated_covid <- readRDS("data/simulated_covid.rds") |> mutate_if(is.Date, ymd)
-head(simulated_covid)
+simulated_covid <- readRDS("data/simulated_covid.rds") 
+
+simulated_covid
 ```
 
 ## Some frequently used `geom_*`
@@ -617,23 +618,26 @@ Scatter plot
 code.r
 
 ```{r eval=FALSE}
+library(dplyr)
 # we need to compute y (case_count before plotting)
-simulated_covid |> 
+aggregated_cases <- simulated_covid |> 
   group_by(date_onset) |> 
   summarize(
     case_count = n()
-  ) |> 
-  ggplot(
-      aes(x = date_onset, y = case_count)
-    ) +                   
-    geom_point(
-      color = "cornflowerblue"    
-    )+                       
-    labs(
-      title = "New covid cases over time",
-      x = "Date",
-      y = "Number of cases"
-    )
+  )
+
+ggplot(
+    aggregated_cases,
+    aes(x = date_onset, y = case_count)
+  ) +                   
+  geom_point(
+    color = "cornflowerblue"    
+  )+                       
+  labs(
+    title = "New covid cases over time",
+    x = "Date",
+    y = "Number of cases"
+  )
 ```
 :::
 :::
@@ -643,22 +647,26 @@ simulated_covid |>
 #| fig-width: 5
 #| fig-height: 5
 #| out-width: "100%"
-simulated_covid |> 
+library(dplyr)
+# we need to compute y (case_count before plotting)
+aggregated_cases <- simulated_covid |> 
   group_by(date_onset) |> 
   summarize(
     case_count = n()
-  ) |> 
-  ggplot(
-      aes(x = date_onset, y = case_count)
-    ) +                   
-    geom_point(
-      color = "cornflowerblue"    
-    )+                       
-    labs(
-      title = "New covid cases over time",
-      x = "Date",
-      y = "Number of cases"
-    )
+  )
+
+ggplot(
+    aggregated_cases,
+    aes(x = date_onset, y = case_count)
+  ) +                   
+  geom_point(
+    color = "cornflowerblue"    
+  )+                       
+  labs(
+    title = "New covid cases over time",
+    x = "Date",
+    y = "Number of cases"
+  )
 ```
 :::
 :::
@@ -693,23 +701,19 @@ Line chart
 code.r
 
 ```{r eval=FALSE}
-# we need to compute y (case_count before plotting)
-simulated_covid |> 
-  group_by(date_onset) |> 
-  summarize(
-    case_count = n()
-  ) |> 
-  ggplot(
-      aes(x = date_onset, y = case_count)
-    ) +                   
-    geom_line(
-      color = "cornflowerblue"    
-    )+                       
-    labs(
-      title = "New covid cases over time",
-      x = "Date",
-      y = "Number of cases"
-    )
+ggplot(
+    aggregated_cases,
+    aes(x = date_onset, 
+        y = case_count)
+  ) +                   
+  geom_line(
+    color = "cornflowerblue"    
+  )+                       
+  labs(
+    title = "New covid cases over time",
+    x = "Date",
+    y = "Number of cases"
+  )
 ```
 :::
 :::
@@ -719,22 +723,18 @@ simulated_covid |>
 #| fig-width: 5
 #| fig-height: 5
 #| out-width: "100%"
-simulated_covid |> 
-  group_by(date_onset) |> 
-  summarize(
-    case_count = n()
-  ) |> 
-  ggplot(
-      aes(x = date_onset, y = case_count)
-    ) +                   
-    geom_line(
-      color = "cornflowerblue"    
-    )+                       
-    labs(
-      title = "New covid cases over time",
-      x = "Date",
-      y = "Number of cases"
-    )
+ggplot(
+    aggregated_cases,
+    aes(x = date_onset, y = case_count)
+  ) +                   
+  geom_line(
+    color = "cornflowerblue"    
+  )+                       
+  labs(
+    title = "New covid cases over time",
+    x = "Date",
+    y = "Number of cases"
+  )
 ```
 :::
 :::
@@ -751,26 +751,23 @@ simulated_covid |>
 code.r
 
 ```{r eval=FALSE}
-simulated_covid |> 
-  group_by(date_onset) |> 
-  summarize(
-    case_count = n()
-  ) |> 
-  ggplot(
-      aes(x = date_onset, y = case_count)
-    ) +                   
-    geom_point(
-      color = "grey"    
-    )+  
-    geom_smooth(
-        color = "cornflowerblue",
-        method = "gam" # choose gam model to fit the data
-      )+
-    labs(
-      title = "New covid cases over time",
-      x = "Date",
-      y = "Number of cases"
-    )
+ggplot(
+    aggregated_cases,
+    aes(x = date_onset, y = case_count)
+  ) +                   
+  geom_point(
+    color = "grey"    
+  )+  
+  geom_smooth(
+      color = "cornflowerblue",
+      # choose gam model to fit the data
+      method = "gam" 
+    )+
+  labs(
+    title = "New covid cases over time",
+    x = "Date",
+    y = "Number of cases"
+  )
 ```
 :::
 :::
@@ -780,26 +777,22 @@ simulated_covid |>
 #| fig-width: 5
 #| fig-height: 5
 #| out-width: "100%"
-simulated_covid |> 
-  group_by(date_onset) |> 
-  summarize(
-    case_count = n()
-  ) |> 
-  ggplot(
-      aes(x = date_onset, y = case_count)
-    ) +                   
-    geom_point(
-      color = "grey"    
-    )+  
-    geom_smooth(
-        color = "cornflowerblue",
-        method = "gam" # choose gam model to fit the data
-      )+
-    labs(
-      title = "New covid cases over time",
-      x = "Date",
-      y = "Number of cases"
-    )
+ggplot(
+    aggregated_cases,
+    aes(x = date_onset, y = case_count)
+  ) +                   
+  geom_point(
+    color = "grey"    
+  )+  
+  geom_smooth(
+      color = "cornflowerblue",
+      method = "gam" # choose gam model to fit the data
+    )+
+  labs(
+    title = "New covid cases over time",
+    x = "Date",
+    y = "Number of cases"
+  )
 ```
 :::
 :::
@@ -830,20 +823,23 @@ Box plot
 code.r
 
 ```{r eval=FALSE}
-simulated_covid |> 
+# compute cases per day for each outbreak
+cases_per_outbreak <- simulated_covid |> 
   group_by(date_onset, outbreak) |> 
   summarize(
     case_count = n()
-  ) |> 
-  ggplot(
-      aes(x = case_count, y = outbreak)
-    ) +                   
-    geom_boxplot()+
-    labs(
-      title = "Compare distribution of daily cases between 2 outbreaks",
-      y = "Outbreak",
-      x = "Number of daily cases"
-    )
+  ) 
+
+ggplot(
+    cases_per_outbreak,
+    aes(x = case_count, y = outbreak)
+  ) +                   
+  geom_boxplot()+
+  labs(
+    title = "Compare distribution of daily cases between 2 outbreaks",
+    y = "Outbreak",
+    x = "Number of daily cases"
+  )
 ```
 :::
 :::
@@ -901,4 +897,5 @@ ggsave(
   dpi = 200 # set resolution
 )
 ```
+
 
