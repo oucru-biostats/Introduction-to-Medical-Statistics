@@ -7,10 +7,11 @@ format-links:
   - html
 toc: false
 number-sections: false
+code-annotations: hover
 format:
   revealjs:
     slide-number: true
-    logo: "figures/OUCRU.jpg"
+    logo: "Figures/OUCRU.jpg"
     preview-links: auto
     show-slide-number: print
     chalkboard: true
@@ -22,15 +23,13 @@ revealjs-plugins:
 
 :::::: columns
 :::: {.column width="50%"}
-![](figures/viz/nature.png)
-
-::: {style="font-size: 50%;"}
-"Mapping routine measles vaccination in low-and middle-income countries." *Nature* 589, no. 7842 (2021): 415-419. (IF 2023 = 50.5).
-:::
+![](Figures/viz/nature.png)
 ::::
 
 ::: {.column width="50%"}
-How do you read this plot?
+- "Mapping routine measles vaccination in low-and middle-income countries." *Nature* 589, no. 7842 (2021): 415-419. (IF 2023 = 50.5).
+
+- How do you read this plot?
 :::
 ::::::
 
@@ -38,11 +37,7 @@ How do you read this plot?
 
 :::::: columns
 :::: {.column width="50%"}
-![](figures/viz/nature.png)
-
-::: {style="font-size: 50%;"}
-"Mapping routine measles vaccination in low-and middle-income countries." *Nature* 589, no. 7842 (2021): 415-419. (IF 2023 = 50.5).
-:::
+![](Figures/viz/nature.png)
 ::::
 
 ::: {.column width="50%"}
@@ -55,7 +50,7 @@ What information would you need to map each dot correctly onto this plot?
 :::
 ::::::
 
-## Scatter plot
+## Data {.smaller}
 
 +------------+------------+--------------+--------------+--------------------+
 | label      | x          | y            | size         | color              |
@@ -85,11 +80,8 @@ head(df)
 
 :::::: columns
 :::: {.column width="50%"}
-![](figures/viz/nature.png)
+![](Figures/viz/nature.png)
 
-::: {style="font-size: 50%;"}
-"Mapping routine measles vaccination in low-and middle-income countries." *Nature* 589, no. 7842 (2021): 415-419. (IF 2023 = 50.5).
-:::
 ::::
 
 ::: {.column width="50%"}
@@ -101,11 +93,8 @@ Let's draw this by hand
 
 :::::: columns
 :::: {.column width="50%"}
-![](figures/viz/nature.png)
+![](Figures/viz/nature.png)
 
-::: {style="font-size: 50%;"}
-"Mapping routine measles vaccination in low-and middle-income countries." *Nature* 589, no. 7842 (2021): 415-419. (IF 2023 = 50.5).
-:::
 ::::
 
 ::: {.column width="50%"}
@@ -130,7 +119,7 @@ library(ggplot2)
 ```
 :::
 
-## Draw the axes
+## Draw the axes {.smaller}
 
 :::: columns
 
@@ -159,7 +148,7 @@ ggplot(df, aes(x = coverage, y = inequality))
 
 ::::
 
-## Draw the data points
+## Draw the data points {.smaller}
 
 :::: columns
 
@@ -191,7 +180,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::::
 
-## Adjust dot sizes
+## Adjust dot sizes {.smaller}
 
 :::: columns
 
@@ -223,7 +212,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::::
 
-## Colour-code the regions
+## Colour-code the regions {.smaller}
 
 :::: columns
 
@@ -255,7 +244,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::::
 
-## Add key country labels
+## Add key country labels {.smaller}
 
 :::: columns
 
@@ -289,13 +278,13 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::::
 
-## Add key country labels
+## Add key country labels {.smaller}
 
 :::: columns
 
 ::: {.column width="50%"}
 
-![](figures/viz/nature.png)
+![](Figures/viz/nature.png)
 
 :::
 
@@ -315,7 +304,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::::
 
-## Refine the plot
+## Refine the plot {.smaller}
 
 :::: columns
 
@@ -325,6 +314,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 code.r
 ```{r}
 #| eval: FALSE
+#| code-line-numbers: false
 cols <- c(
   "red" = "#fa8495",
   "green" = "#4ca258",
@@ -333,6 +323,10 @@ cols <- c(
   "blue" = "#7dd8f3",
   "purple" = "#bc5c91"
 )
+
+# 1. Don't try to write and run everything at once
+# 2. Add one small piece at a time
+# 3. If something goes wrong, it's easier to fix
 
 ggplot(df, aes(x = coverage, y = inequality)) +
   geom_point(aes(size = size, color = color), alpha = 0.8) +
@@ -374,6 +368,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
     axis.text = element_text(size = 11)
   )
 ```
+
 :::
 :::
 
@@ -438,13 +433,13 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::::
 
-## Refine the plot
+## Refine the plot {.smaller}
 
 :::: columns
 
 ::: {.column width="50%"}
 
-![](figures/viz/nature.png)
+![](Figures/viz/nature.png)
 
 :::
 
@@ -547,7 +542,6 @@ head(simulated_covid)
 ## Some frequently used `geom_*`
 
 ::: {.r-fit-text}
-
 **Example:** creating a bar chart for number of covid incidence over time 
 
 
