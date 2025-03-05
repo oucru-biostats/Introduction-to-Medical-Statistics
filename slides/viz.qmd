@@ -11,7 +11,7 @@ code-annotations: hover
 format:
   revealjs:
     slide-number: true
-    logo: "Figures/OUCRU.jpg"
+    logo: "figures/OUCRU.jpg"
     preview-links: auto
     show-slide-number: print
     chalkboard: true
@@ -23,7 +23,7 @@ revealjs-plugins:
 
 :::::: columns
 :::: {.column width="50%"}
-![](Figures/viz/nature.png)
+![](figures/viz/nature.png)
 ::::
 
 ::: {.column width="50%"}
@@ -37,7 +37,7 @@ revealjs-plugins:
 
 :::::: columns
 :::: {.column width="50%"}
-![](Figures/viz/nature.png)
+![](figures/viz/nature.png)
 ::::
 
 ::: {.column width="50%"}
@@ -80,7 +80,7 @@ head(df)
 
 :::::: columns
 :::: {.column width="50%"}
-![](Figures/viz/nature.png)
+![](figures/viz/nature.png)
 
 ::::
 
@@ -93,7 +93,7 @@ Let's draw this by hand
 
 :::::: columns
 :::: {.column width="50%"}
-![](Figures/viz/nature.png)
+![](figures/viz/nature.png)
 
 ::::
 
@@ -284,7 +284,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::: {.column width="50%"}
 
-![](Figures/viz/nature.png)
+![](figures/viz/nature.png)
 
 :::
 
@@ -439,7 +439,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
 
 ::: {.column width="50%"}
 
-![](Figures/viz/nature.png)
+![](figures/viz/nature.png)
 
 :::
 
