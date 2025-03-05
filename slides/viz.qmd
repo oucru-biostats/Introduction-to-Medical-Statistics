@@ -43,10 +43,12 @@ revealjs-plugins:
 ::: {.column width="50%"}
 What information would you need to map each dot correctly onto this plot?
 
+::: {.incremental}
 -   Country name
 -   Position
 -   Size
 -   Color
+:::
 :::
 ::::::
 
