@@ -65,7 +65,7 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
 - [Exercises]{style="cursor:not-allowed;user-select:none;"}
 - [Exercise answer keys]{style="cursor:not-allowed;user-select:none;"}
 
-## Principles of data visualisation
+## Day 3: Principles of data visualisation
 
 ### 🧑‍🏫️ Lead instructors: Ronald and Thinh
 
@@ -77,7 +77,7 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
 - [Exercises](handouts/exercises_Day3.qmd){style="cursor:not-allowed;user-select:none;"}
 - [Exercise answer keys]{style="cursor:not-allowed;user-select:none;"}
 
-## Advanced R topics
+## Day 4: Advanced R topics
 
 ### 🧑‍🏫️ Lead instructors: Tuyen and Hai
 
@@ -92,7 +92,7 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
 - [Exercises]{style="cursor:not-allowed;user-select:none;"}
 - [Exercise answer keys]{style="cursor:not-allowed;user-select:none;"}
 
-## Using Quarto for reproducible research
+## Day 5: Using Quarto for reproducible research
 
 ### 🧑‍🏫️ Lead instructor: Thinh
 
