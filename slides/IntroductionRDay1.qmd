@@ -608,7 +608,7 @@ Consists of 4 main panes
   - Excel (`readxl` package)
     ```{.r}
    library(readxl)
-   titanic <- read_excel("data/Titanic3.xlsx")
+   titanic <- read_excel("data/raw/Titanic3.xlsx")
    ```
   - SPSS/Stata/SAS (`haven` package)
 
@@ -698,6 +698,8 @@ Variable summaries
 - `table`: tabulation of one or two categorical variables
 
 ## Make exercises 3 and 4 
+
+Data found here: [Titanic3.xlsx](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/Titanic3.xlsx)
 
 <!-- Package readxl needs to be installed (not sure whether it comes with RStudio) -->
 
@@ -831,5 +833,13 @@ xtabs(~titanic$survived, data=titanic, subset=(titanic$sex=="male"))
    
 - See page 5 of this [reference card](http://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf){target="_blank"}
 
+- Packages [anytime](https://cran.r-project.org/web/packages/anytime/index.html){target="_blank"} and
+    [lubridate](https://cran.r-project.org/web/packages/lubridate/index.html){target="_blank"} useful
+
+- [A Comprehensive Introduction to Handling Date & Time](https://blog.rsquaredacademy.com/handling-date-and-time-in-r){target="_blank"}
+
+
 
 ## Make exercises 5, 6 and 7
+
+Return to [main course page](https://oucru-modelling.github.io/R-training-2025/)

@@ -51,7 +51,7 @@ vec[index]
 
 ## Exercise 2: some calculations
 
-a.  Use the elementary functions `/`, `-`, `^` and the function `sum` to calculate the mean $$\bar{x}=\sum_{i=1}^n x_i/n$$ and the standard deviation $$\sqrt{\sum_{i=1}^{n}(x_i-\bar{x})^2/(n-1)}$$ of the fare paid by the titanic passengers. Note: $n=10$.
+a.  Use the elementary functions `/`, `-`, `^` and the function `sum` to calculate the mean $$\bar{x}=\sum_{i=1}^n x_i/n$$ and the standard deviation $$\sqrt{\sum_{i=1}^{n}(x_i-\bar{x})^2/(n-1)}$$ of the fare paid by the titanic passengers. 
 b.  Verify your answer by using the built-in R functions `mean` and `sd`.
 
 ```{r}
@@ -71,7 +71,7 @@ sd(fare)
 
 ## RStudio
 
-We will work with the dataset that gives the survival status of passengers on the Titanic. We provide the dataset in **Excel** format ([Titanic3.xlsx](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/Titanic3.xlsx)). See [this link](https://hbiostat.org/data/repo/ctitanic3) for a description of the variables. Our data set has three additional columns: `dob` (date of birth), `family` (whether the person tarvelled with family) and `agecat` (age categorized in age ranges).
+We will work with the dataset that gives the survival status of passengers on the Titanic. We provide the dataset in **Excel** format ([Titanic3.xlsx](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/Titanic3.xlsx)). See [this link](https://hbiostat.org/data/repo/ctitanic3) for a description of the variables. Our data set has three additional columns: `dob` (date of birth), `family` (whether the person travelled with family) and `agecat` (age categorized in age ranges).
 
 We assume that you have created a folder on your computer for the R course. Start the RStudio program from within that folder. Your working directory should be that folder. If it is not, set the working directory via
 
@@ -87,7 +87,8 @@ Write the code in that R Script file.
 
 <summary>[Some useful Keyboard Shortcuts in RStudio for Windows]{style="color:blue"}</summary>
 
-Over time it is useful to learn a couple of RStudio shortcuts that you frequently use. You can find an overview of them under the **Help → Keyboard Shortcuts help**. More shortcuts and tips can be found on the [Appsilon](https://www.appsilon.com/post/rstudio-shortcuts-and-tips) website.
+Over time it is useful to learn a couple of RStudio shortcuts that you frequently
+use. You can find an overview of them under the **Help → Keyboard Shortcuts help** menu. More shortcuts and tips can be found on the [Appsilon](https://www.appsilon.com/post/rstudio-shortcuts-and-tips) website.
 
 ::: callout-note
 On the mac, Ctrl → Cmd, Alt → Option, and Enter → Return.
@@ -139,7 +140,7 @@ A problem with the mode for age is that missing values are coded as a character 
 
 ```{.r}
 library(readxl)
-titanic <- read_excel("../slides/data/Titanic3.xlsx", na = "NA")
+titanic <- read_excel("data/raw/Titanic3.xlsx", na = "NA")
 View(titanic)
 ```
 
@@ -273,7 +274,9 @@ b.  The default display is "year/month/day". Make a table of the day of the mont
 table(format(titanic$dob, "%d"))
 ```
 
-c.  What was the earliest date of birth among all the passengers on the boat. Does this correspond to the age of the oldest person on the date that the ship sank (April 15th, 1912)?
+c.  What was the earliest date of birth among all the passengers on the boat. Does
+this correspond to the age of the oldest person on the date that the ship sank (April
+15th, 1912)? Use the functions `min` and `max`.
 
 ```{r}
 #| echo: true
