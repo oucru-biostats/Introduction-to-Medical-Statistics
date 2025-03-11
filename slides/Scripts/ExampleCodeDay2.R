@@ -113,13 +113,20 @@ help(descriptive)
 ### apply functions
 #############################################################
 
-
 ## https://www.listendata.com/2015/05/converting-multiple-numeric-variables.html
 n.vals <- apply(titanic, MARGIN=2, FUN=\(x) length(unique(x)))
+## or
 n.vals <- sapply(titanic, FUN=\(x) length(unique(x)))
-n.vals
-titanic[n.vals<=5] <- lapply(titanic[n.vals<=5], as.factor)
+## or
+N.unique <- function(x) length(unique(x))
+n.vals <- sapply(titanic, FUN=N.unique)
+## or
 n.vals <- lapply(titanic, FUN=\(x) length(unique(x)))
+##
+n.vals
+
+## select the variables with <= 5 unique values
+titanic[n.vals<=5] <- lapply(titanic[n.vals<=5], as.factor)
 
 ## median age by passenger class
 with(titanic,tapply(age, pclass, median,na.rm=T))
