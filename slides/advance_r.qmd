@@ -620,7 +620,8 @@ class(c(12, 13, 14))
 
 ::: {.fragment}
 ```{r}
-# str(covid_cases)
+covid_cases <- readr::read_rds("data/covid_cases.rds")
+str(covid_cases)
 ```
 :::
 
