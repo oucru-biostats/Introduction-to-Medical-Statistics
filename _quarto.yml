@@ -3,8 +3,7 @@ project:
   output-dir: _render
   render:
     - "*.qmd"
-    - "!*_answer.qmd"
-  
+    - "!handouts/exercises_Day3_answer.qmd"
 website:
   cookie-consent:
     type: express
