@@ -227,18 +227,12 @@ What information would you need to map each dot correctly onto this plot?
 | Nigeria    | 0.20       | -0.07        | 220M         | Sub-Saharan Africa |
 +------------+------------+--------------+--------------+--------------------+
 
-::: {.codewindow .r}
-code.r
-```{r}
-#| eval: FALSE
-df <- readRDS("data/nature_plot.rds")
-head(df)
-```
-:::
+Data found here: [nature_plot.xlsx](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/nature_plot.xlsx)
 
 ```{r}
 #| echo: FALSE
-df <- readRDS("data/nature_plot.rds")
+library(readxl)
+df <- read_excel("data/nature_plot.xlsx")
 head(df)
 ```
 
@@ -1210,7 +1204,7 @@ Recall this slide:
 
 ::: {.fragment}
 ```{r}
-df <- readRDS("data/nature_plot.rds")
+df <- read_excel("data/nature_plot.xlsx")
 head(df)
 ```
 :::
@@ -1465,7 +1459,7 @@ Back to this slide (again):
 +------------+------------+--------------+--------------+--------------------+
 
 ```{r}
-df <- readRDS("data/nature_plot.rds")
+df <- read_excel("data/nature_plot.xlsx")
 head(df)
 ```
 
