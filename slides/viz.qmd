@@ -737,13 +737,16 @@ Histogram and bar charts
 
 ## Some frequently used `geom_*`
 
-**Example:** For the following examples, we will use the following `simulated_covid` dataset
+::: .r-fit-text
+**Example:** For the following examples, we will use the [simulated_covid.rds](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/simulated_covid.rds) dataset
 
 ```{r}
 simulated_covid <- readRDS("data/simulated_covid.rds") 
 
-simulated_covid
+head(simulated_covid)
 ```
+
+:::
 
 ## Some frequently used `geom_*`
 
@@ -823,7 +826,8 @@ code.r
 
 ```{r eval=FALSE}
 library(dplyr)
-# we need to compute y (case_count before plotting)
+# we need to compute y 
+# (case_count before plotting)
 aggregated_cases <- simulated_covid |> 
   group_by(date_onset) |> 
   summarize(
@@ -1072,6 +1076,13 @@ simulated_covid |>
 :::
 :::
 
+## Where to find more geom_*?
+::: .r-fit-text
+For a complete list of `geom_*`, refer to [ggplot2 documentation](https://ggplot2.tidyverse.org/reference/index.html#geom){preview-link="true"}
+
+Alternatively, you can also look for the example code for your desired chart type at [R Graph Gallery](https://r-graph-gallery.com){preview-link="true"}
+:::
+
 ## Save plot
 
 ::: r-fit-text
@@ -1123,7 +1134,7 @@ ggsave(
 - Aesthetic attributes: "role" of variables in plot:
 location (often along x-axis and y-axis), colour, size, shape
 
-- Scales: map data values to aesthetic attibutes
+- Scales: map data values to aesthetic attributes
 
 ::: {.fragment}
 
