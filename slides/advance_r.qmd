@@ -748,7 +748,7 @@ map2(data, data2, some_fn) |> list_c()
 
 ::: {.fragment}
 ```{r}
-some_other_fn <- function(hp, wt){
+some_other_fn <- function(h, w){
   h / (w / 2.205)
 }
 
@@ -889,7 +889,8 @@ print(ifelse(x > 10, "x is larger than 10", "x is smaller than 10"))
 # ?ifelse
 ```
 
-- It is basically the same, a one-liner version of the typical `if (...) {...} else {...}` structure
+- It is a vectorized version of the typical `if (...) {...} else {...}` structure
+- That means, you need a vector of conditions. Imagine 
 
 ## For-loop
 
