@@ -69,10 +69,7 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
   - Create visualisations using Base R graphics
   - Understand the R working environment, including file paths and workspace management
   - Find and use R documentation and resources to solve problems on your own
-- Exercises:
-  - [Handout file]{style="cursor:not-allowed;user-select:none;"}
-  - [Exercise answer key]{style="cursor:not-allowed;user-select:none;"}
-  - [Exercise answer script]{style="cursor:not-allowed;user-select:none;"}
+- No exercises given
 - [Example R code scripts - Day 2](slides/Scripts/ExampleCodeDay2.R){target="_blank"}
 
 
@@ -88,7 +85,7 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
 - [Handout file](handouts/VisualisationHandouts.pdf)
 - Exercises:
   - [Exercise file](handouts/exercises_Day3.qmd)
-  - [Exercise answer key]{style="cursor:not-allowed;user-select:none;"}
+  - [Exercise answer key](handouts/Exercises_Day3_answer.pdf)
   - [Exercise answer script](handouts/Exercises_Day3_answer.R)
   - Datasets: 
     - [NightingaleRose.csv](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/NightingaleRose.csv) 
