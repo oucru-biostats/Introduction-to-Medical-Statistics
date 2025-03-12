@@ -1191,9 +1191,16 @@ geom_point(mapping = NULL, data = NULL, ...)
 ![](figures/ggplots_mapping_aes.png)
 :::
 
-## What does `mapping = aes()` do?
+## What does `mapping = aes()` do? {.scrollable}
 
-Recall this slide: 
+Recall this: 
+
+::: {.fragment}
+```{r}
+df <- read_excel("data/nature_plot.xlsx")
+head(df)
+```
+:::
 
 +------------+------------+--------------+--------------+--------------------+
 | label      | x          | y            | size         | color              |
@@ -1202,13 +1209,6 @@ Recall this slide:
 +============+============+==============+==============+====================+
 | Nigeria    | 0.20       | -0.07        | 220M         | Sub-Saharan Africa |
 +------------+------------+--------------+--------------+--------------------+
-
-::: {.fragment}
-```{r}
-df <- read_excel("data/nature_plot.xlsx")
-head(df)
-```
-:::
 
 
 ## What does `mapping = aes()` do?
@@ -1247,14 +1247,6 @@ Simply:
 ## Inheritance of data and aesthetics
 
 ::: {.fragment}
-The idea is that:
-
-- `ggplot()` can control the **dataset** and **aesthetics**
-- `geom_*()`s can also control the type of **geometries**, and *allow customisation* of **aesthetics**
-:::
-
-## Inheritance of data and aesthetics
-
 Recall this:
 
 - `ggplot()` arguments and default values:
@@ -1270,6 +1262,15 @@ geom_bar(mapping = NULL, data = NULL, ...)
 geom_boxplot(mapping = NULL, data = NULL, ...)
 geom_point(mapping = NULL, data = NULL, ...)
 ```
+:::
+
+## Inheritance of data and aesthetics
+
+The idea is that:
+
+- `ggplot()` can control the **dataset** and **aesthetics**
+- `geom_*()`s can also control the type of **geometries**, and *allow customisation* of **aesthetics**
+
 
 ## Inheritance of data and aesthetics
 
@@ -1447,7 +1448,7 @@ ggplot(df, aes(x = coverage, y = inequality)) +
   )
 ```
 
-## Inside and outside `aes()`
+## Inside and outside `aes()` {.scrollable}
 
 Back to this slide (again):
 
