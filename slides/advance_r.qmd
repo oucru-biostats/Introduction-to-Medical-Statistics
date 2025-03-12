@@ -13,215 +13,105 @@ number-sections: false
 
 What will be covered:
 
-1. **Programming logics in R**
-    - If-else statements
-    - For-loops
-    - Piping in R
+**Data manipulation in R with `tidyverse`**
 
-2. **Data manipulation in R**
-    - Into the `tidyverse`
-    - Data manipulation with `tidyverse` functions
-    - Joining `tibble`s
-    - Pivotting `tibble`s into long and wide formats
+- *Morning*:
+  - Into the `tidyverse`
+  - Data ingestion
+  - Handling NAs (drop_na, filter)
+  - Pivotting `tibble`s into long and wide formats
 
-3. **Advance advance R**
-    - Vectorisation in R with `map()`
+- *Afternoon*:
+  - Transforming `tibble`s
+    - Column manipulation (mutate, rename, if else)
+    - Type assignment (as.*)
+  - Joining `tibble`s
+  - Vectorisation in R with `map()` (for loop)
 
-# Programming logics in R
 
-## If-else
+*Appendix*
 
-- R provides *conditional* logic: depending on the outcome of a test, execute a specific statement
+- If-else statements
+- For-loops
+- Piping in R
+- Summarising `tibble`s (push to day 5)
 
-```{.r}
-if (logical statement) {
-    do this
-} else {
-    do that
-}
-```
 
-## If-else
+# Into the `tidyverse`
 
-- Logic statements are any statement (piece of R code) that provides a TRUE/FALSE result
+## Into the `tidyverse`
+
+- `tidyverse` is a **collection of R packages** built for data science
+- Provide alternatives to base R functionalities  
+- All packages shared the same principle of **tidy data**
+
+## Into the `tidyverse`
+
+![](figures/tidy-packages.png)
+
+## Into the `tidyverse`
+
+- The main "unit" in `tidyverse` is a `tibble`
+- A `tibble` is a similar to a dataframe in **base R**
+- Difference:
+  - `tibble` looks different when printed out
+  - seamless integration with *every* function in the `tidyverse` ()
+
+
+## Tidy data
+
+- A `tibble` is a table of rows and columns, following the principle of **tidy data**
+- Each *column* is a *variable*
+- Each *row* is an *observation*
+- Each *cell* contains *1 value* only
+
+## Tidy data
+
+Which of these is a *tidy data* table
 
 ```{r}
-24 < 50 # This is a logic statement
-TRUE & FALSE # This is also a logic statement
-"R programming" == "fun" # Still a logic statement
-TRUE # Believe it or not, still a logic statement
-100 %in% seq(50, 120, 2) # Also logic statement
+#| echo: false
+tibble::tribble(
+  ~country, ~code, ~"2015", ~"2016",
+  "Aruba", "ABW", 28419.264, 28449.713,
+  "Albania", "ALB", 3952.8036, 4124.055
+)
 ```
 
-
-## If-else
-
-- Example:
+or
 
 ```{r}
-x <- 10
-
-if (x == 10) {
-  print("x is 10")
-} else {
-  print("x is not 10")
-}
-
+#| echo: false
+tibble::tribble(
+  ~country, ~code, ~year, ~gdp,
+  "Aruba", "ABW", 2015, 28419.2645,
+  "Aruba", "ABW", 2016, 28449.713,
+  "Albania", "ALB", 2015, 3952.8036,
+  "Albania", "ALB", 2016, 4124.055,
+)
 ```
 
-## If-else
+## Why `tidyverse`?
 
-- You can infinitely* add more "branches" to if-else with `else if`
+::: {.callout-important}
+### Takeaway points
 
-```{.r}
-if (logical statement 1) {
-    do this
-} else if (logical statement 2) {
-    do that
-} else if (logical statement 3) {
-    do something different
-} else {
-    do something other thing
-}
-```
-
-::: {.footnote}
-*: it is technically possible but of course you should not add too much `else if`s; make sure that your code is readable and understandable
+1.  `tidyverse` is not a replacement of base R. **It is just a collection of R packages**
+2.  You don't have to use `tidyverse` when using R
+3.  `tidyverse` has most functions for data science needs. Though, there are times base R will be needed, and might be better/easier/faster
 :::
 
-## If-else
+## Into the `tidyverse` {.scrollable}
 
-- Example:
+`tidyverse` functions that we will be using:
 
-```{r}
-x <- 24
-
-if (x < 10) {
-  print("x is less than 10")
-} else if (x < 20) {
-  print("x is greater than 10 and less than 20")
-} else if (x < 30) {
-  print("x is greater than 20 and less than 30")
-} else {
-  print("x is greater or equal to 30")
-}
-```
-
-## If-else
-
-- Another example:
-
-```{r}
-target_year <- 2025
-
-if ((target_year %% 4 == 0 & target_year %% 100 != 0) |
-  (target_year %% 400 == 0)) {
-  print(paste0(target_year, " is a leap year."))
-} else {
-  print(paste0(target_year, " is not a leap year."))
-}
-```
-
-## If-else
-
-- You can assign the resulting value if you want:
-
-```{r}
-x <- 24
-
-y <- if (x < 10) {
-  "x is less than 10"
-} else if (x < 20) {
-  "x is greater than 10 and less than 20"
-} else if (x < 30) {
-  "x is greater than 20 and less than 30"
-} else {
-  "x is greater or equal to 30"
-}
-
-print(y)
-```
-
-
-## If-else
-
-- You may also stumble into `ifelse()`
-
-```{r}
-print(ifelse(x > 10, "x is larger than 10", "x is smaller than 10"))
-# ?ifelse
-```
-
-- It is basically the same, a one-liner version of the typical `if (...) {...} else {...}` structure
-
-## For-loop
-
-- Imagine that you have to repeat the same analysis for many files that are all in the same folder on your computer
-- A solution for that might be an iterative construct like a for-loop:
-
-```{.r}
-files <- dir()
-
-for (filename in files) {
-    infile <- read.table(filename, ...)
-    do something with `infile`
-}
-```
-
-## For-loop
-
-- An simple example simulating $R_0$:
-
-```{r}
-vec <- rep(0, 50) # 50 time steps
-vec[1] <- 2 # starting number of infectious
-r0 <- 1.5 # basic reproduction number R_0
-
-# loop from the 2nd time step to the end of vector
-for (i in 2:length(vec)) {
-  # get the number of infectious at current time step (starting at 2)
-  vec[i] <- vec[i - 1] * r0
-}
-
-vec
-```
-
-## For-loop
-```{r}
-#| fig-align: center
-plot(vec)
-lines(vec)
-```
-
-## Conditionals within for-loops {.scrollable}
-
-- Let's combine if-else logics with for-loops:
-
-![](figures/leaky_relu.png)
-
-```{r}
-vec <- seq(-10, 10)
-neg_slope <- 0.01
-
-for (i in 1:length(vec)) {
-  x <- vec[i]
-  if (x >= 0) {
-    vec[i] <- x
-  } else {
-    vec[i] <- x * neg_slope
-  }
-}
-
-vec
-```
-
-## Conditionals within for-loops
-
-```{r}
-#| fig-align: center
-plot(vec)
-lines(vec)
-```
+::: {.incremental style="font-size: 75%;"}
+- `dplyr::select()` to select columns from a `tibble`
+- `dplyr::mutate()` to modify and create columns in a `tibble`
+- `dplyr::*_join()` to join `tibble`s in a specified method
+- `tidyr::pivot_*longer*()` to transform a `tibble` from wide to long format (less columns, more rows)
+- `purrr::map()` to performing vectorisation of function on vectors in R
+:::
 
 
 ## Piping in R {.scrollable}
@@ -290,7 +180,7 @@ ggplot(
 
 - `|>` comes from R since version 4.1.0. It functions largely the same as `%>%` but not identical
 - `%>%` comes from the `magrittr` package which is used by all of `tidyverse`
-- **In this course we will use `|>`**
+- **In this presentation `|>` will be used**
 :::
 
 
@@ -376,74 +266,19 @@ plot_dat |>
   geom_col()
 ```
 
-# Data manipulation in R
+# Data ingestion
 
-## Into the `tidyverse`
-
-- `tidyverse` is a **collection of R packages** built for data science
-- Provide alternatives to base R functionalities  
-- All packages shared the same principle of **tidy data**
-
-## Into the `tidyverse`
+## Data ingestion
 
 ![](figures/tidy-packages.png)
 
-## Tidy data
+## Data ingestion
 
-- The main "unit" in `tidyverse` is a dataframe called `tibble`
-- A `tibble` is a table of rows and columns
-- Each *column* is a *variable*
-- Each *row* is an *observation*
-- Each *cell* contains *1 value* only
-
-## Tidy data
-
-Which of these is a *tidy data* table
-
-```{r}
-#| echo: false
-tibble::tribble(
-  ~country, ~code, ~"2015", ~"2016",
-  "Aruba", "ABW", 28419.264, 28449.713,
-  "Albania", "ALB", 3952.8036, 4124.055
-)
-```
-
-or
-
-```{r}
-#| echo: false
-tibble::tribble(
-  ~country, ~code, ~year, ~gdp,
-  "Aruba", "ABW", 2015, 28419.2645,
-  "Aruba", "ABW", 2016, 28449.713,
-  "Albania", "ALB", 2015, 3952.8036,
-  "Albania", "ALB", 2016, 4124.055,
-)
-```
-
-## Why `tidyverse`?
-
-::: {.callout-important}
-### Takeaway points
-
-1.  `tidyverse` is not a replacement of base R. **It is just a collection of R packages**
-2.  You don't have to use `tidyverse` when using R
-3.  `tidyverse` has most functions for data science needs. Though, there are times base R will be needed, and might be better/easier/faster
+::: {.incremental}
+- Data comes in different formats (.xlsx, .csv, .tsv)
+- `readr` is a package for reading **rectangular table text** files
+- `readxl` is a package for reading Excel files
 :::
-
-## Into the `tidyverse` {.scrollable}
-
-`tidyverse` functions that we will be using:
-
-::: {.incremental style="font-size: 75%;"}
-- `dplyr::select()` to select columns from a `tibble`
-- `dplyr::mutate()` to modify and create columns in a `tibble`
-- `dplyr::*_join()` to join `tibble`s in a specified method
-- `tidyr::pivot_*longer*()` to transform a `tibble` from wide to long format (less columns, more rows)
-- `purrr::map()` to performing vectorisation of function on vectors in R
-:::
-
 
 ## Before we start {.scrollable}
 
@@ -453,6 +288,7 @@ tibble::tribble(
 
 ```{r}
 # install.packages("tidyverse")
+# install.packages("readxl")
 library(tidyverse)
 library(readxl)
 
@@ -777,3 +613,206 @@ mtcars |>
   )
 ```
 :::
+
+
+
+
+
+
+# Programming logics in R
+
+## If-else
+
+- R provides *conditional* logic: depending on the outcome of a test, execute a specific statement
+
+```{.r}
+if (logical statement) {
+    do this
+} else {
+    do that
+}
+```
+
+## If-else
+
+- Logic statements are any statement (piece of R code) that provides a TRUE/FALSE result
+
+```{r}
+24 < 50 # This is a logic statement
+TRUE & FALSE # This is also a logic statement
+"R programming" == "fun" # Still a logic statement
+TRUE # Believe it or not, still a logic statement
+100 %in% seq(50, 120, 2) # Also logic statement
+```
+
+
+## If-else
+
+- Example:
+
+```{r}
+x <- 10
+
+if (x == 10) {
+  print("x is 10")
+} else {
+  print("x is not 10")
+}
+
+```
+
+## If-else
+
+- You can infinitely* add more "branches" to if-else with `else if`
+
+```{.r}
+if (logical statement 1) {
+    do this
+} else if (logical statement 2) {
+    do that
+} else if (logical statement 3) {
+    do something different
+} else {
+    do something other thing
+}
+```
+
+::: {.footnote}
+*: it is technically possible but of course you should not add too much `else if`s; make sure that your code is readable and understandable
+:::
+
+## If-else
+
+- Example:
+
+```{r}
+x <- 24
+
+if (x < 10) {
+  print("x is less than 10")
+} else if (x < 20) {
+  print("x is greater than 10 and less than 20")
+} else if (x < 30) {
+  print("x is greater than 20 and less than 30")
+} else {
+  print("x is greater or equal to 30")
+}
+```
+
+## If-else
+
+- Another example:
+
+```{r}
+target_year <- 2025
+
+if ((target_year %% 4 == 0 & target_year %% 100 != 0) |
+  (target_year %% 400 == 0)) {
+  print(paste0(target_year, " is a leap year."))
+} else {
+  print(paste0(target_year, " is not a leap year."))
+}
+```
+
+## If-else
+
+- You can assign the resulting value if you want:
+
+```{r}
+x <- 24
+
+y <- if (x < 10) {
+  "x is less than 10"
+} else if (x < 20) {
+  "x is greater than 10 and less than 20"
+} else if (x < 30) {
+  "x is greater than 20 and less than 30"
+} else {
+  "x is greater or equal to 30"
+}
+
+print(y)
+```
+
+
+## If-else
+
+- You may also stumble into `ifelse()`
+
+```{r}
+print(ifelse(x > 10, "x is larger than 10", "x is smaller than 10"))
+# ?ifelse
+```
+
+- It is basically the same, a one-liner version of the typical `if (...) {...} else {...}` structure
+
+## For-loop
+
+- Imagine that you have to repeat the same analysis for many files that are all in the same folder on your computer
+- A solution for that might be an iterative construct like a for-loop:
+
+```{.r}
+files <- dir()
+
+for (filename in files) {
+    infile <- read.table(filename, ...)
+    do something with `infile`
+}
+```
+
+## For-loop
+
+- An simple example simulating $R_0$:
+
+```{r}
+vec <- rep(0, 50) # 50 time steps
+vec[1] <- 2 # starting number of infectious
+r0 <- 1.5 # basic reproduction number R_0
+
+# loop from the 2nd time step to the end of vector
+for (i in 2:length(vec)) {
+  # get the number of infectious at current time step (starting at 2)
+  vec[i] <- vec[i - 1] * r0
+}
+
+vec
+```
+
+## For-loop
+```{r}
+#| fig-align: center
+plot(vec)
+lines(vec)
+```
+
+## Conditionals within for-loops {.scrollable}
+
+- Let's combine if-else logics with for-loops:
+
+![](figures/leaky_relu.png)
+
+```{r}
+vec <- seq(-10, 10)
+neg_slope <- 0.01
+
+for (i in 1:length(vec)) {
+  x <- vec[i]
+  if (x >= 0) {
+    vec[i] <- x
+  } else {
+    vec[i] <- x * neg_slope
+  }
+}
+
+vec
+```
+
+## Conditionals within for-loops
+
+```{r}
+#| fig-align: center
+plot(vec)
+lines(vec)
+```
+
+
