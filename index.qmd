@@ -59,9 +59,6 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
   - [Handout file](handouts/exercises_Day1.qmd){target="_blank"}
   - [Exercise answer key](handouts/exercises_Day1_answer.qmd){target="_blank"}
   - [Exercise answer script](handouts/exercises_Day1_answer.R){target="_blank"}
-  - Datasets: 
-    - [NightingaleRose.csv](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/NightingaleRose.csv) 
-    - [ICUCost.csv](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/ICUCost.csv)
 - [Example R code scripts - Day 1](slides/Scripts/ExampleCodeDay1.R){target="_blank"}
 
 ### Day 2
@@ -93,6 +90,9 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
   - [Exercise file](handouts/exercises_Day3.qmd)
   - [Exercise answer key]{style="cursor:not-allowed;user-select:none;"}
   - [Exercise answer script](handouts/Exercises_Day3_answer.R)
+  - Datasets: 
+    - [NightingaleRose.csv](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/NightingaleRose.csv) 
+    - [ICUCost.csv](https://github.com/OUCRU-Modelling/R-training-2025/raw/refs/heads/main/slides/data/ICUCost.csv)
 
 
 ## Day 4: Advanced R topics
