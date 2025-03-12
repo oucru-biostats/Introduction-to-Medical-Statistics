@@ -672,6 +672,22 @@ covid_cases |> slice(10000:10010) |> pull(cases)
 
 ::: {.fragment}
 ```{r}
+data <- covid_cases$cases[10000:10010]
+
+# before
+data
+
+squared_data <- numeric() # create new object to hold new data
+idx <- seq(1, length(data)) # create index vector from 1 to the length of data
+for (i in idx) {
+  squared_data[i] <- data[i]^2
+}
+
+# after
+squared_data
+```
+
+```{r}
 # before
 squared_data
 
