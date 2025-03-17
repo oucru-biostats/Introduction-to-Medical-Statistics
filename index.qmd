@@ -34,11 +34,6 @@ date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 - Dr. Dung Vu Tien Viet, Biostatistician, OUCRU Hanoi
 - Dr. Trinh Dong Huu Khanh, formerly: Biostatistics group, OUCRU HCM
 
-# Zoom link for online participants {.unnumbered}
-
-- Zoom link [here](https://zoom.us/j/99703191986?pwd=tUBHoIHNtggLlbepFrjTYUxdHyeYVS.1)
-- For **Meeting ID** and **passcode** please email [tuyenhn\@oucru.org](mailto:tuyenhn\@oucru.org)
-
 # Pre-course setups and requirements
 
 Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} before joining the course.
