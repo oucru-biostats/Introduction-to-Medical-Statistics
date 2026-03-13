@@ -9,7 +9,7 @@ toc-depth: 2
 date: last-modified
 date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 ---
-# Welcome to the OUCRU introduction to Medical Statisitcs 2026 {.unnumbered}
+# Welcome to the OUCRU introduction to Medical Statistics 2026 {.unnumbered}
 
 ## Course structure {.unnumbered}
 ![](site_imgs/R_course_schedule.png)

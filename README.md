@@ -1,5 +1,5 @@
-# OUCRU introduction to Medical Statisitcs
-The GitHub repository for the OUCRU introduction to Medical Statisitcs
+# OUCRU introduction to Medical Statistics
+The GitHub repository for the OUCRU introduction to Medical Statistics
 
 Materials for the course in their quarto format are stored here
 

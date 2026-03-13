@@ -12,7 +12,7 @@ website:
   google-analytics:
     tracking-id: "G-3EXJ6W4CBC"
     anonymize-ip: true
-  title: "OUCRU introduction to Medical Statisitcs"
+  title: "OUCRU introduction to Medical Statistics"
   favicon: "site_imgs/OUCRU.jpg"
   navbar:
     left:
