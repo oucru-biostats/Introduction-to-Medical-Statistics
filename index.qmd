@@ -44,7 +44,7 @@ Please follow [this handout](handouts/precourse_setup.qmd){target="_blank"} befo
   - Perform basic data exploration, including calculating summaries and identifying missing values
   - Navigate RStudio with confidence
 - Exercises:
-  - [Handout file](handouts/Exercise1_Webr.qmd){target="_blank"}
+  - [Handout file](handouts/Exercise1_Webr.html){target="_blank"}
   - [Exercise answer key](handouts/exercises_Day1_answer.qmd){target="_blank"}
   - [Exercise answer script](handouts/exercises_Day1_answer.R){target="_blank"}
 - [Example R code scripts - Day 1](slides/Scripts/ExampleCodeDay1.R){target="_blank"}
