@@ -18,11 +18,11 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: https://oucru-modelling.github.io/R-training-2025/
-        text: R training  2025     
       - href: handouts/medical_statistics_2024.qmd 
-        text: Old medical statistics courses  
-
+        text: Previous Medical Statistics course 
+      - href: https://oucru-modelling.github.io/R-training-2025/
+        text: Previous R training 
+        
     right:
       - icon: envelope
         aria-label: email
