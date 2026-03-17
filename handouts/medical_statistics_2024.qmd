@@ -14,6 +14,7 @@ date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 These links are the video recordings for the 2024 iteration of the course. The links for the 2026 iteration will be updated here after the course concludes.
 
 OUCRU introduction to Medical Statistics 2024
+
 - [Day 1](https://youtu.be/f4bBIMs5w08)
 - [Day 2](https://youtu.be/DXEC9z0FQpM)
 - [Day 3 (1/2)](https://youtu.be/ThvKyzUIeZY)
