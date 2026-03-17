@@ -1421,11 +1421,11 @@
     "text": "Prof. Ronald Geskus, Biostatistics group, OUCRU HCM\nDr. Duc Du Hong, Biostatistics group, OUCRU HCM\nDr. Hoang Van Thuan, Biostatistics group, OUCRU HCM\nDr. Nguyen Lam Vuong, Biostatistics group, OUCRU HCM\nDr. Tran Thai Hung, Biostatistics group, OUCRU HCM"
   },
   {
-    "objectID": "index.html#introduction-to-r",
-    "href": "index.html#introduction-to-r",
+    "objectID": "index.html#day-1-descriptive-and-exploratory-data-analysis",
+    "href": "index.html#day-1-descriptive-and-exploratory-data-analysis",
     "title": "Welcome to the OUCRU introduction to Medical Statistics 2026",
-    "section": "2.1 Introduction to R",
-    "text": "2.1 Introduction to R\n\n🧑‍🏫️ Lead instructors: Ronald and Duc\n\n\nDay 1: Descriptive and exploratory data analysis\n\nLecture slides\nContents:\n\nOpen and inspect datasets, understand their structure\nMake selections and extract relevant data\nPerform basic data exploration, including calculating summaries and identifying missing values\nNavigate RStudio with confidence\n\nExercises:\n\nHandout file\nExercise answer key\nExercise answer script\n\nExample R code scripts - Day 1\n\n\n\nDay 2\n\nLecture slides\nContents:\n\nWrite simple functions to automate tasks\nCreate visualisations using Base R graphics\nUnderstand the R working environment, including file paths and workspace management\nFind and use R documentation and resources to solve problems on your own\n\nNo exercises given\nExample R code scripts - Day 2"
+    "section": "2.1 Day 1: Descriptive and exploratory data analysis",
+    "text": "2.1 Day 1: Descriptive and exploratory data analysis\n\n🧑‍🏫️ Lead instructors: Ronald and Duc\n\n\nDescriptive data analysis\n\nLecture slides\nContents:\n\nOpen and inspect datasets, understand their structure\nMake selections and extract relevant data\nPerform basic data exploration, including calculating summaries and identifying missing values\nNavigate RStudio with confidence\n\nExercises:\n\nHandout file\nExercise answer key\nExercise answer script\n\nExample R code scripts - Day 1\n\n\n\nExploratory data analysis\n\nLecture slides\nContents:\n\nWrite simple functions to automate tasks\nCreate visualisations using Base R graphics\nUnderstand the R working environment, including file paths and workspace management\nFind and use R documentation and resources to solve problems on your own\n\nNo exercises given\nExample R code scripts - Day 2"
   },
   {
     "objectID": "index.html#day-3-principles-of-data-visualisation",
