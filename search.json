@@ -21,6 +21,13 @@
     "text": "2.1 Day 1: Descriptive and exploratory data analysis\n\n🧑‍🏫️ Lead instructors: Ronald and Duc\n\n\nMorning: Descriptive data analysis\n\nLecture slides\nContents:\n\n\nData characteristics\n\n\nVariable types\n\n\nVariable summaries: numerical and graphical\n\n\nIntroduction to R and RStudio\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nR studio; pdf\n\n\n\n\nAfternoon: Exploratory data analysis\n\nLecture slides\nContents:\n\n\n(Baseline) tables\n\n\nGraphs: ≥ 2 categorical variables\n\n\nGraphs: numeric variables by group\n\n\nGraphs: 2 numeric variables\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nwebr; R studio"
   },
   {
+    "objectID": "handouts/medical_statistics_2024.html",
+    "href": "handouts/medical_statistics_2024.html",
+    "title": "OUCRU introduction to Medical Statistics 2024",
+    "section": "",
+    "text": "Day 1: https://youtu.be/f4bBIMs5w08 Day 2: https://youtu.be/DXEC9z0FQpM Day 3 (1/2): https://youtu.be/ThvKyzUIeZY Day 3 (2/2): https://youtu.be/cWA-BrcN0kM Day 4 (1/2): https://youtu.be/8zJkYpFUqRI Day 4 (2/2): https://youtu.be/O8rZbQaIBi8 Day 5: https://youtu.be/5ajIkOWAI9Q"
+  },
+  {
     "objectID": "handouts/precourse_setup.html",
     "href": "handouts/precourse_setup.html",
     "title": "Pre-course setups and requirements",
