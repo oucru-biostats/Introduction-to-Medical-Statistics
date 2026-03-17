@@ -18,12 +18,14 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: https://oucru-modelling.github.io/R-training-2025/
-        text: R training        
+      
     right:
       - icon: envelope
         aria-label: email
         href: "hungtt@oucru.org"   
+      - href: https://oucru-modelling.github.io/R-training-2025/
+        text: R training 
+      
 
 # Don't touch unless you know what you are doing :) ------------
   search: 
