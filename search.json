@@ -1411,7 +1411,7 @@
     "href": "index.html",
     "title": "Welcome to the OUCRU introduction to Medical Statistics 2026",
     "section": "",
-    "text": "Time table\nThe training will be 09:00 – 17:00 (UTC +7) for everyday\nThere will be a lunch break between 12:30 – 13:30 (UTC +7)\nLunch will be provided for in-person attendees\n\n\n\n\nProf. Ronald Geskus, Biostatistics group, OUCRU HCM\nDr. Duc Du Hong, Biostatistics group, OUCRU HCM\nDr. Hoang Van Thuan, Biostatistics group, OUCRU HCM\nDr. Nguyen Lam Vuong, Biostatistics group, OUCRU HCM\nDr. Tran Thai Hung, Biostatistics group, OUCRU HCM"
+    "text": "Time table\nThe training will be 09:15 – 16:45 (UTC +7) for everyday\nThere will be a lunch break between 12:30 – 13:30 (UTC +7)\nLunch will be provided for in-person attendees\n\n\n\n\nProf. Ronald Geskus, Biostatistics group, OUCRU HCM\nDr. Duc Du Hong, Biostatistics group, OUCRU HCM\nDr. Hoang Van Thuan, Biostatistics group, OUCRU HCM\nDr. Nguyen Lam Vuong, Biostatistics group, OUCRU HCM\nDr. Tran Thai Hung, Biostatistics group, OUCRU HCM"
   },
   {
     "objectID": "index.html#contributors",
@@ -1698,14 +1698,14 @@
     "href": "slides/qt-repro-res.html#how-to-use-quarto",
     "title": "Using Quarto for reproducible research",
     "section": "How to use Quarto?",
-    "text": "How to use Quarto?\n\n\n\nindex.qmd\n---\ntitle: \"My Quarto file\"\nauthor: \"Your Name\"\ndate: \"2026-03-13\"\nformat: html\n---\n\nSummary of `mtcars`\n\n```{r}\nsummary(mtcars)\n```\n\n\n\n\nMain components of a Quarto file:\n\nHeader (YAML metadata)\nBody (Markdown content and code chunks)"
+    "text": "How to use Quarto?\n\n\n\nindex.qmd\n---\ntitle: \"My Quarto file\"\nauthor: \"Your Name\"\ndate: \"2026-03-17\"\nformat: html\n---\n\nSummary of `mtcars`\n\n```{r}\nsummary(mtcars)\n```\n\n\n\n\nMain components of a Quarto file:\n\nHeader (YAML metadata)\nBody (Markdown content and code chunks)"
   },
   {
     "objectID": "slides/qt-repro-res.html#header",
     "href": "slides/qt-repro-res.html#header",
     "title": "Using Quarto for reproducible research",
     "section": "Header",
-    "text": "Header\n\n\n\nindex.qmd\n---\ntitle: \"My Quarto file\"\nauthor: \"Your Name\"\ndate: \"2026-03-13\"\nformat: html\ntoc: true\n---\n\n\n\n\nDefines document properties and settings, for examples:\n\ntitle: Document title\nauthor: Authorship\ndate: Date this document was published\nformat:\n\nWebpage: html\nPresentation: revealjs\nMS Word: docx\nReport/Manuscript: pdf\n\ntoc: table of contents"
+    "text": "Header\n\n\n\nindex.qmd\n---\ntitle: \"My Quarto file\"\nauthor: \"Your Name\"\ndate: \"2026-03-17\"\nformat: html\ntoc: true\n---\n\n\n\n\nDefines document properties and settings, for examples:\n\ntitle: Document title\nauthor: Authorship\ndate: Date this document was published\nformat:\n\nWebpage: html\nPresentation: revealjs\nMS Word: docx\nReport/Manuscript: pdf\n\ntoc: table of contents"
   },
   {
     "objectID": "slides/qt-repro-res.html#body",
