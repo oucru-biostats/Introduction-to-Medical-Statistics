@@ -18,7 +18,7 @@
     "href": "index.html#day-1-descriptive-and-exploratory-data-analysis",
     "title": "Welcome to the OUCRU introduction to Medical Statistics 2026",
     "section": "2.1 Day 1: Descriptive and exploratory data analysis",
-    "text": "2.1 Day 1: Descriptive and exploratory data analysis\n\n🧑‍🏫️ Lead instructors: Ronald and Duc\n\n\nMorning: Descriptive data analysis\n\nLecture slides\nContents:\n\n\nData characteristics\n\n\nVariable types\n\n\nVariable summaries: numerical and graphical\n\n\nIntroduction to R and RStudio\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nhtml; pdf\n\n\n\n\nAfternoon: Exploratory data analysis\n\nLecture slides\nContents:\n\n\n(Baseline) tables\n\n\nGraphs: ≥ 2 categorical variables\n\n\nGraphs: numeric variables by group\n\n\nGraphs: 2 numeric variables\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nhtml; pdf"
+    "text": "2.1 Day 1: Descriptive and exploratory data analysis\n\n🧑‍🏫️ Lead instructors: Ronald and Duc\n\n\nMorning: Descriptive data analysis\n\nLecture slides\nContents:\n\n\nData characteristics\n\n\nVariable types\n\n\nVariable summaries: numerical and graphical\n\n\nIntroduction to R and RStudio\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nR studio; pdf\n\n\n\n\nAfternoon: Exploratory data analysis\n\nLecture slides\nContents:\n\n\n(Baseline) tables\n\n\nGraphs: ≥ 2 categorical variables\n\n\nGraphs: numeric variables by group\n\n\nGraphs: 2 numeric variables\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nwebr; R studio"
   },
   {
     "objectID": "index.html#day-3-principles-of-data-visualisation",
@@ -75,5 +75,26 @@
     "title": "Welcome to the OUCRU introduction to Medical Statistics 2026",
     "section": "3.5 R GUIs",
     "text": "3.5 R GUIs"
+  },
+  {
+    "objectID": "handouts/precourse_setup.html",
+    "href": "handouts/precourse_setup.html",
+    "title": "Pre-course setups and requirements",
+    "section": "",
+    "text": "Here we explain how to install R and RStudio on your own computer. This is required to ensure a smooth experience and reproducible results during the course."
+  },
+  {
+    "objectID": "handouts/precourse_setup.html#r",
+    "href": "handouts/precourse_setup.html#r",
+    "title": "Pre-course setups and requirements",
+    "section": "R",
+    "text": "R\n\nGo to the R website\nIn the column on the left hand side, click on the CRAN link under the subheading Download\n\nYou now see a page with CRAN Mirrors. This is a list of servers from which the R software and extensions can be downloaded from\n\nClick on the first link\n\nNow both the left hand side and the right hand side of the page change (This page can be saved as a bookmark/favorite)\n\nOn the right hand side, click on the download link for your operating system\n\nE.g. Windows users click on Download R for Windows, then click on base and download the program from there.\nIt is recommended to install the latest version as well as to upgrade the program if a new major version is released, which is about once per year\nYou can use the default installation options"
+  },
+  {
+    "objectID": "handouts/precourse_setup.html#rstudio-desktop",
+    "href": "handouts/precourse_setup.html#rstudio-desktop",
+    "title": "Pre-course setups and requirements",
+    "section": "RStudio Desktop",
+    "text": "RStudio Desktop\n\nGo to the download page\nScroll down, look for 2: Install Rstudio and click on the button for downloading RStudio Desktop\nDownload and install RStudio Desktop\n\nYou can use the default installation options\n\nOpen Rstudio Desktop, to check that everything has been installed correctly\n\nE.g. via the Start menu in Windows"
   }
 ]
