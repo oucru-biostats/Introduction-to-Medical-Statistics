@@ -38,17 +38,19 @@ If you would like to do the exercises using RStudio, please follow [this handout
 
 ### Morning: Descriptive data analysis
 
-- [Lecture slides](slides/1.SlidesDescriptives.pdf)
+- [Lecture slides](slides/IntroductionRDay1.qmd)
 - Contents:
-  - Open and inspect datasets, understand their structure
-  - Make selections and extract relevant data
-  - Perform basic data exploration, including calculating summaries and identifying missing values
-  - Navigate RStudio with confidence
+  - 1. Data characteristics
+  - 2. Variable types
+  - 3. Variable summaries: numerical and graphical
+  - 4. Introduction to R and RStudio
+
 - Exercises:
   - [Handout file](handouts/Exercise1_Webr.html){target="_blank"}
   - [Exercise answer key](handouts/exercises_Day1_answer.qmd){target="_blank"}
   - [Exercise answer script](handouts/exercises_Day1_answer.R){target="_blank"}
-- [Example R code scripts - Day 1](slides/Scripts/ExampleCodeDay1.R){target="_blank"}
+- Answers: 
+  - [Example R code scripts - Day 1](slides/Scripts/ExampleCodeDay1.R){target="_blank"}
 
 ### Afternoon: Exploratory data analysis
 
