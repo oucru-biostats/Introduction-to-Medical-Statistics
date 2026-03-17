@@ -21,7 +21,7 @@ website:
     right:
       - icon: envelope
         aria-label: email
-        href: "hungtt@ourcru.org"   
+        href: "hungtt@oucru.org"   
 
 # Don't touch unless you know what you are doing :) ------------
   search: 
