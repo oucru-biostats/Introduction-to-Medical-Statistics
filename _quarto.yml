@@ -23,10 +23,11 @@ website:
       - href: https://oucru-modelling.github.io/R-training-2025/
         text: Previous R training course
         
+    # your social media handles
     right:
       - icon: envelope
         aria-label: email
-        href: "mailto:thaihung.tran306@gmail.com"
+        href: "mailto:thaihung.tran306@gmail.com"  
 
   comments:
     giscus:
