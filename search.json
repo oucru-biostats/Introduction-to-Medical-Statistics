@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome to the OUCRU Introduction to Medical Statistics 2026. This course is designed to provide clinicians and researchers with the fundamental statistical tools required for medical research.\n\n\n\n\n\n\n\nNote📅 Logistics & Schedule\n\n\n\n\nTime: 09:15 – 16:45 (UTC +7) daily\nLunch Break: 12:30 – 13:30 (UTC +7)\nFull Schedule: {{&lt; fa file-pdf &gt;}} Download Timetable\nNote: Lunch is provided for in-person attendees.\n\n\n\n\n\n\n\n\n\nProf. Ronald Geskus\nDr. Duc Du Hong\nDr. Hoang Van Thuan\nDr. Nguyen Lam Vuong\nDr. Tran Thai Hung"
+    "text": "Welcome to the OUCRU Introduction to Medical Statistics 2026. This course is designed to provide clinicians and researchers with the fundamental statistical tools required for medical research.\n\n\n\n\n\n\n\nNote📅 Logistics & Schedule\n\n\n\n\nTime: 09:15 – 16:45 (UTC +7) daily\nLunch Break: 12:30 – 13:30 (UTC +7)\nFull Schedule: Download Timetable\nNote: Lunch is provided for in-person attendees.\n\n\n\n\n\n\n\n\n\nProf. Ronald Geskus\nDr. Duc Du Hong\nDr. Hoang Van Thuan\nDr. Nguyen Lam Vuong\nDr. Tran Thai Hung"
   },
   {
     "objectID": "index.html#contributors",
@@ -25,14 +25,14 @@
     "href": "index.html#morning-descriptive-analysis",
     "title": "Welcome",
     "section": "2.2 ☀️ Morning: Descriptive Analysis",
-    "text": "2.2 ☀️ Morning: Descriptive Analysis\n\n\n\nContents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\nMaterials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\nClick to unlock answers"
+    "text": "2.2 ☀️ Morning: Descriptive Analysis\n\n\n\nContents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version (Script)\n\nAnswers:\n\nClick to unlock answers"
   },
   {
     "objectID": "index.html#afternoon-exploratory-analysis",
     "href": "index.html#afternoon-exploratory-analysis",
     "title": "Welcome",
     "section": "2.3 🌤️ Afternoon: Exploratory Analysis",
-    "text": "2.3 🌤️ Afternoon: Exploratory Analysis\n\n\n\nContents\n\n(Baseline) tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\nMaterials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\nClick to unlock answers"
+    "text": "2.3 🌤️ Afternoon: Exploratory Analysis\n\n\n\nContents\n\n(Baseline) tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version (Script)\n\nAnswers:\n\nClick to unlock answers"
   },
   {
     "objectID": "handouts/medical_statistics_2024.html",
