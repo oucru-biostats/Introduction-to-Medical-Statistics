@@ -32,8 +32,8 @@ website:
         text: Home
       - href: handouts/medical_statistics_2024.qmd 
         text: Course Videos
-      - href: https://oucru-modelling.github.io/R-training-2025/
-        text: Previous R training course
+      - href: handouts/other_resources.qmd
+        text: Additional R Resources
         
 
   comments:
