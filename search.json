@@ -23,9 +23,16 @@
   {
     "objectID": "handouts/medical_statistics_2024.html",
     "href": "handouts/medical_statistics_2024.html",
-    "title": "OUCRU Medical Statistics Course Videos",
+    "title": "Course Video Archive",
     "section": "",
-    "text": "These links are the video recordings for the 2024 iteration of the course. The links for the 2026 iteration will be updated here after the course concludes.\nOUCRU introduction to Medical Statistics 2024\n\nDay 1\nDay 2\nDay 3 (1/2)\nDay 3 (2/2)\nDay 4 (1/2)\nDay 4 (2/2)\nDay 5"
+    "text": "These recordings are from the 2024 iteration of the course. Links for the 2026 iteration will be uploaded here shortly after the course concludes in March."
+  },
+  {
+    "objectID": "handouts/medical_statistics_2024.html#lecture-recordings",
+    "href": "handouts/medical_statistics_2024.html#lecture-recordings",
+    "title": "Course Video Archive",
+    "section": "📺 2024 Lecture Recordings",
+    "text": "📺 2024 Lecture Recordings\n\n\n\nDay 1: Descriptives & EDA\nFoundations of data types and exploratory analysis.\nWatch Session\n\n\nDay 2: Linear Regression\nIntroduction to simple and multiple linear regression models.\nWatch Session\n\n\n\n\nDay 3: Logistic Regression\nModeling binary outcomes and interpreting odds ratios.\nPart 1 Part 2\n\n\nDay 4: Survival Analysis\nTime-to-event data and Cox proportional hazards.\nPart 1 Part 2\n\n\n\n\nDay 5: Advanced Topics\nMixed models and course wrap-up.\nWatch Session"
   },
   {
     "objectID": "handouts/precourse_setup.html",

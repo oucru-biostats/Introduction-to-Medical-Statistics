@@ -1,24 +1,45 @@
 ---
-title: "OUCRU Medical Statistics Course Videos"
+title: "Course Video Archive"
+subtitle: "Recordings from the 2024 Iteration"
 toc: false
 number-sections: false
 format: 
   html:
     link-external-newwindow: true
     link-external-icon: true
-navbar: false
+    page-layout: full
 date: last-modified
-date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
+date-format: "MMMM D, YYYY"
 ---
 
-These links are the video recordings for the 2024 iteration of the course. The links for the 2026 iteration will be updated here after the course concludes.
+::: {.callout-important appearance="simple"}
+These recordings are from the **2024 iteration** of the course. Links for the **2026 iteration** will be uploaded here shortly after the course concludes in March.
+:::
 
-OUCRU introduction to Medical Statistics 2024
+## 📺 2024 Lecture Recordings
 
-- [Day 1](https://youtu.be/f4bBIMs5w08)
-- [Day 2](https://youtu.be/DXEC9z0FQpM)
-- [Day 3 (1/2)](https://youtu.be/ThvKyzUIeZY)
-- [Day 3 (2/2)](https://youtu.be/cWA-BrcN0kM)
-- [Day 4 (1/2)](https://youtu.be/8zJkYpFUqRI)
-- [Day 4 (2/2)](https://youtu.be/O8rZbQaIBi8)
-- [Day 5](https://youtu.be/5ajIkOWAI9Q)
+::: {layout-ncol=2}
+
+### Day 1: Descriptives & EDA
+Foundations of data types and exploratory analysis.  
+[**Watch Session**](https://youtu.be/f4bBIMs5w08){.btn .btn-outline-primary .btn-sm}
+
+### Day 2: Linear Regression
+Introduction to simple and multiple linear regression models.  
+[**Watch Session**](https://youtu.be/DXEC9z0FQpM){.btn .btn-outline-primary .btn-sm}
+
+### Day 3: Logistic Regression
+Modeling binary outcomes and interpreting odds ratios.  
+[**Part 1**](https://youtu.be/ThvKyzUIeZY){.btn .btn-outline-primary .btn-sm} [**Part 2**](https://youtu.be/cWA-BrcN0kM){.btn .btn-outline-primary .btn-sm}
+
+### Day 4: Survival Analysis
+Time-to-event data and Cox proportional hazards.  
+[**Part 1**](https://youtu.be/8zJkYpFUqRI){.btn .btn-outline-primary .btn-sm} [**Part 2**](https://youtu.be/O8rZbQaIBi8){.btn .btn-outline-primary .btn-sm}
+
+### Day 5: Advanced Topics
+Mixed models and course wrap-up.  
+[**Watch Session**](https://youtu.be/5ajIkOWAI9Q){.btn .btn-outline-primary .btn-sm}
+
+:::
+
+---
