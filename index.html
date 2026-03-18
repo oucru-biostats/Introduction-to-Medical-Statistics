@@ -176,7 +176,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 18, 2026 – 06:27:54 (UTC)</p>
+      <p class="date">March 18, 2026 – 06:33:59 (UTC)</p>
     </div>
   </div>
   
@@ -268,7 +268,26 @@ cookieconsent.run({
 <p><strong>Exercises:</strong> - <a href="handouts/day_1/Exercise1_Webr.html" target="_blank">Web-R version</a> - <a href="handouts/day_1/ExerciseRStudio.html" target="_blank">RStudio version</a> (<a href="handouts/day_1/ExerciseCode.R">Download Script</a>)</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><strong>Answers:</strong> <a href="handouts/day_1/ExerciseAnswers.html">RStudio</a> | <a href="handouts/day_1/ExerciseAnswers.pdf">PDF</a></p>
+<strong>Answers:</strong>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div id="morning-answers" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><button onclick="unlockMorning()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<script>
+function unlockMorning() {
+  var password = prompt("Please enter the session code provided in class:");
+  if (password === "OUCRU2026") {
+    document.getElementById("morning-answers").innerHTML = 
+      '<a href="handouts/day_1/ExerciseAnswers.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a> ' +
+      '<a href="handouts/day_1/ExerciseAnswers.pdf" class="btn btn-success btn-sm" target="_blank">PDF</a>';
+  } else {
+    alert("Incorrect code. Please ask the instructor for the password.");
+  }
+}
+</script>
 </div>
 </div>
 <div class="quarto-layout-row">
@@ -285,7 +304,26 @@ cookieconsent.run({
 <p><strong>Exercises:</strong> - <a href="handouts/day_1/ExerciseWebr-2.html" target="_blank">Web-R version</a> - <a href="handouts/day_1/ExerciseRStudio-2.html" target="_blank">RStudio version</a> (<a href="handouts/day_1/ExerciseCode-2.R">Download Script</a>)</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><strong>Answers:</strong> <a href="handouts/day_1/ExerciseWebrAnswers-2.html">Web-R</a> | <a href="handouts/day_1/ExerciseAnswers-2.html">RStudio</a></p>
+<strong>Answers:</strong>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div id="afternoon-answers" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><button onclick="unlockAfternoon()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<script>
+function unlockAfternoon() {
+  var password = prompt("Please enter the session code provided in class:");
+  if (password === "OUCRU2026") {
+    document.getElementById("afternoon-answers").innerHTML = 
+      '<a href="handouts/day_1/ExerciseWebrAnswers-2.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ' +
+      '<a href="handouts/day_1/ExerciseAnswers-2.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a>';
+  } else {
+    alert("Incorrect code.");
+  }
+}
+</script>
 </div>
 </div>
 </div>
