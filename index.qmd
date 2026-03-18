@@ -68,8 +68,12 @@ You have two ways to follow the course exercises:
     -   [Web-R version](handouts/day_1/Exercise1_Webr.html){target="_blank"}
     -   [RStudio version](handouts/day_1/ExerciseRStudio.html){target="_blank"} ([Script](handouts/day_1/ExerciseCode.R))
 -   **Answers:**
-<div id="morning-answers">
-  <button onclick="unlockMorning1()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button>
+<div id="day1-morning">
+  <button class="btn btn-primary" onclick="unlockSession('TooEasy?', 'day1-morning', 
+    '<a href=\'./handouts/day_1/ExerciseAnswers.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
+    '<a href=\'./handouts/day_1/ExerciseAnswers.pdf\' class=\'btn btn-success btn-sm\' target=\'_blank\'>PDF</a>')">
+    Unlock Morning Answers
+  </button>
 </div>
 
 
@@ -93,8 +97,12 @@ You have two ways to follow the course exercises:
     -   [Web-R version](handouts/day_1/ExerciseWebr-2.html){target="_blank"}
     -   [RStudio version](handouts/day_1/ExerciseRStudio-2.html){target="_blank"} ([Script](handouts/day_1/ExerciseCode-2.R))
 -   **Answers:**
-<div id="afternoon-answers">
-  <button onclick="unlockAfternoon1()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button>
+<div id="day1-afternoon">
+  <button class="btn btn-primary" onclick="unlockSession('RealFun!', 'day1-afternoon', 
+    '<a href=\'./handouts/day_1/ExerciseWebrAnswers-2.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
+    '<a href=\'./handouts/day_1/ExerciseAnswers-2.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>RStudio Answers</a>')">
+    Unlock Afternoon Answers
+  </button>
 </div>
 
 
@@ -124,8 +132,11 @@ You have two ways to follow the course exercises:
 -   **Exercises:**
     -   [Web-R version](handouts/day_3/Exercise5_Webr.html){target="_blank"}
 -   **Answers:**
-<div id="morning-answers">
-  <button onclick="unlockSession('TooEasy?', 'morning-answers', './handouts/day_3/Exercise5_Answers.html')">Unlock Morning</button>
+<div id="day3-morning">
+  <button class="btn btn-primary" onclick="unlockSession('TooEasy?', 'day3-morning', 
+    '<a href=\'./handouts/day_3/Exercise5_Answers.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a>')">
+    Unlock Morning Answers
+  </button>
 </div>
 
 
@@ -148,8 +159,11 @@ You have two ways to follow the course exercises:
 -   **Exercises:**
     -   [Web-R version](handouts/day_3/Exercise6_Webr.html){target="_blank"}
 -   **Answers:**
-<div id="afternoon-answers">
-  <button onclick="unlockSession('RealFun!', 'afternoon-answers', './handouts/day_3/Exercise6_Answers.html')">Unlock Afternoon</button>
+<div id="day3-afternoon">
+  <button class="btn btn-primary" onclick="unlockSession('RealFun!', 'day3-afternoon', 
+    '<a href=\'./handouts/day_3/Exercise6_Answers.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a>')">
+    Unlock Afternoon Answers
+  </button>
 </div>
 
 
@@ -197,13 +211,13 @@ You have two ways to follow the course exercises:
 
 
 <script>
-function unlockSession(correctPassword, elementId, filePath) {
+
+function unlockSession(correctPassword, elementId, linksHtml) {
   var password = prompt("Please enter the session code provided in class:");
   
   if (password === correctPassword) {
-    document.getElementById(elementId).innerHTML = 
-      '<a href="' + filePath + '" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a>';
-  } else if (password !== null) {
+    document.getElementById(elementId).innerHTML = linksHtml;
+  } else if (password !== null && password !== "") {
     alert("Incorrect code.");
   }
 }
