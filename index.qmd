@@ -70,13 +70,11 @@ You have two ways to follow the course exercises:
     -   [Web-R version](handouts/day_1/Exercise1_Webr.html){target="_blank"}
     -   [RStudio version](handouts/day_1/ExerciseRStudio.html){target="_blank"} ([Script](handouts/day_1/ExerciseCode.R))
 -   **Answers:**
-```{=html}
 <div id="morning-answers">
   <button onclick="unlockMorning()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button>
 </div>
 
 
-```
 :::
 
 
@@ -97,14 +95,10 @@ You have two ways to follow the course exercises:
     -   [Web-R version](handouts/day_1/ExerciseWebr-2.html){target="_blank"}
     -   [RStudio version](handouts/day_1/ExerciseRStudio-2.html){target="_blank"} ([Script](handouts/day_1/ExerciseCode-2.R))
 -   **Answers:**
-
-```{=html}
 <div id="afternoon-answers">
   <button onclick="unlockAfternoon()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button>
 </div>
 
-
-```
 
 :::
 

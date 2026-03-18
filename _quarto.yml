@@ -4,6 +4,10 @@ project:
   render:
     - "*.qmd"
     - "!handouts/exercises_Day3_answer.qmd"
+  resources:
+    - "handouts/"
+    - "slides/"
+    - "site_imgs/"
 website:
   cookie-consent:
     type: express
