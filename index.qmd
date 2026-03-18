@@ -11,13 +11,11 @@ date-format: "MMMM D, YYYY"
 ---
 
 # Welcome {.unnumbered}
-::: {.column width="70%"}
+
 Welcome to the **OUCRU Introduction to Medical Statistics 2026**. This course is designed to provide clinicians and researchers with the fundamental statistical tools required for medical research.
-:::
 
 ::: {.callout-note appearance="simple"}
 ## 📅 Logistics & Schedule
-
 -   **Time:** 09:15 – 16:45 (UTC +7) daily
 -   **Lunch Break:** 12:30 – 13:30 (UTC +7)
 -   **Full Schedule:** [Download Timetable](handouts/Agenda_StatCourse_23-27March2026.pdf)
