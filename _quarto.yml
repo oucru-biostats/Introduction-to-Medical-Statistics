@@ -28,7 +28,13 @@ website:
         aria-label: email
         href: "mailto:hungtt@oucru.org"
         target: _blank
-
+  comments:
+    giscus:
+      repo: your-username/your-repo-name
+      category: General
+      mapping: pathname
+      reactions-enabled: true
+      loading: lazy
       
 
 # Don't touch unless you know what you are doing :) ------------
