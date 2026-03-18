@@ -100,6 +100,54 @@ You have two ways to follow the course exercises:
 
 :::
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
 function unlockMorning1() {
   var password = prompt("Please enter the session code provided in class:");
