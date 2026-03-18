@@ -158,6 +158,7 @@ cookieconsent.run({
   <li><a href="#course-topics" id="toc-course-topics" class="nav-link" data-scroll-target="#course-topics"><span class="header-section-number">2</span> Course Topics</a>
   <ul class="collapse">
   <li><a href="#day-1-descriptive-and-exploratory-data-analysis" id="toc-day-1-descriptive-and-exploratory-data-analysis" class="nav-link" data-scroll-target="#day-1-descriptive-and-exploratory-data-analysis"><span class="header-section-number">2.1</span> Day 1: Descriptive and Exploratory Data Analysis</a></li>
+  <li><a href="#day-3-comparing-continuous-variables-and-simple-linear-regression" id="toc-day-3-comparing-continuous-variables-and-simple-linear-regression" class="nav-link" data-scroll-target="#day-3-comparing-continuous-variables-and-simple-linear-regression"><span class="header-section-number">2.2</span> Day 3: Comparing continuous variables and Simple linear regression</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -316,12 +317,76 @@ cookieconsent.run({
 </div>
 </div>
 <hr>
+</section>
+</section>
+<section id="day-3-comparing-continuous-variables-and-simple-linear-regression" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="day-3-comparing-continuous-variables-and-simple-linear-regression"><span class="header-section-number">2.2</span> Day 3: Comparing continuous variables and Simple linear regression</h2>
+<section id="lead-instructors-vuong" class="level3">
+<h3 class="anchored" data-anchor-id="lead-instructors-vuong">🧑‍🏫 Lead instructors: Vuong</h3>
+</section>
+<section id="morning-comparing-continuous-variables" class="level3">
+<h3 class="anchored" data-anchor-id="morning-comparing-continuous-variables">☀️ Morning: Comparing continuous variables</h3>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<section id="contents-2" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h4 class="anchored" data-anchor-id="contents-2">Contents</h4>
+<ol type="1">
+<li>Student’s t-test vs.&nbsp;Wilcoxon rank-sum test</li>
+<li>Paired t-test vs.&nbsp;Wilcoxon signed-rank test</li>
+</ol>
+</section>
+<section id="materials-2" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h4 class="anchored" data-anchor-id="materials-2">Materials</h4>
+<ul>
+<li><strong>Lecture:</strong> <a href="slides/day_3/5_Group comparison_Slides.pdf">Slides</a></li>
+<li><strong>Exercises:</strong>
+<ul>
+<li><a href="handouts/day_3/Exercise5_Webr.html" target="_blank">Web-R version</a></li>
+</ul></li>
+<li><strong>Answers:</strong>
+<div id="morning-answers">
+<p><button onclick="unlockMorning3()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+</div></li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+<section id="afternoonsimple-linear-regression" class="level3">
+<h3 class="anchored" data-anchor-id="afternoonsimple-linear-regression">🌤️ Afternoon:Simple linear regression</h3>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<section id="contents-3" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h4 class="anchored" data-anchor-id="contents-3">Contents</h4>
+<ol type="1">
+<li>Visualizing Relationships</li>
+<li>The Linear Regression Model</li>
+<li>Interpreting Results</li>
+<li>Regression Diagnostics</li>
+</ol>
+</section>
+<section id="materials-3" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h4 class="anchored" data-anchor-id="materials-3">Materials</h4>
+<ul>
+<li><strong>Lecture:</strong> <a href="slides/day_3/6.simpleLinearRegression_Slides.pdf">Slides</a></li>
+<li><strong>Exercises:</strong>
+<ul>
+<li><a href="handouts/day_3/Exercise6_Webr.html" target="_blank">Web-R version</a></li>
+</ul></li>
+<li><strong>Answers:</strong>
+<div id="afternoon-answers">
+<p><button onclick="unlockAfternoon1()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+</div></li>
+</ul>
+</section>
+</div>
+</div>
 <script>
 function unlockMorning1() {
   var password = prompt("Please enter the session code provided in class:");
   if (password === "TooEasy?") {
     document.getElementById("morning-answers").innerHTML = 
-      '<a href="./handouts/day_1/ExerciseAnswers.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a> ' +
+      '<a href="./handouts/day_1/ExerciseAnswers.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ' +
       '<a href="./handouts/day_1/ExerciseAnswers.pdf" class="btn btn-success btn-sm" target="_blank">PDF</a>';
   } else if (password !== null) {
     alert("Incorrect code.");
@@ -338,6 +403,29 @@ function unlockAfternoon1() {
     alert("Incorrect code.");
   }
 }
+
+
+function unlockMorning3() {
+  var password = prompt("Please enter the session code provided in class:");
+  if (password === "TooEasy?") {
+    document.getElementById("morning-answers").innerHTML = 
+      '<a href="./handouts/day_3/Exercise5_Answers.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ';
+  } else if (password !== null) {
+    alert("Incorrect code.");
+  }
+}
+
+function unlockAfternoon3() {
+  var password = prompt("Please enter the session code provided in class:");
+  if (password === "RealFun!") {
+    document.getElementById("afternoon-answers").innerHTML = 
+      '<a href="./handouts/day_3/Exercise6_Answers.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ';
+  } else if (password !== null) {
+    alert("Incorrect code.");
+  }
+}
+
+
 </script>
 
 
