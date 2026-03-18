@@ -1,0 +1,47 @@
+---
+title: "Additional R Resources"
+description: "Supplementary training materials and community resources for R users at OUCRU."
+toc: false
+number-sections: false
+format: 
+  html:
+    link-external-newwindow: true
+    link-external-icon: true
+navbar: false
+date: last-modified
+date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
+---
+
+Welcome! Beyond this medical statistics course, we highly recommend exploring these dedicated R programming resources developed by the OUCRU Modelling and Biostatistics groups.
+
+---
+
+## 📚 Training & Community
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### [R Training 2025](https://oucru-modelling.github.io/R-training-2025/)
+::: {.callout-note appearance="minimal"}
+**Foundational R Skills** A comprehensive course covering the essentials of R, from data manipulation with `dplyr` to professional visualization with `ggplot2`. Perfect for those who want a solid programming foundation before diving deeper into statistics.
+[Go to Course →](https://oucru-modelling.github.io/R-training-2025/){.btn .btn-outline-primary .btn-sm role="button"}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [R Cafe Materials](https://oucru-modelling.github.io/R-cafe-materials/)
+::: {.callout-tip appearance="minimal"}
+**Continuous Learning** The "R Cafe" is our community-driven space for sharing tips, advanced tricks, and solving specific coding challenges. These materials include slide decks and scripts from our regular meetups.
+[Browse Materials →](https://oucru-modelling.github.io/R-cafe-materials/){.btn .btn-outline-primary .btn-sm role="button"}
+:::
+:::
+
+:::
+
+---
+
+### How to use these resources
+* **New to R?** Start with the **R Training 2025** link to get comfortable with the syntax.
+* **Need specific solutions?** Search the **R Cafe Materials** for localized examples and community-tested code.
+
+If you have questions about any of these materials, feel free to leave a comment below or reach out to the Biostatistics group.
