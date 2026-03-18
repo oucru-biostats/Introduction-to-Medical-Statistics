@@ -28,6 +28,7 @@ date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 * **Dr. Hoang Van Thuan** (Biostatistics, OUCRU HCM)
 * **Dr. Nguyen Lam Vuong** (Biostatistics, OUCRU HCM)
 * **Dr. Tran Thai Hung** (Biostatistics, OUCRU HCM)
+
 :::
 
 ---
