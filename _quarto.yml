@@ -15,6 +15,7 @@ website:
   title: "OUCRU introduction to Medical Statistics"
   favicon: "site_imgs/OUCRU.jpg"
   navbar:
+    pinned: true
     left:
       - href: index.qmd
         text: Home
