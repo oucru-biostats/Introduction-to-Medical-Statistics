@@ -1,6 +1,15 @@
 ---
 title: "Additional R Resources"
 description: "Supplementary training materials and community resources for R users at OUCRU."
+toc: false
+number-sections: false
+format: 
+  html:
+    link-external-newwindow: true
+    link-external-icon: true
+navbar: false
+date: last-modified
+date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 ---
 
 Welcome! Beyond this medical statistics course, we highly recommend exploring these dedicated R programming resources developed by the OUCRU Modelling and Biostatistics groups.
