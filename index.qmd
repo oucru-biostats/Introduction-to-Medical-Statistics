@@ -62,7 +62,23 @@ You have two ways to follow the course exercises:
 - [Web-R version](handouts/day_1/Exercise1_Webr.html){target="_blank"}
 - [RStudio version](handouts/day_1/ExerciseRStudio.html){target="_blank"} ([Download Script](handouts/day_1/ExerciseCode.R))
 
-**Answers:** [RStudio](handouts/day_1/ExerciseAnswers.html) | [PDF](handouts/day_1/ExerciseAnswers.pdf)
+**Answers:**
+<div id="morning-answers">
+  <button onclick="unlockMorning()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button>
+</div>
+
+<script>
+function unlockMorning() {
+  var password = prompt("Please enter the session code provided in class:");
+  if (password === "OUCRU2026") {
+    document.getElementById("morning-answers").innerHTML = 
+      '<a href="handouts/day_1/ExerciseAnswers.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a> ' +
+      '<a href="handouts/day_1/ExerciseAnswers.pdf" class="btn btn-success btn-sm" target="_blank">PDF</a>';
+  } else {
+    alert("Incorrect code. Please ask the instructor for the password.");
+  }
+}
+</script>
 
 ### 🌤️ Afternoon: Exploratory Analysis
 **Lecture:** [Slides](slides/day_1/2.SlidesEDA.pdf)
@@ -77,7 +93,23 @@ You have two ways to follow the course exercises:
 - [Web-R version](handouts/day_1/ExerciseWebr-2.html){target="_blank"}
 - [RStudio version](handouts/day_1/ExerciseRStudio-2.html){target="_blank"} ([Download Script](handouts/day_1/ExerciseCode-2.R))
 
-**Answers:** [Web-R](handouts/day_1/ExerciseWebrAnswers-2.html) | [RStudio](handouts/day_1/ExerciseAnswers-2.html)
+**Answers:**
+<div id="afternoon-answers">
+  <button onclick="unlockAfternoon()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button>
+</div>
+
+<script>
+function unlockAfternoon() {
+  var password = prompt("Please enter the session code provided in class:");
+  if (password === "OUCRU2026") {
+    document.getElementById("afternoon-answers").innerHTML = 
+      '<a href="handouts/day_1/ExerciseWebrAnswers-2.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ' +
+      '<a href="handouts/day_1/ExerciseAnswers-2.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a>';
+  } else {
+    alert("Incorrect code.");
+  }
+}
+</script>
 
 :::
 
