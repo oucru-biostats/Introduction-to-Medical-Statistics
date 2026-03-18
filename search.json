@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "others/precourse_setup.html",
+    "href": "others/precourse_setup.html",
+    "title": "Pre-course setups and requirements",
+    "section": "",
+    "text": "Here we explain how to install R and RStudio on your own computer. This is required to ensure a smooth experience and reproducible results during the course."
+  },
+  {
+    "objectID": "others/precourse_setup.html#r",
+    "href": "others/precourse_setup.html#r",
+    "title": "Pre-course setups and requirements",
+    "section": "R",
+    "text": "R\n\nGo to the R website\nIn the column on the left hand side, click on the CRAN link under the subheading Download\n\nYou now see a page with CRAN Mirrors. This is a list of servers from which the R software and extensions can be downloaded from\n\nClick on the first link\n\nNow both the left hand side and the right hand side of the page change (This page can be saved as a bookmark/favorite)\n\nOn the right hand side, click on the download link for your operating system\n\nE.g. Windows users click on Download R for Windows, then click on base and download the program from there.\nIt is recommended to install the latest version as well as to upgrade the program if a new major version is released, which is about once per year\nYou can use the default installation options"
+  },
+  {
+    "objectID": "others/precourse_setup.html#rstudio-desktop",
+    "href": "others/precourse_setup.html#rstudio-desktop",
+    "title": "Pre-course setups and requirements",
+    "section": "RStudio Desktop",
+    "text": "RStudio Desktop\n\nGo to the download page\nScroll down, look for 2: Install Rstudio and click on the button for downloading RStudio Desktop\nDownload and install RStudio Desktop\n\nYou can use the default installation options\n\nOpen Rstudio Desktop, to check that everything has been installed correctly\n\nE.g. via the Start menu in Windows"
+  },
+  {
+    "objectID": "others/Additional R Resources.html",
+    "href": "others/Additional R Resources.html",
+    "title": "Additional R Resources",
+    "section": "",
+    "text": "Welcome! Beyond this medical statistics course, we highly recommend exploring these dedicated R programming resources developed by the OUCRU Modelling and Biostatistics groups."
+  },
+  {
+    "objectID": "others/Additional R Resources.html#training-community",
+    "href": "others/Additional R Resources.html#training-community",
+    "title": "Additional R Resources",
+    "section": "📚 Training & Community",
+    "text": "📚 Training & Community\n\n\nR Training 2025\n\n\n\n\n\n\nFoundational R Skills A comprehensive course covering the essentials of R, from data manipulation with dplyr to professional visualization with ggplot2. Perfect for those who want a solid programming foundation before diving deeper into statistics. Go to Course →\n\n\n\n\n\nR Cafe Materials\n\n\n\n\n\n\nContinuous Learning The “R Cafe” is our community-driven space for sharing tips, advanced tricks, and solving specific coding challenges. These materials include slide decks and scripts from our regular meetups. Browse Materials →\n\n\n\n\n\n\n\nHow to use these resources\n\nNew to R? Start with the R Training 2025 link to get comfortable with the syntax.\nNeed specific solutions? Search the R Cafe Materials for localized examples and community-tested code.\n\nIf you have questions about any of these materials, feel free to leave a comment below or reach out to the Biostatistics group."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome",
@@ -35,52 +70,17 @@
     "text": "2.3 Day 4: Multivariable linear and logistic regression\n\n🧑‍🏫 Lead instructors: Thuan and Vuong\n\n\n☀️ Morning: Multivariable linear regression\n\n\n\nContents\n\nModel formulation\nEstimation\nTesting\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer \n\n\n\n\n\n\n\n🌤️ Afternoon: Logistic regression\n\n\n\nContents\n\nRisk/odds, risk ratio (RR)/odds ratio (OR)\nLogistic regression model\nInterpreting Univariable Logistic Regression\nInterpreting Multivariable Logistic Regression\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer"
   },
   {
-    "objectID": "handouts/medical_statistics_2024.html",
-    "href": "handouts/medical_statistics_2024.html",
+    "objectID": "others/medical_statistics_2024.html",
+    "href": "others/medical_statistics_2024.html",
     "title": "Course Video Archive",
     "section": "",
     "text": "These recordings are from the 2024 iteration of the course. Links for the 2026 iteration will be uploaded here shortly after the course concludes in March."
   },
   {
-    "objectID": "handouts/medical_statistics_2024.html#lecture-recordings",
-    "href": "handouts/medical_statistics_2024.html#lecture-recordings",
+    "objectID": "others/medical_statistics_2024.html#lecture-recordings",
+    "href": "others/medical_statistics_2024.html#lecture-recordings",
     "title": "Course Video Archive",
     "section": "📺 2024 Lecture Recordings",
     "text": "📺 2024 Lecture Recordings\n\n\n\nDay 1: Descriptives & EDA\nWatch Session\n\n\nDay 2: Statistical Principles & Distributions\nWatch Session\n\n\n\n\nDay 3: Group Comparisons & Simple Modeling\nPart 1 Part 2\n\n\nDay 4: Multivariable & Logistic Regression\nPart 1 Part 2\n\n\n\n\nDay 5: Study Design & Research Methodology\nWatch Session"
-  },
-  {
-    "objectID": "handouts/Additional R Resources.html",
-    "href": "handouts/Additional R Resources.html",
-    "title": "Additional R Resources",
-    "section": "",
-    "text": "Welcome! Beyond this medical statistics course, we highly recommend exploring these dedicated R programming resources developed by the OUCRU Modelling and Biostatistics groups."
-  },
-  {
-    "objectID": "handouts/Additional R Resources.html#training-community",
-    "href": "handouts/Additional R Resources.html#training-community",
-    "title": "Additional R Resources",
-    "section": "📚 Training & Community",
-    "text": "📚 Training & Community\n\n\nR Training 2025\n\n\n\n\n\n\nFoundational R Skills A comprehensive course covering the essentials of R, from data manipulation with dplyr to professional visualization with ggplot2. Perfect for those who want a solid programming foundation before diving deeper into statistics. Go to Course →\n\n\n\n\n\nR Cafe Materials\n\n\n\n\n\n\nContinuous Learning The “R Cafe” is our community-driven space for sharing tips, advanced tricks, and solving specific coding challenges. These materials include slide decks and scripts from our regular meetups. Browse Materials →\n\n\n\n\n\n\n\nHow to use these resources\n\nNew to R? Start with the R Training 2025 link to get comfortable with the syntax.\nNeed specific solutions? Search the R Cafe Materials for localized examples and community-tested code.\n\nIf you have questions about any of these materials, feel free to leave a comment below or reach out to the Biostatistics group."
-  },
-  {
-    "objectID": "handouts/precourse_setup.html",
-    "href": "handouts/precourse_setup.html",
-    "title": "Pre-course setups and requirements",
-    "section": "",
-    "text": "Here we explain how to install R and RStudio on your own computer. This is required to ensure a smooth experience and reproducible results during the course."
-  },
-  {
-    "objectID": "handouts/precourse_setup.html#r",
-    "href": "handouts/precourse_setup.html#r",
-    "title": "Pre-course setups and requirements",
-    "section": "R",
-    "text": "R\n\nGo to the R website\nIn the column on the left hand side, click on the CRAN link under the subheading Download\n\nYou now see a page with CRAN Mirrors. This is a list of servers from which the R software and extensions can be downloaded from\n\nClick on the first link\n\nNow both the left hand side and the right hand side of the page change (This page can be saved as a bookmark/favorite)\n\nOn the right hand side, click on the download link for your operating system\n\nE.g. Windows users click on Download R for Windows, then click on base and download the program from there.\nIt is recommended to install the latest version as well as to upgrade the program if a new major version is released, which is about once per year\nYou can use the default installation options"
-  },
-  {
-    "objectID": "handouts/precourse_setup.html#rstudio-desktop",
-    "href": "handouts/precourse_setup.html#rstudio-desktop",
-    "title": "Pre-course setups and requirements",
-    "section": "RStudio Desktop",
-    "text": "RStudio Desktop\n\nGo to the download page\nScroll down, look for 2: Install Rstudio and click on the button for downloading RStudio Desktop\nDownload and install RStudio Desktop\n\nYou can use the default installation options\n\nOpen Rstudio Desktop, to check that everything has been installed correctly\n\nE.g. via the Start menu in Windows"
   }
 ]
