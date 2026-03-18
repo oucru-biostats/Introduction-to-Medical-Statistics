@@ -2,23 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to the OUCRU Introduction to Medical Statistics 2026",
+    "title": "Welcome",
     "section": "",
-    "text": "Note📅 Logistics & Schedule\n\n\n\n\nTime: 09:15 – 16:45 (UTC +7) daily\nLunch Break: 12:30 – 13:30 (UTC +7)\nFull Schedule: Download Timetable (PDF)\nNote: Lunch is provided for in-person attendees.\n\n\n\n\n\n\n\n\n\nProf. Ronald Geskus (Biostatistics, OUCRU HCM)\nDr. Duc Du Hong (Biostatistics, OUCRU HCM)\nDr. Hoang Van Thuan (Biostatistics, OUCRU HCM)\nDr. Nguyen Lam Vuong (Biostatistics, OUCRU HCM)\nDr. Tran Thai Hung (Biostatistics, OUCRU HCM)"
+    "text": "Welcome to the OUCRU Introduction to Medical Statistics 2026. This course is designed to provide clinicians and researchers with the fundamental statistical tools required for medical research.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote📅 Logistics & Schedule\n\n\n\n\nTime: 09:15 – 16:45 (UTC +7) daily\nLunch Break: 12:30 – 13:30 (UTC +7)\nFull Schedule: {{&lt; fa file-pdf &gt;}} Download Timetable\nNote: Lunch is provided for in-person attendees.\n\n\n\n\n\n\n\n\n\nProf. Ronald Geskus\nDr. Duc Du Hong\nDr. Hoang Van Thuan\nDr. Nguyen Lam Vuong\nDr. Tran Thai Hung"
   },
   {
     "objectID": "index.html#contributors",
     "href": "index.html#contributors",
-    "title": "Welcome to the OUCRU Introduction to Medical Statistics 2026",
+    "title": "Welcome",
     "section": "",
-    "text": "Prof. Ronald Geskus (Biostatistics, OUCRU HCM)\nDr. Duc Du Hong (Biostatistics, OUCRU HCM)\nDr. Hoang Van Thuan (Biostatistics, OUCRU HCM)\nDr. Nguyen Lam Vuong (Biostatistics, OUCRU HCM)\nDr. Tran Thai Hung (Biostatistics, OUCRU HCM)"
+    "text": "Prof. Ronald Geskus\nDr. Duc Du Hong\nDr. Hoang Van Thuan\nDr. Nguyen Lam Vuong\nDr. Tran Thai Hung"
   },
   {
     "objectID": "index.html#day-1-descriptive-and-exploratory-data-analysis",
     "href": "index.html#day-1-descriptive-and-exploratory-data-analysis",
-    "title": "Welcome to the OUCRU Introduction to Medical Statistics 2026",
+    "title": "Welcome",
     "section": "2.1 Day 1: Descriptive and Exploratory Data Analysis",
-    "text": "2.1 Day 1: Descriptive and Exploratory Data Analysis\n\n🧑‍🏫 Lead instructors: Ronald and Duc\n\n\n☀️ Morning: Descriptive Analysis\n\n\n\nContents: - 1. Data characteristics & Variable types - 2. Numerical & Graphical summaries - 3. Intro to R and RStudio\n\n\nLecture: Slides Exercises: - Web-R version - RStudio version (Download Script) Answers:\n\n\n\n\nClick to unlock answers\n\n\n\n\n\n\n\n\n🌤️ Afternoon: Exploratory Analysis\n\n\n\nContents: - 1. (Baseline) tables - 2. Graphs for categorical variables - 3. Numeric variables by group - 4. 2-variable numeric plots\n\n\nLecture: Slides Exercises: - Web-R version - RStudio version (Download Script) Answers:\n\n\n\n\nClick to unlock answers"
+    "text": "2.1 Day 1: Descriptive and Exploratory Data Analysis\n\n🧑‍🏫 Lead instructors: Ronald and Duc\n\n☀️ Morning: Descriptive Analysis🌤️ Afternoon: Exploratory Analysis\n\n\n\n\n\n{{&lt; fa list-ul &gt;}} Contents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\n{{&lt; fa download &gt;}} Materials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\n&lt;button onclick=\"unlockMorning()\" class=\"btn btn-outline-secondary btn-sm\"&gt;Click to unlock answers&lt;/button&gt;\n\n\n\n\n\n\n\n\n\n\n{{&lt; fa list-ul &gt;}} Contents\n\n(Baseline) tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\n{{&lt; fa download &gt;}} Materials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\n&lt;button onclick=\"unlockAfternoon()\" class=\"btn btn-outline-secondary btn-sm\"&gt;Click to unlock answers&lt;/button&gt;"
   },
   {
     "objectID": "handouts/medical_statistics_2024.html",
