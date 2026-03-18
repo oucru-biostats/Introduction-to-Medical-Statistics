@@ -18,7 +18,21 @@
     "href": "index.html#day-1-descriptive-and-exploratory-data-analysis",
     "title": "Welcome",
     "section": "2.1 Day 1: Descriptive and Exploratory Data Analysis",
-    "text": "2.1 Day 1: Descriptive and Exploratory Data Analysis\n\n🧑‍🏫 Lead instructors: Ronald and Duc\n\n☀️ Morning: Descriptive Analysis🌤️ Afternoon: Exploratory Analysis\n\n\n\n\n\n{{&lt; fa list-ul &gt;}} Contents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\n{{&lt; fa download &gt;}} Materials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\n\n\n\n\n&lt;div id=\"morning-answers\"&gt;\n  &lt;button onclick=\"unlockMorning()\" class=\"btn btn-outline-secondary btn-sm\"&gt;Click to unlock answers&lt;/button&gt;\n&lt;/div&gt;\n\n\n\n\n\n\n\n\n{{&lt; fa list-ul &gt;}} Contents\n\n(Baseline) tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\n{{&lt; fa download &gt;}} Materials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\n\n\n\n\n&lt;div id=\"afternoon-answers\"&gt;\n  &lt;button onclick=\"unlockAfternoon()\" class=\"btn btn-outline-secondary btn-sm\"&gt;Click to unlock answers&lt;/button&gt;\n&lt;/div&gt;"
+    "text": "2.1 Day 1: Descriptive and Exploratory Data Analysis\n\n🧑‍🏫 Lead instructors: Ronald and Duc"
+  },
+  {
+    "objectID": "index.html#morning-descriptive-analysis",
+    "href": "index.html#morning-descriptive-analysis",
+    "title": "Welcome",
+    "section": "2.2 ☀️ Morning: Descriptive Analysis",
+    "text": "2.2 ☀️ Morning: Descriptive Analysis\n\n\n\n{{&lt; fa list-ul &gt;}} Contents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\n{{&lt; fa download &gt;}} Materials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\n\n\n\n\n&lt;div id=\"morning-answers\"&gt;\n  &lt;button onclick=\"unlockMorning()\" class=\"btn btn-outline-secondary btn-sm\"&gt;Click to unlock answers&lt;/button&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "index.html#afternoon-exploratory-analysis",
+    "href": "index.html#afternoon-exploratory-analysis",
+    "title": "Welcome",
+    "section": "2.3 🌤️ Afternoon: Exploratory Analysis",
+    "text": "2.3 🌤️ Afternoon: Exploratory Analysis\n\n\n\n{{&lt; fa list-ul &gt;}} Contents\n\n(Baseline) tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\n{{&lt; fa download &gt;}} Materials\n\nLecture: {{&lt; fa file-pdf &gt;}} Slides\nExercises:\n\n{{&lt; fa desktop &gt;}} Web-R version\n{{&lt; fa code &gt;}} RStudio version (Script)\n\nAnswers:\n\n\n\n\n\n&lt;div id=\"afternoon-answers\"&gt;\n  &lt;button onclick=\"unlockAfternoon()\" class=\"btn btn-outline-secondary btn-sm\"&gt;Click to unlock answers&lt;/button&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "handouts/medical_statistics_2024.html",
