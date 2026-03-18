@@ -242,7 +242,11 @@ cookieconsent.run({
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You have two ways to follow the course exercises: 1. <strong>Zero Setup (Recommended):</strong> Use the <span class="badge bg-primary"><strong>Web-R</strong></span> versions directly in your browser. 2. <strong>Local Setup:</strong> If you prefer using <strong>RStudio</strong>, please complete the <a href="./handouts/precourse_setup.html" target="_blank">Pre-course Setup Handout</a> before joining.</p>
+<p>You have two ways to follow the course exercises:</p>
+<ol type="1">
+<li><strong>Zero Setup (Recommended):</strong> Use the <span class="badge bg-primary"><strong>Web-R</strong></span> versions directly in your browser.</li>
+<li><strong>Local Setup:</strong> If you prefer using <strong>RStudio</strong>, please complete the <a href="./handouts/precourse_setup.html" target="_blank">Pre-course Setup Handout</a> before joining.</li>
+</ol>
 </div>
 </div>
 </section>
@@ -277,7 +281,7 @@ cookieconsent.run({
 </ul></li>
 <li><strong>Answers:</strong>
 <div id="morning-answers">
-<p><button onclick="unlockMorning()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+<p><button onclick="unlockMorning1()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
 </div></li>
 </ul>
 </section>
@@ -308,16 +312,16 @@ cookieconsent.run({
 </ul></li>
 <li><strong>Answers:</strong>
 <div id="afternoon-answers">
-<p><button onclick="unlockAfternoon()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+<p><button onclick="unlockAfternoon1()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
 </div></li>
 </ul>
 </section>
 </div>
 </div>
 <script>
-function unlockMorning() {
+function unlockMorning1() {
   var password = prompt("Please enter the session code provided in class:");
-  if (password === "OUCRU2026") {
+  if (password === "TooEasy?") {
     document.getElementById("morning-answers").innerHTML = 
       '<a href="./handouts/day_1/ExerciseAnswers.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a> ' +
       '<a href="./handouts/day_1/ExerciseAnswers.pdf" class="btn btn-success btn-sm" target="_blank">PDF</a>';
@@ -326,9 +330,9 @@ function unlockMorning() {
   }
 }
 
-function unlockAfternoon() {
+function unlockAfternoon1() {
   var password = prompt("Please enter the session code provided in class:");
-  if (password === "OUCRU2026") {
+  if (password === "RealFun!") {
     document.getElementById("afternoon-answers").innerHTML = 
       '<a href="./handouts/day_1/ExerciseWebrAnswers-2.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ' +
       '<a href="./handouts/day_1/ExerciseAnswers-2.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a>';
