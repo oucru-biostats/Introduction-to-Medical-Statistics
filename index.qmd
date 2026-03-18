@@ -51,7 +51,7 @@ You have two ways to follow the course exercises:
 ::: {layout-ncol=2}
 
 ### ☀️ Morning: Descriptive Analysis
-**Lecture:** [{{< fa file-pdf >}} Slides](slides/day_1/1.SlidesDescriptives.pdf)
+**Lecture:** [Slides](slides/day_1/1.SlidesDescriptives.pdf)
 
 **Contents:**
 1. Data characteristics & Variable types
@@ -65,7 +65,7 @@ You have two ways to follow the course exercises:
 **Answers:** [RStudio](handouts/day_1/ExerciseAnswers.html) | [PDF](handouts/day_1/ExerciseAnswers.pdf)
 
 ### 🌤️ Afternoon: Exploratory Analysis
-**Lecture:** [{{< fa file-pdf >}} Slides](slides/day_1/2.SlidesEDA.pdf)
+**Lecture:** [Slides](slides/day_1/2.SlidesEDA.pdf)
 
 **Contents:**
 1. (Baseline) tables
