@@ -30,9 +30,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: handouts/medical_statistics_2024.qmd 
+      - href: slide/medical_statistics_2024.qmd 
         text: Course Videos
-      - href: handouts/other_resources.qmd
+      - href: slide/other_resources.qmd
         text: Additional R Resources
         
 
