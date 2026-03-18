@@ -2,23 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to the OUCRU Introduction to Medical Statistics 2026",
+    "title": "Welcome to the OUCRU introduction to Medical Statistics 2026",
     "section": "",
-    "text": "Note📅 Logistics & Schedule\n\n\n\n\nTime: 09:15 – 16:45 (UTC +7) daily\nLunch Break: 12:30 – 13:30 (UTC +7)\nFull Schedule: Download Timetable (PDF)\nNote: Lunch is provided for in-person attendees.\n\n\n\n\n\n\n\n\n\nProf. Ronald Geskus (Biostatistics, OUCRU HCM)\nDr. Duc Du Hong (Biostatistics, OUCRU HCM)\nDr. Hoang Van Thuan (Biostatistics, OUCRU HCM)\nDr. Nguyen Lam Vuong (Biostatistics, OUCRU HCM)\nDr. Tran Thai Hung (Biostatistics, OUCRU HCM)"
+    "text": "Time table\nThe training will be 09:15 – 16:45 (UTC +7) for everyday\nThere will be a lunch break between 12:30 – 13:30 (UTC +7)\nLunch will be provided for in-person attendees\n\n\n\n\nProf. Ronald Geskus, Biostatistics group, OUCRU HCM\nDr. Duc Du Hong, Biostatistics group, OUCRU HCM\nDr. Hoang Van Thuan, Biostatistics group, OUCRU HCM\nDr. Nguyen Lam Vuong, Biostatistics group, OUCRU HCM\nDr. Tran Thai Hung, Biostatistics group, OUCRU HCM"
   },
   {
     "objectID": "index.html#contributors",
     "href": "index.html#contributors",
-    "title": "Welcome to the OUCRU Introduction to Medical Statistics 2026",
+    "title": "Welcome to the OUCRU introduction to Medical Statistics 2026",
     "section": "",
-    "text": "Prof. Ronald Geskus (Biostatistics, OUCRU HCM)\nDr. Duc Du Hong (Biostatistics, OUCRU HCM)\nDr. Hoang Van Thuan (Biostatistics, OUCRU HCM)\nDr. Nguyen Lam Vuong (Biostatistics, OUCRU HCM)\nDr. Tran Thai Hung (Biostatistics, OUCRU HCM)"
+    "text": "Prof. Ronald Geskus, Biostatistics group, OUCRU HCM\nDr. Duc Du Hong, Biostatistics group, OUCRU HCM\nDr. Hoang Van Thuan, Biostatistics group, OUCRU HCM\nDr. Nguyen Lam Vuong, Biostatistics group, OUCRU HCM\nDr. Tran Thai Hung, Biostatistics group, OUCRU HCM"
   },
   {
     "objectID": "index.html#day-1-descriptive-and-exploratory-data-analysis",
     "href": "index.html#day-1-descriptive-and-exploratory-data-analysis",
-    "title": "Welcome to the OUCRU Introduction to Medical Statistics 2026",
-    "section": "2.1 Day 1: Descriptive and Exploratory Data Analysis",
-    "text": "2.1 Day 1: Descriptive and Exploratory Data Analysis\n\n🧑‍🏫 Lead instructors: Ronald and Duc\n\n\n\n\n☀️ Morning: Descriptive Analysis\nLecture: {{&lt; fa file-pdf &gt;}} Slides\n\n\nContents: 1. Data characteristics & Variable types 2. Numerical & Graphical summaries 3. Intro to R and RStudio\n\n\n\n\nExercises: - Web-R version - RStudio version (Download Script)\n\n\nAnswers: RStudio | PDF\n\n\n\n\n🌤️ Afternoon: Exploratory Analysis\nLecture: {{&lt; fa file-pdf &gt;}} Slides\n\n\nContents: 1. (Baseline) tables 2. Graphs for categorical variables 3. Numeric variables by group 4. 2-variable numeric plots\n\n\n\n\nExercises: - Web-R version - RStudio version (Download Script)\n\n\nAnswers: Web-R | RStudio"
+    "title": "Welcome to the OUCRU introduction to Medical Statistics 2026",
+    "section": "2.1 Day 1: Descriptive and exploratory data analysis",
+    "text": "2.1 Day 1: Descriptive and exploratory data analysis\n\n🧑‍🏫️ Lead instructors: Ronald and Duc\n\n\nMorning: Descriptive data analysis\n\nLecture slides\nContents:\n\n\nData characteristics\n\n\nVariable types\n\n\nVariable summaries: numerical and graphical\n\n\nIntroduction to R and RStudio\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nR studio; pdf\n\n\n\n\nAfternoon: Exploratory data analysis\n\nLecture slides\nContents:\n\n\n(Baseline) tables\n\n\nGraphs: ≥ 2 categorical variables\n\n\nGraphs: numeric variables by group\n\n\nGraphs: 2 numeric variables\n\n\nExercises:\n\nWebr version\nR studio version; Exercise script (download)\n\nAnswers:\n\nwebr; R studio"
   },
   {
     "objectID": "handouts/medical_statistics_2024.html",
