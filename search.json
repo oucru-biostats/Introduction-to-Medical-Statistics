@@ -18,14 +18,14 @@
     "href": "index.html#day-1-descriptive-and-exploratory-data-analysis",
     "title": "Welcome",
     "section": "2.1 Day 1: Descriptive and Exploratory Data Analysis",
-    "text": "2.1 Day 1: Descriptive and Exploratory Data Analysis\n\n🧑‍🏫 Lead instructors: Ronald\n\n\n☀️ Morning: Descriptive Analysis\n\n\n\nContents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version (Script)\n\nAnswers:\n\n Unlock Morning Answers \n\n\n\n\n\n\n\n🌤️ Afternoon: Exploratory Analysis\n\n\n\nContents\n\nBaseline tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version (Script)\n\nAnswers:\n\n Unlock Afternoon Answers"
+    "text": "2.1 Day 1: Descriptive and Exploratory Data Analysis\n\n🧑‍🏫 Lead instructors: Ronald\n\n\n☀️ Morning: Descriptive Analysis\n\n\n\nContents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version (Script)\n\nAnswers:\n\n Click to unlock answer \n\n\n\n\n\n\n\n🌤️ Afternoon: Exploratory Analysis\n\n\n\nContents\n\nBaseline tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version (Script)\n\nAnswers:\n\n Click to unlock answer"
   },
   {
     "objectID": "index.html#day-3-comparing-continuous-variables-and-simple-linear-regression",
     "href": "index.html#day-3-comparing-continuous-variables-and-simple-linear-regression",
     "title": "Welcome",
     "section": "2.2 Day 3: Comparing continuous variables and Simple linear regression",
-    "text": "2.2 Day 3: Comparing continuous variables and Simple linear regression\n\n🧑‍🏫 Lead instructors: Vuong\n\n\n☀️ Morning: Comparing continuous variables\n\n\n\nContents\n\nStudent’s t-test vs. Wilcoxon rank-sum test\nPaired t-test vs. Wilcoxon signed-rank test\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Unlock Morning Answers \n\n\n\n\n\n\n\n🌤️ Afternoon:Simple linear regression\n\n\n\nContents\n\nVisualizing Relationships\nThe Linear Regression Model\nInterpreting Results\nRegression Diagnostics\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Unlock Afternoon Answers"
+    "text": "2.2 Day 3: Comparing continuous variables and Simple linear regression\n\n🧑‍🏫 Lead instructors: Vuong\n\n\n☀️ Morning: Comparing continuous variables\n\n\n\nContents\n\nStudent’s t-test vs. Wilcoxon rank-sum test\nPaired t-test vs. Wilcoxon signed-rank test\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer \n\n\n\n\n\n\n\n🌤️ Afternoon:Simple linear regression\n\n\n\nContents\n\nVisualizing Relationships\nThe Linear Regression Model\nInterpreting Results\nRegression Diagnostics\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer"
   },
   {
     "objectID": "handouts/medical_statistics_2024.html",
