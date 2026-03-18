@@ -345,7 +345,7 @@ cookieconsent.run({
 </ul></li>
 <li><strong>Answers:</strong>
 <div id="morning-answers">
-<p><button onclick="unlockMorning3()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+<p><button onclick="unlockSession('TooEasy?', 'morning-answers', './handouts/day_3/Exercise5_Answers.html')">Unlock Morning</button></p>
 </div></li>
 </ul>
 </section>
@@ -375,56 +375,23 @@ cookieconsent.run({
 </ul></li>
 <li><strong>Answers:</strong>
 <div id="afternoon-answers">
-<p><button onclick="unlockAfternoon1()" class="btn btn-outline-secondary btn-sm">Click to unlock answers</button></p>
+<p><button onclick="unlockSession('RealFun!', 'afternoon-answers', './handouts/day_3/Exercise6_Answers.html')">Unlock Afternoon</button></p>
 </div></li>
 </ul>
 </section>
 </div>
 </div>
 <script>
-function unlockMorning1() {
+function unlockSession(correctPassword, elementId, filePath) {
   var password = prompt("Please enter the session code provided in class:");
-  if (password === "TooEasy?") {
-    document.getElementById("morning-answers").innerHTML = 
-      '<a href="./handouts/day_1/ExerciseAnswers.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ' +
-      '<a href="./handouts/day_1/ExerciseAnswers.pdf" class="btn btn-success btn-sm" target="_blank">PDF</a>';
+  
+  if (password === correctPassword) {
+    document.getElementById(elementId).innerHTML = 
+      '<a href="' + filePath + '" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a>';
   } else if (password !== null) {
     alert("Incorrect code.");
   }
 }
-
-function unlockAfternoon1() {
-  var password = prompt("Please enter the session code provided in class:");
-  if (password === "RealFun!") {
-    document.getElementById("afternoon-answers").innerHTML = 
-      '<a href="./handouts/day_1/ExerciseWebrAnswers-2.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ' +
-      '<a href="./handouts/day_1/ExerciseAnswers-2.html" class="btn btn-success btn-sm" target="_blank">RStudio Answers</a>';
-  } else if (password !== null) {
-    alert("Incorrect code.");
-  }
-}
-
-
-function unlockMorning3() {
-  var password = prompt("Please enter the session code provided in class:");
-  if (password === "TooEasy?") {
-    document.getElementById("morning-answers").innerHTML = 
-      '<a href="./handouts/day_3/Exercise5_Answers.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ';
-  } else if (password !== null) {
-    alert("Incorrect code.");
-  }
-}
-
-function unlockAfternoon3() {
-  var password = prompt("Please enter the session code provided in class:");
-  if (password === "RealFun!") {
-    document.getElementById("afternoon-answers").innerHTML = 
-      '<a href="./handouts/day_3/Exercise6_Answers.html" class="btn btn-success btn-sm" target="_blank">Web-R Answers</a> ';
-  } else if (password !== null) {
-    alert("Incorrect code.");
-  }
-}
-
 
 </script>
 
