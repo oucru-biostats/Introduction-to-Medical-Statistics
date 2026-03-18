@@ -6,13 +6,13 @@ library(gtsummary)
 
 tbl_summary(data=cmTbm, by=groupLong, include=c(age,bldwcc,csfwcc,sex,groupLong))
 
-tbl_summary(data=cmTbm, by=groupLong, include=c(age,bldwcc,csfwcc,sex,groupLong), 
-            label=list(age~"age [years]", bldwcc~"white blood cells [count/mm3]",
-                       csfwcc~"white CSF cells [count/mm3]", sex~"Female"),     
-            type = all_continuous() ~ "continuous2",
-    statistic=list(all_continuous()~ c("{median} ({p25}, {p75})","{mean} ({sd})")), 
-            missing_text="missing", 
-            value=list(sex~2))
+# tbl_summary(data=cmTbm, by=groupLong, include=c(age,bldwcc,csfwcc,sex,groupLong),
+#             label=list(age~"age [years]", bldwcc~"white blood cells [count/mm3]",
+#                        csfwcc~"white CSF cells [count/mm3]", sex~"Female"),
+#             type = all_continuous() ~ "continuous2",
+#     statistic=list(all_continuous()~ c("{median} ({p25}, {p75})","{mean} ({sd})")),
+#             missing_text="missing",
+#             value=list(sex~2))
 
 tbl_summary(data=cmTbm, by=groupLong, include=c(age,bldwcc,csfwcc,sex,groupLong), 
             label=list(age~"age [years]", bldwcc~"white blood cells [count/mm3]",
