@@ -11,7 +11,7 @@ date: last-modified
 date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 ---
 
-Welcome! Beyond this medical statistics course, we highly recommend exploring these dedicated R programming resources developed by the OUCRU Modelling and Biostatistics groups.
+Welcome! Beyond this medical statistics course, we highly recommend exploring these dedicated R programming resources developed by the OUCRU Math Modelling and Biostatistics groups.
 
 ---
 
