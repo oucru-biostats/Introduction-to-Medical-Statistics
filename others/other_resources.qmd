@@ -7,7 +7,6 @@ format:
   html:
     link-external-newwindow: true
     link-external-icon: true
-navbar: false
 date: last-modified
 date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 ---

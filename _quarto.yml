@@ -8,7 +8,6 @@ project:
     - "handouts/"
     - "slides/"
     - "site_imgs/"
-author: "Tran Thai Hung"
 keywords: ["Medical Statistics", "OUCRU", "Biostatistics", "R Programming", "Clinical Research", "TBM"]
 
 website:
