@@ -21,6 +21,13 @@
     "text": "RStudio Desktop\n\nGo to the download page\nScroll down, look for 2: Install Rstudio and click on the button for downloading RStudio Desktop\nDownload and install RStudio Desktop\n\nYou can use the default installation options\n\nOpen Rstudio Desktop, to check that everything has been installed correctly\n\nE.g. via the Start menu in Windows"
   },
   {
+    "objectID": "others/precourse_setup.html#r-packages",
+    "href": "others/precourse_setup.html#r-packages",
+    "title": "Pre-course setups and requirements",
+    "section": "R Packages",
+    "text": "R Packages\nOnce R and RStudio are installed, you need to install the specific libraries we will use for data visualization and analysis.\nInstructions: 1. Open RStudio. 2. Copy the code below and paste it into the Console (the bottom-left pane). 3. Press Enter.\n# List of required packages\npkgs &lt;- c(\"ggplot2\", \"gtsummary\", \"ggrain\", \"GGally\", \"patchwork\", \n          \"ggExtra\", \"ggResidpanel\", \"performance\", \"see\", \"ggeffects\")\n\n# Install packages\ninstall.packages(pkgs)"
+  },
+  {
     "objectID": "others/medical_statistics_2024.html",
     "href": "others/medical_statistics_2024.html",
     "title": "Course Video Archive",
