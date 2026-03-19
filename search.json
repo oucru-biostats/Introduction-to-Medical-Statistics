@@ -25,7 +25,7 @@
     "href": "others/precourse_setup.html#r-packages",
     "title": "Pre-course setups and requirements",
     "section": "R Packages",
-    "text": "R Packages\nOnce R and RStudio are installed, you need to install the specific libraries we will use for data visualization and analysis.\nInstructions: 1. Open RStudio. 2. Copy the code below and paste it into the Console (the bottom-left pane). 3. Press Enter.\n# List of required packages\npkgs &lt;- c(\"ggplot2\", \"gtsummary\", \"ggrain\", \"GGally\", \"patchwork\", \n          \"ggExtra\", \"ggResidpanel\", \"performance\", \"see\", \"ggeffects\")\n\n# Install packages\ninstall.packages(pkgs)"
+    "text": "R Packages\nOnce R and RStudio are installed, you need to install the specific libraries we will use for data visualization and analysis.\nInstructions:\n\nOpen RStudio.\nCopy the code below and paste it into the Console (the bottom-left pane).\nPress Enter.\n\n# List of required packages\npkgs &lt;- c(\"ggplot2\", \"gtsummary\", \"ggrain\", \"GGally\", \"patchwork\", \n          \"ggExtra\", \"ggResidpanel\", \"performance\", \"see\", \"ggeffects\")\n\n# Install packages\ninstall.packages(pkgs)"
   },
   {
     "objectID": "others/medical_statistics_2024.html",
@@ -67,14 +67,14 @@
     "href": "index.html#day-3-comparing-continuous-variables-and-simple-linear-regression",
     "title": "Welcome",
     "section": "2.2 Day 3: Comparing continuous variables and Simple linear regression",
-    "text": "2.2 Day 3: Comparing continuous variables and Simple linear regression\n\n🧑‍🏫 Lead instructors: Vuong\n\n\n☀️ Morning: Comparing continuous variables\n\n\n\nContents\n\nStudent’s t-test vs. Wilcoxon rank-sum test\nPaired t-test vs. Wilcoxon signed-rank test\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer \n\n\n\n\n\n\n\n🌤️ Afternoon: Simple linear regression\n\n\n\nContents\n\nVisualizing Relationships\nThe Linear Regression Model\nInterpreting Results\nRegression Diagnostics\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer"
+    "text": "2.2 Day 3: Comparing continuous variables and Simple linear regression\n\n🧑‍🏫 Lead instructors: Vuong\n\n\n☀️ Morning: Comparing continuous variables\n\n\n\nContents\n\nStudent’s t-test vs. Wilcoxon rank-sum test\nPaired t-test vs. Wilcoxon signed-rank test\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\n Click to unlock answer \n\n\n\n\n\n\n\n🌤️ Afternoon: Simple linear regression\n\n\n\nContents\n\nVisualizing Relationships\nThe Linear Regression Model\nInterpreting Results\nRegression Diagnostics\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\n Click to unlock answer"
   },
   {
     "objectID": "index.html#day-4-multivariable-linear-and-logistic-regression",
     "href": "index.html#day-4-multivariable-linear-and-logistic-regression",
     "title": "Welcome",
     "section": "2.3 Day 4: Multivariable linear and logistic regression",
-    "text": "2.3 Day 4: Multivariable linear and logistic regression\n\n🧑‍🏫 Lead instructors: Thuan and Vuong\n\n\n☀️ Morning: Multivariable linear regression\n\n\n\nContents\n\nModel formulation\nEstimation\nTesting\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer \n\n\n\n\n\n\n\n🌤️ Afternoon: Logistic regression\n\n\n\nContents\n\nRisk/odds, risk ratio (RR)/odds ratio (OR)\nLogistic regression model\nInterpreting Univariable Logistic Regression\nInterpreting Multivariable Logistic Regression\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer"
+    "text": "2.3 Day 4: Multivariable linear and logistic regression\n\n🧑‍🏫 Lead instructors: Thuan and Vuong\n\n\n☀️ Morning: Multivariable linear regression\n\n\n\nContents\n\nModel formulation\nEstimation\nTesting\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\n\nAnswers:\n\n Click to unlock answer \n\n\n\n\n\n\n\n🌤️ Afternoon: Logistic regression\n\n\n\nContents\n\nRisk/odds, risk ratio (RR)/odds ratio (OR)\nLogistic regression model\nInterpreting Univariable Logistic Regression\nInterpreting Multivariable Logistic Regression\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\n\nAnswers:\n\n Click to unlock answer"
   },
   {
     "objectID": "others/other_resources.html",
