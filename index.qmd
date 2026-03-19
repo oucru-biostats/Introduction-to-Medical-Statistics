@@ -18,7 +18,7 @@ Welcome to the **OUCRU Introduction to Medical Statistics 2026**. This course is
 ## 📅 Logistics & Schedule
 -   **Time:** 09:15 – 16:45 (UTC +7) daily
 -   **Lunch Break:** 12:30 – 13:30 (UTC +7)
--   **Full Schedule:** [Download Timetable](handouts/Agenda_StatCourse_23-27March2026.pdf){.btn .btn-outline-primary .btn-sm}
+-   **Full Schedule:** [Download Timetable](handouts/Agenda_StatCourse_23-27March2026.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   *Note: Lunch is provided for in-person attendees.*
 :::
 
@@ -42,12 +42,12 @@ Welcome to the **OUCRU Introduction to Medical Statistics 2026**. This course is
 You have two ways to follow the course exercises:
 
 1.  **Zero Setup:** Use the **Web-R** versions directly in your browser.
-2.  **Local Setup:** If you prefer using **RStudio**, please complete the [Pre-course Setup Handout](others/precourse_setup.qmd){.btn .btn-outline-primary .btn-sm} before joining.
+2.  **Local Setup:** If you prefer using **RStudio**, please complete the [Pre-course Setup Handout](others/precourse_setup.qmd){.btn .btn-outline-primary .btn-sm target="_blank"} before joining.
 :::
 
 # Course Topics
 
-**Course handout:** [pdf](handouts/CourseHandouts.pdf){.btn .btn-outline-primary .btn-sm}
+**Course handout:** [pdf](handouts/CourseHandouts.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 
 ## Day 1: Descriptive and Exploratory Data Analysis
 
@@ -65,10 +65,10 @@ You have two ways to follow the course exercises:
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_1/1.SlidesDescriptives.pdf){.btn .btn-outline-primary .btn-sm}
+-   **Lecture:** [Slides](slides/day_1/1.SlidesDescriptives.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
-    -   [Web-R version](handouts/day_1/ExerciseWebr-1.html){.btn .btn-outline-primary .btn-sm}
-    -   [RStudio version](handouts/day_1/ExerciseRStudio-1.html){.btn .btn-outline-primary .btn-sm} [Script](handouts/day_1/ExerciseCode-1.R){.btn .btn-outline-primary .btn-sm}
+    -   [Web-R version](handouts/day_1/ExerciseWebr-1.html){.btn .btn-outline-primary .btn-sm target="_blank"}
+    -   [RStudio version](handouts/day_1/ExerciseRStudio-1.html){.btn .btn-outline-primary .btn-sm target="_blank"} [Script](handouts/day_1/ExerciseCode-1.R){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day1-morning">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day1-morning', 
@@ -94,10 +94,10 @@ You have two ways to follow the course exercises:
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_1/2.SlidesEDA.pdf){.btn .btn-outline-primary .btn-sm}
+-   **Lecture:** [Slides](slides/day_1/2.SlidesEDA.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
-    -   [Web-R version](handouts/day_1/ExerciseWebr-2.html){.btn .btn-outline-primary .btn-sm}
-    -   [RStudio version](handouts/day_1/ExerciseRStudio-2.html){.btn .btn-outline-primary .btn-sm} [Script](handouts/day_1/ExerciseCode-2.R){.btn .btn-outline-primary .btn-sm}
+    -   [Web-R version](handouts/day_1/ExerciseWebr-2.html){.btn .btn-outline-primary .btn-sm target="_blank"}
+    -   [RStudio version](handouts/day_1/ExerciseRStudio-2.html){.btn .btn-outline-primary .btn-sm target="_blank"} [Script](handouts/day_1/ExerciseCode-2.R){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day1-afternoon">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day1-afternoon', 
@@ -130,9 +130,9 @@ You have two ways to follow the course exercises:
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_3/5_Group comparison_Slides.pdf){.btn .btn-outline-primary .btn-sm}
+-   **Lecture:** [Slides](slides/day_3/5_Group comparison_Slides.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
-    -   [Web-R version](handouts/day_3/Exercise5_Webr.html){.btn .btn-outline-primary .btn-sm}
+    -   [Web-R version](handouts/day_3/Exercise5_Webr.html){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day3-morning">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day3-morning', 
@@ -157,9 +157,9 @@ You have two ways to follow the course exercises:
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_3/6.simpleLinearRegression_Slides.pdf){.btn .btn-outline-primary .btn-sm}
+-   **Lecture:** [Slides](slides/day_3/6.simpleLinearRegression_Slides.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
-    -   [Web-R version](handouts/day_3/Exercise6_Webr.html){.btn .btn-outline-primary .btn-sm}
+    -   [Web-R version](handouts/day_3/Exercise6_Webr.html){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day3-afternoon">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day3-afternoon', 
@@ -191,9 +191,9 @@ You have two ways to follow the course exercises:
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_4/7.multipleRegression.pdf){.btn .btn-outline-primary .btn-sm}
+-   **Lecture:** [Slides](slides/day_4/7.multipleRegression.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
-    -   [Web-R version](handouts/day_4/Exercise7-Webr.html){.btn .btn-outline-primary .btn-sm}
+    -   [Web-R version](handouts/day_4/Exercise7-Webr.html){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day4-morning">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day4-morning', 
@@ -218,9 +218,9 @@ You have two ways to follow the course exercises:
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_4/8.Logistic Regression_Slides.pdf){.btn .btn-outline-primary .btn-sm}
+-   **Lecture:** [Slides](slides/day_4/8.Logistic Regression_Slides.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
-    -   [Web-R version](handouts/day_4/Exercise8_Webr.html){.btn .btn-outline-primary .btn-sm}
+    -   [Web-R version](handouts/day_4/Exercise8_Webr.html){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day4-afternoon">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day4-afternoon', 
