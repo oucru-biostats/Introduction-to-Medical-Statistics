@@ -97,6 +97,12 @@ You have two ways to follow the course exercises:
 2.  Graphs for categorical variables
 3.  Numeric variables by group
 4.  2-variable numeric plots
+<div id="QR2">
+  <button class="btn btn-primary" onclick="unlockSession('a', 'QR2', 
+    '<a href=\'./handouts/QR_code/02.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+    Click to unlock QR code
+  </button>
+</div>
 
 #### Materials
 
@@ -131,7 +137,12 @@ You have two ways to follow the course exercises:
 2. Sampling variation
 3. Binomial distribution
 4. Testing hypotheses
-
+<div id="QR3">
+  <button class="btn btn-primary" onclick="unlockSession('a', 'QR3', 
+    '<a href=\'./handouts/QR_code/03.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+    Click to unlock QR code
+  </button>
+</div>
 
 #### Materials
 
@@ -145,6 +156,12 @@ You have two ways to follow the course exercises:
 1.  The normal distribution
 2.  Confidence intervals
 3.  Hypothesis tests and p-values
+<div id="QR4">
+  <button class="btn btn-primary" onclick="unlockSession('a', 'QR4', 
+    '<a href=\'./handouts/QR_code/04.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+    Click to unlock QR code
+  </button>
+</div>
 
 #### Materials
 
@@ -182,6 +199,12 @@ You have two ways to follow the course exercises:
 
 1.  Student’s t-test vs. Wilcoxon rank-sum test
 2.  Paired t-test vs. Wilcoxon signed-rank test
+<div id="QR5">
+  <button class="btn btn-primary" onclick="unlockSession('a', 'QR5', 
+    '<a href=\'./handouts/QR_code/05.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+    Click to unlock QR code
+  </button>
+</div>
 
 #### Materials
 
@@ -211,6 +234,12 @@ You have two ways to follow the course exercises:
 2.  The Linear Regression Model
 3.  Interpreting Results
 4.  Regression Diagnostics
+<div id="QR6">
+  <button class="btn btn-primary" onclick="unlockSession('a', 'QR6', 
+    '<a href=\'./handouts/QR_code/06.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+    Click to unlock QR code
+  </button>
+</div>
 
 #### Materials
 
@@ -247,6 +276,12 @@ You have two ways to follow the course exercises:
 1. Model formulation
 2. Estimation
 3. Testing
+<div id="QR7">
+  <button class="btn btn-primary" onclick="unlockSession('a', 'QR7', 
+    '<a href=\'./handouts/QR_code/07.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+    Click to unlock QR code
+  </button>
+</div>
 
 #### Materials
 
@@ -275,6 +310,12 @@ You have two ways to follow the course exercises:
 2.  Logistic regression model
 3.  Interpreting Univariable Logistic Regression
 4.  Interpreting Multivariable Logistic Regression
+<div id="QR8">
+  <button class="btn btn-primary" onclick="unlockSession('a', 'QR8', 
+    '<a href=\'./handouts/QR_code/08.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+    Click to unlock QR code
+  </button>
+</div>
 
 #### Materials
 
