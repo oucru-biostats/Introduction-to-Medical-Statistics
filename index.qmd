@@ -151,7 +151,7 @@ You have two ways to follow the course exercises:
 -   **Lecture:** [Slides](slides/day_2/4_MainConceptsPrinciples.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
     -   [Web-R version](handouts/day_2/Exercise4Webr.html){.btn .btn-outline-primary .btn-sm target="_blank"}
-    -   [RStudio version](handouts/day_2/Exercise4.qmd){.btn .btn-outline-primary .btn-sm target="_blank"}
+    -   [RStudio version](handouts/day_2/Exercise4_RStudio.qmd){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day1-afternoon">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day1-afternoon', 
