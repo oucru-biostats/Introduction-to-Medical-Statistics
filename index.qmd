@@ -111,60 +111,56 @@ You have two ways to follow the course exercises:
 :::
 
 ------------------------------------------------------------------------
-## Day 2: Descriptive and Exploratory Data Analysis
 
-### 🧑‍🏫 Lead instructors: Ronald
+## Day 2: Statistical analysis principles, Distributions, Confidence Intervals
+
+### 🧑‍🏫 Lead instructors: Ronald and Thuan
 
 
-### ☀️ Morning: Descriptive Analysis
+### ☀️ Morning: Statistical analysis: main concepts and principles. Binomial distribution.
 
 ::: {layout-ncol="2"}
 #### Contents
 
-1.  Data characteristics & Variable types
-2.  Numerical & Graphical summaries
-3.  Intro to R and RStudio
+1. Types of study questions
+2. Sampling variation
+3. Binomial distribution
+4. Testing hypotheses
+
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_1/1.SlidesDescriptives.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
+-   **Lecture:** 
 -   **Exercises:**
-    -   [Web-R version](handouts/day_1/ExerciseWebr-1.html){.btn .btn-outline-primary .btn-sm target="_blank"}
-    -   [RStudio version](handouts/day_1/ExerciseRStudio-1.html){.btn .btn-outline-primary .btn-sm target="_blank"} [Script](handouts/day_1/ExerciseCode-1.R){.btn .btn-outline-primary .btn-sm target="_blank"}
+    -   
+    -   
 -   **Answers:**
-<div id="day1-morning">
-  <button class="btn btn-primary" onclick="unlockSession('a', 'day1-morning', 
-    '<a href=\'./handouts/day_1/ExerciseWebrAnswers-1.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
-    '<a href=\'./handouts/day_1/ExerciseRStudioAnswers-1.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>PDF</a>')">
-    Click to unlock answer
-  </button>
-</div>
+
 
 
 :::
 
 
-### 🌤️ Afternoon: Exploratory Analysis
+### 🌤️ Afternoon:The Normal Distribution; Confidence Intervalss
 
 ::: {layout-ncol="2"}
 #### Contents
 
-1.  Baseline tables
-2.  Graphs for categorical variables
-3.  Numeric variables by group
-4.  2-variable numeric plots
+1.  The normal distribution
+2.  Confidence intervals
+3.  Hypothesis tests and p-values
 
 #### Materials
 
--   **Lecture:** [Slides](slides/day_1/2.SlidesEDA.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
+-   **Lecture:** [Slides](slides/day_2/4_MainConceptsPrinciples.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Exercises:**
-    -   [Web-R version](handouts/day_1/ExerciseWebr-2.html){.btn .btn-outline-primary .btn-sm target="_blank"}
-    -   [RStudio version](handouts/day_1/ExerciseRStudio-2.html){.btn .btn-outline-primary .btn-sm target="_blank"} [Script](handouts/day_1/ExerciseCode-2.R){.btn .btn-outline-primary .btn-sm target="_blank"}
+    -   [Web-R version](handouts/day_2/Exercise4Webr.html){.btn .btn-outline-primary .btn-sm target="_blank"}
+    -   [RStudio version](handouts/day_2/Exercise4.qmd){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day1-afternoon">
   <button class="btn btn-primary" onclick="unlockSession('a', 'day1-afternoon', 
-    '<a href=\'./handouts/day_1/ExerciseWebrAnswers-2.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
-    '<a href=\'./handouts/day_1/ExerciseRStudioAnswers-2.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>RStudio Answers</a>')">
+    '<a href=\'./handouts/day_2/Exercise4Answer_Webr.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
+    '<a href=\'./handouts/day_2/Exercise4Answer_RStudio.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>RStudio Answers</a>')">
     Click to unlock answer
   </button>
 </div>
