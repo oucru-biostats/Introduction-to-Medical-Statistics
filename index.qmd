@@ -18,7 +18,7 @@ Welcome to the **OUCRU Introduction to Medical Statistics 2026**. This course is
 ## 📅 Logistics & Schedule
 -   **Time:** 09:15 – 16:45 (UTC +7) daily
 -   **Lunch Break:** 12:30 – 13:30 (UTC +7)
--   **Full Schedule:** [Download Timetable](handouts/Agenda_StatCourse_23-27March2026.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
+-   **Full Schedule:** [Timetable](handouts/Agenda_StatCourse_23-27March2026.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   *Note: Lunch is provided for in-person attendees.*
 :::
 
