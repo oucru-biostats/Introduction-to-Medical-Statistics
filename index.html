@@ -575,6 +575,23 @@ cookieconsent.run({
 </section>
 </div>
 </div>
+<script>
+
+function unlockSession(correctPassword, elementId, linksHtml) {
+  var password = prompt("Please enter the session code provided in class:");
+  
+  if (password === correctPassword) {
+    document.getElementById(elementId).innerHTML = linksHtml;
+  } else if (password !== null && password !== "") {
+    alert("Incorrect code.");
+  }
+}
+
+</script>
+<hr>
+<div id="test">
+<p><button class="btn btn-primary" onclick="unlockQR('secret123', 'test', '<a href=\'./handouts/QR_code/01.png\' class=\'btn btn-success\'>QR code</a>')"> Click to unlock QR code </button></p>
+</div>
 <style>
 #pw-overlay {
     display: none; 
@@ -600,18 +617,19 @@ cookieconsent.run({
 </style>
 <div id="pw-overlay">
 <pre><code>&lt;h4 style="color:#0d6efd; margin-top:0;"&gt;Secure Unlock&lt;/h4&gt;
-&lt;p&gt;Please enter the code and press &lt;strong&gt;Enter&lt;/strong&gt;:&lt;/p&gt;
-&lt;input type="password" id="pw-input" placeholder="Type code here..." onkeydown="if(event.key==='Enter') checkPW()"&gt;
-&lt;p style="margin-top: 10px;"&gt;
-    &lt;a href="javascript:void(0)" onclick="closePW()" style="color: #666; font-size: 0.8em; text-decoration: none;"&gt;[ Cancel / Close ]&lt;/a&gt;
-&lt;/p&gt;</code></pre>
+&lt;p&gt;Please enter the code for this material:&lt;/p&gt;
+&lt;input type="password" id="pw-input" onkeydown="if(event.key==='Enter') checkPW()"&gt;
+&lt;div style="display: flex; justify-content: center; gap: 10px;"&gt;
+    &lt;button class="btn btn-primary" onclick="checkPW()"&gt;Unlock&lt;/button&gt;
+    &lt;button class="btn btn-secondary" onclick="closePW()"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 </div>
 <script>
 let targetId = "";
 let contentHtml = "";
 let correctCode = "";
 
-function unlockSession(code, id, html) {
+function unlockQR(code, id, html) {
     correctCode = code;
     targetId = id;
     contentHtml = html;
