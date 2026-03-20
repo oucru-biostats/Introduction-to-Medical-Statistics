@@ -77,7 +77,7 @@ You have two ways to follow the course exercises:
     -   [RStudio version](handouts/day_1/ExerciseRStudio-1.html){.btn .btn-outline-primary .btn-sm target="_blank"} [Script](handouts/day_1/ExerciseCode-1.R){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day1-morning">
-  <button class="btn btn-primary" onclick="unlockSession('a', 'day1-morning', 
+  <button class="btn btn-primary" onclick="unlockSession('TooEasy?', 'day1-morning', 
     '<a href=\'./handouts/day_1/ExerciseWebrAnswers-1.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
     '<a href=\'./handouts/day_1/ExerciseRStudioAnswers-1.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>RStudio Answers</a>')">
     Click to unlock answer
@@ -112,7 +112,7 @@ You have two ways to follow the course exercises:
     -   [RStudio version](handouts/day_1/ExerciseRStudio-2.html){.btn .btn-outline-primary .btn-sm target="_blank"} [Script](handouts/day_1/ExerciseCode-2.R){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day1-afternoon">
-  <button class="btn btn-primary" onclick="unlockSession('a', 'day1-afternoon', 
+  <button class="btn btn-primary" onclick="unlockSession('RealFun!', 'day1-afternoon', 
     '<a href=\'./handouts/day_1/ExerciseWebrAnswers-2.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
     '<a href=\'./handouts/day_1/ExerciseRStudioAnswers-2.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>RStudio Answers</a>')">
     Click to unlock answer
@@ -151,7 +151,7 @@ You have two ways to follow the course exercises:
     -   [RStudio version](handouts/day_2/ExerciseRStudio-3.html){.btn .btn-outline-primary .btn-sm target="_blank"} [Script](handouts/day_2/ExerciseCode-3.R){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day2-morning">
-  <button class="btn btn-primary" onclick="unlockSession('a', 'day2-morning', 
+  <button class="btn btn-primary" onclick="unlockSession('TheBasic', 'day2-morning', 
     '<a href=\'./handouts/day_2/ExerciseWebrAnswers-3.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
     '<a href=\'./handouts/day_2/ExerciseRStudioAnswers-3.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>RStudio Answers</a>')">
     Click to unlock answer
@@ -183,7 +183,7 @@ You have two ways to follow the course exercises:
     -   [RStudio version](handouts/day_2/Exercise4_RStudio.qmd){.btn .btn-outline-primary .btn-sm target="_blank"}
 -   **Answers:**
 <div id="day2-afternoon">
-  <button class="btn btn-primary" onclick="unlockSession('a', 'day2-afternoon', 
+  <button class="btn btn-primary" onclick="unlockSession('Important', 'day2-afternoon', 
     '<a href=\'./handouts/day_2/Exercise4Answer_Webr.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>Web-R Answers</a> ' +
     '<a href=\'./handouts/day_2/Exercise4Answer_RStudio.html\' class=\'btn btn-success btn-sm\' target=\'_blank\'>RStudio Answers</a>')">
     Click to unlock answer
