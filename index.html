@@ -600,7 +600,10 @@ Unlock Session
 <p>
 Please enter the code for this specific material:
 </p>
-<p><input type="password" id="pw-input" class="form-control" style="margin-bottom: 15px; text-align: center; width: 100%;" onkeydown="if(event.key==='Enter') checkPW()"></p>
+<input type="password" id="pw-input" class="form-control" style="margin-bottom: 15px; text-align: center; width: 100%;" onkeydown="if(event.key==='Enter') checkPW()">
+<div style="display: flex; justify-content: center; gap: 10px;">
+<pre><code>&lt;button class="btn btn-outline-secondary btn-sm" onclick="closePW()"&gt;Cancel&lt;/button&gt;</code></pre>
+</div>
 </div>
 <script>
 let currentTargetId = "";
