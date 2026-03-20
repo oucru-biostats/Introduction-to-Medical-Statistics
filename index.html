@@ -590,10 +590,11 @@ function unlockSession(correctPassword, elementId, linksHtml) {
 </script>
 <hr>
 <div id="qr-session-1">
-<p><button class="btn btn-primary" onclick="unlockQR('secret123', 'qr-session-1', '<a href=\'./handouts/QR_code/01.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')"> Click to unlock QR code </button></p>
+<button class="btn btn-primary" onclick="unlockQR('secret123', 'qr-session-1', '<a href=\'./handouts/QR_code/01.png\' class=\'btn btn-success btn-sm\' target=\'_blank\'>QR code</a>')">
+Click to unlock QR code
+</button>
 </div>
 <style>
-/* 1. Modal Styling - Ensures it sits on top of everything */
 #pw-overlay {
     display: none; 
     position: fixed; 
@@ -607,6 +608,7 @@ function unlockSession(correctPassword, elementId, linksHtml) {
     border-radius: 15px; 
     text-align: center;
     min-width: 320px;
+    font-family: sans-serif;
 }
 #pw-input {
     display: block;
@@ -627,22 +629,21 @@ function unlockSession(correctPassword, elementId, linksHtml) {
 &lt;/div&gt;</code></pre>
 </div>
 <script>
-let globalTargetId = "";
-let globalContentHtml = "";
-let globalCorrectCode = "";
+var globalTargetId = "";
+var globalContentHtml = "";
+var globalCorrectCode = "";
 
 function unlockQR(code, id, html) {
     globalCorrectCode = code;
     globalTargetId = id;
     globalContentHtml = html;
-    
     document.getElementById('pw-overlay').style.display = 'block';
     document.getElementById('pw-input').value = '';
-    document.getElementById('pw-input').focus();
+    setTimeout(function() { document.getElementById('pw-input').focus(); }, 10);
 }
 
 function checkPW() {
-    const entered = document.getElementById('pw-input').value;
+    var entered = document.getElementById('pw-input').value;
     if (entered === globalCorrectCode) {
         document.getElementById(globalTargetId).innerHTML = globalContentHtml;
         closePW();
