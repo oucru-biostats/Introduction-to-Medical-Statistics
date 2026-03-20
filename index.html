@@ -575,18 +575,48 @@ cookieconsent.run({
 </section>
 </div>
 </div>
+<div id="pw-overlay" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border: 2px solid #0d6efd; box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 9999; border-radius: 12px; text-align: center; min-width: 300px; font-family: sans-serif;">
+<h5 style="margin-top:0; color: #0d6efd;" class="anchored">
+Unlock Session
+</h5>
+<p>
+Please enter the code for this specific material:
+</p>
+<input type="password" id="pw-input" class="form-control" style="margin-bottom: 15px; text-align: center; width: 100%;" onkeydown="if(event.key==='Enter') checkPW()">
+<div style="display: flex; justify-content: center; gap: 10px;">
+<pre><code>&lt;button class="btn btn-primary btn-sm" onclick="checkPW()"&gt;Unlock&lt;/button&gt;
+&lt;button class="btn btn-outline-secondary btn-sm" onclick="closePW()"&gt;Cancel&lt;/button&gt;</code></pre>
+</div>
+</div>
 <script>
+let currentTargetId = "";
+let currentLinks = "";
+let currentCorrectPW = ""; // This stores the password for the button just clicked
 
-function unlockSession(correctPassword, elementId, linksHtml) {
-  var password = prompt("Please enter the session code provided in class:");
+function unlockSession(specificPW, elementId, linksHtml) {
+  currentCorrectPW = specificPW; // Get the password from the button
+  currentTargetId = elementId;
+  currentLinks = linksHtml;
   
-  if (password === correctPassword) {
-    document.getElementById(elementId).innerHTML = linksHtml;
-  } else if (password !== null && password !== "") {
-    alert("Incorrect code.");
+  document.getElementById('pw-overlay').style.display = 'block';
+  document.getElementById('pw-input').value = ''; 
+  document.getElementById('pw-input').focus();
+}
+
+function checkPW() {
+  const entered = document.getElementById('pw-input').value;
+  if (entered === currentCorrectPW) {
+    document.getElementById(currentTargetId).innerHTML = currentLinks;
+    closePW();
+  } else {
+    alert("Incorrect code. Please check with your instructor.");
+    document.getElementById('pw-input').value = '';
   }
 }
 
+function closePW() {
+  document.getElementById('pw-overlay').style.display = 'none';
+}
 </script>
 
 
