@@ -373,75 +373,52 @@ function unlockSession(correctPassword, elementId, linksHtml) {
 
 
 
-<div id="qr-session-1">
-  <button class="btn btn-primary" onclick="unlockQR('secret123', 'qr-session-1', '<a href=\'./handouts/QR_code/01.png\'>QR code</a>')">
-    Click to unlock QR code
+
+
+<div id="QR1_test">
+  <button class="btn btn-primary" onclick="unlockQR('qr99', 'QR1_test', 
+    '<a href=\'./handouts/QR_code/01.png\' class=\'btn btn-success btn-sm\'>QR code</a>')">
+    Click to unlock QR code test
   </button>
 </div>
 
-
-
-<style>
-#pw-overlay {
-    display: none; 
-    position: fixed; 
-    top: 50%; left: 50%; 
-    transform: translate(-50%, -50%); 
-    background: white; 
-    padding: 30px; 
-    border: 3px solid #0d6efd; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.5); 
-    z-index: 10000; 
-    border-radius: 15px; 
-    text-align: center;
-    min-width: 320px;
-}
-#pw-input {
-    display: block;
-    margin: 15px auto;
-    padding: 10px;
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-</style>
-
-<div id="pw-overlay">
-    <h4 style="color:#0d6efd; margin-top:0;">Secure Unlock</h4>
-    <p>Please enter the code for this material:</p>
-    <input type="password" id="pw-input" onkeydown="if(event.key==='Enter') checkPW()">
-    <div style="display: flex; justify-content: center; gap: 10px;">
-        <button type="button" class="btn btn-primary btn-sm" onclick="checkPW()">Unlock</button>
-        <button type="button" class="btn btn-outline-secondary btn-sm" onclick="closePW()">Cancel</button>
-    </div>
+<div id="pw-overlay" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border: 2px solid #0d6efd; box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 9999; border-radius: 12px; text-align: center; min-width: 300px; font-family: sans-serif;">
+  <h5 style="margin-top:0; color: #0d6efd;">Unlock Session</h5>
+  <p>Please enter the code for this specific material:</p>
+  <input type="password" id="pw-input" class="form-control" style="margin-bottom: 15px; text-align: center; width: 100%;" onkeydown="if(event.key==='Enter') checkPW()">
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <button class="btn btn-primary btn-sm" onclick="checkPW()">Unlock</button>
+    <button class="btn btn-outline-secondary btn-sm" onclick="closePW()">Cancel</button>
+  </div>
 </div>
 
 <script>
-var globalTargetId = "";
-var globalContentHtml = "";
-var globalCorrectCode = "";
+let currentTargetId = "";
+let currentLinks = "";
+let currentCorrectPW = ""; // This stores the password for the button just clicked
 
-function unlockQR(code, id, html) {
-    globalCorrectCode = code;
-    globalTargetId = id;
-    globalContentHtml = html;
-    document.getElementById('pw-overlay').style.display = 'block';
-    document.getElementById('pw-input').value = '';
-    setTimeout(function() { document.getElementById('pw-input').focus(); }, 10);
+function unlockQR(specificPW, elementId, linksHtml) {
+  currentCorrectPW = specificPW; // Get the password from the button
+  currentTargetId = elementId;
+  currentLinks = linksHtml;
+  
+  document.getElementById('pw-overlay').style.display = 'block';
+  document.getElementById('pw-input').value = ''; 
+  document.getElementById('pw-input').focus();
 }
 
 function checkPW() {
-    var entered = document.getElementById('pw-input').value;
-    if (entered === globalCorrectCode) {
-        document.getElementById(globalTargetId).innerHTML = globalContentHtml;
-        closePW();
-    } else {
-        alert("Incorrect code.");
-        document.getElementById('pw-input').value = '';
-    }
+  const entered = document.getElementById('pw-input').value;
+  if (entered === currentCorrectPW) {
+    document.getElementById(currentTargetId).innerHTML = currentLinks;
+    closePW();
+  } else {
+    alert("Incorrect code. Please check with your instructor.");
+    document.getElementById('pw-input').value = '';
+  }
 }
 
 function closePW() {
-    document.getElementById('pw-overlay').style.display = 'none';
+  document.getElementById('pw-overlay').style.display = 'none';
 }
 </script>
