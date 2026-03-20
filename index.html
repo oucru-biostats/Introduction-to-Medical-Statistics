@@ -575,47 +575,66 @@ cookieconsent.run({
 </section>
 </div>
 </div>
-<div id="pw-overlay" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border: 2px solid #0d6efd; box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 9999; border-radius: 12px; text-align: center; min-width: 320px; font-family: sans-serif;">
-<h5 style="margin-top:0; color: #0d6efd;" class="anchored">
-Unlock Session
-</h5>
-<p style="color: #333; margin-bottom: 15px;">
-Please enter the code for this material:
-</p>
-<p><input type="password" id="pw-input" class="form-control" style="margin-bottom: 20px; text-align: center; width: 100%; border: 1px solid #ccc; padding: 8px; border-radius: 4px;" onkeydown="if(event.key==='Enter') checkPW()"></p>
-<div style="display: flex; justify-content: center; gap: 10px;">
-<pre><code>&lt;button type="button" class="btn btn-primary btn-sm" onclick="checkPW()"&gt;Unlock&lt;/button&gt;
-&lt;button type="button" class="btn btn-outline-secondary btn-sm" onclick="closePW()"&gt;Cancel&lt;/button&gt;</code></pre>
-</div>
+<style>
+#pw-overlay {
+    display: none; 
+    position: fixed; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: white; 
+    padding: 30px; 
+    border: 3px solid #0d6efd; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.5); 
+    z-index: 10000; 
+    border-radius: 15px; 
+    text-align: center;
+}
+#pw-input {
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+</style>
+<div id="pw-overlay">
+<pre><code>&lt;h4 style="color:#0d6efd; margin-top:0;"&gt;Secure Unlock&lt;/h4&gt;
+&lt;p&gt;Please enter the code and press &lt;strong&gt;Enter&lt;/strong&gt;:&lt;/p&gt;
+&lt;input type="password" id="pw-input" placeholder="Type code here..." onkeydown="if(event.key==='Enter') checkPW()"&gt;
+
+&lt;p style="margin-top: 10px;"&gt;
+    &lt;a href="javascript:void(0)" onclick="closePW()" style="color: #666; font-size: 0.8em; text-decoration: none;"&gt;[ Cancel / Close ]&lt;/a&gt;
+&lt;/p&gt;</code></pre>
 </div>
 <script>
-let currentTargetId = "";
-let currentLinks = "";
-let currentCorrectPW = "";
+let targetId = "";
+let contentHtml = "";
+let correctCode = "";
 
-function unlockSession(specificPW, elementId, linksHtml) {
-  currentCorrectPW = specificPW;
-  currentTargetId = elementId;
-  currentLinks = linksHtml;
-  
-  document.getElementById('pw-overlay').style.display = 'block';
-  document.getElementById('pw-input').value = ''; 
-  document.getElementById('pw-input').focus();
+function unlockSession(code, id, html) {
+    correctCode = code;
+    targetId = id;
+    contentHtml = html;
+    
+    document.getElementById('pw-overlay').style.display = 'block';
+    document.getElementById('pw-input').value = '';
+    document.getElementById('pw-input').focus();
 }
 
 function checkPW() {
-  const entered = document.getElementById('pw-input').value;
-  if (entered === currentCorrectPW) {
-    document.getElementById(currentTargetId).innerHTML = currentLinks;
-    closePW();
-  } else {
-    alert("Incorrect code.");
-    document.getElementById('pw-input').value = '';
-  }
+    const entered = document.getElementById('pw-input').value;
+    if (entered === correctCode) {
+        document.getElementById(targetId).innerHTML = contentHtml;
+        closePW();
+    } else {
+        alert("Incorrect code.");
+        document.getElementById('pw-input').value = '';
+    }
 }
 
 function closePW() {
-  document.getElementById('pw-overlay').style.display = 'none';
+    document.getElementById('pw-overlay').style.display = 'none';
 }
 </script>
 
