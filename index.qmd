@@ -377,7 +377,6 @@ You have two ways to follow the course exercises:
     <h4 style="color:#0d6efd; margin-top:0;">Secure Unlock</h4>
     <p>Please enter the code and press <strong>Enter</strong>:</p>
     <input type="password" id="pw-input" placeholder="Type code here..." onkeydown="if(event.key==='Enter') checkPW()">
-    
     <p style="margin-top: 10px;">
         <a href="javascript:void(0)" onclick="closePW()" style="color: #666; font-size: 0.8em; text-decoration: none;">[ Cancel / Close ]</a>
     </p>
