@@ -137,7 +137,7 @@ You have two ways to follow the course exercises:
 
 ::: {.panel-tabset}
 
-### ☀️ Morning: Statistical analysis: main concepts and principles. Binomial distribution.
+### ☀️ Morning: Main principles. Binomial distribution.
 
 ::: {layout-ncol="2"}
 #### Contents
