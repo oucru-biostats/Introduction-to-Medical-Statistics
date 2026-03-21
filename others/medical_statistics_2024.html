@@ -102,7 +102,7 @@ cookieconsent.run({
   
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../custom_styles.css">
 </head>
 
 <body class="floating nav-fixed quarto-light">
@@ -266,46 +266,6 @@ cookieconsent.run({
 </section>
 
 </main> <!-- /main -->
-<div id="pw-backdrop" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 9998;" onclick="closePW()"></div>
-<div id="pw-overlay" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border: 2px solid #0d6efd; box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 9999; border-radius: 12px; text-align: center; min-width: 300px; font-family: sans-serif;">
-  <h5 style="margin-top:0; color: #0d6efd;">Unlock Session</h5>
-  <p>Please enter the code:</p>
-  <input type="password" id="pw-input" style="margin-bottom: 15px; text-align: center; width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" onkeydown="if(event.key==='Enter') checkPW()">
-</div>
-
-<script>
-let currentTargetId = "";
-let currentLinks = "";
-let currentCorrectPW = ""; 
-
-function unlockSession(specificPW, elementId, linksHtml) {
-  currentCorrectPW = specificPW;
-  currentTargetId = elementId;
-  currentLinks = linksHtml;
-  document.getElementById('pw-backdrop').style.display = 'block';
-  document.getElementById('pw-overlay').style.display = 'block';
-  document.getElementById('pw-input').value = ''; 
-  document.getElementById('pw-input').focus();
-}
-
-function checkPW() {
-  const entered = document.getElementById('pw-input').value;
-  if (entered === currentCorrectPW) {
-    document.getElementById(currentTargetId).innerHTML = currentLinks;
-    closePW();
-  } else {
-    alert("Incorrect code.");
-    document.getElementById('pw-input').value = '';
-  }
-}
-
-function closePW() {
-  document.getElementById('pw-backdrop').style.display = 'none';
-  document.getElementById('pw-overlay').style.display = 'none';
-}
-
-document.addEventListener('keydown', (e) => { if(e.key === "Escape") closePW(); });
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
