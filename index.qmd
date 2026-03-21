@@ -169,7 +169,7 @@ You have two ways to follow the course exercises:
 
 :::
 
-### 🌤️ Afternoon:The Normal Distribution; Confidence Intervalss
+### 🌤️ Afternoon: Normal Distribution; Confidence Intervals
 
 ::: {layout-ncol="2"}
 #### Contents
