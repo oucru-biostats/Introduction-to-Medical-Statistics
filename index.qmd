@@ -54,6 +54,8 @@ You have two ways to follow the course exercises:
 <details>
 <summary>[Click to expand]{style="color:blue"}</summary>
 
+::: {.panel-tabset}
+
 ### ☀️ Morning: Descriptive Analysis
 
 ::: {layout-ncol="2"}
@@ -119,6 +121,8 @@ You have two ways to follow the course exercises:
   </button>
 </div>
 
+
+:::
 
 :::
 
