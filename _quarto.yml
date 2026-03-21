@@ -72,6 +72,9 @@ execute:
 format:
   html:
     theme: cosmo
-    include-after-body: comment-header.html
-  revealjs:
-    css: ../styles.css
+    css: styles.css          # Links your CSS file to every page
+    toc: true
+    toc-location: left       # Forces TOC to the left on all pages
+    toc-title: "On this page"
+    include-after-body: 
+      - password-logic.html  # Injects the password HTML/JS into every page
