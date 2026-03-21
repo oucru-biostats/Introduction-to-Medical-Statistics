@@ -136,14 +136,19 @@ cookieconsent.run({
   
 
 
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="floating fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -162,7 +167,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 21, 2026 – 05:01:41 (UTC)</p>
+      <p class="date">March 21, 2026 – 09:15:50 (UTC)</p>
     </div>
   </div>
   
@@ -242,18 +247,46 @@ cookieconsent.run({
 </section>
 
 </main> <!-- /main -->
-<hr>
-<div class="callout callout-style-simple callout-note no-icon">
-  <div class="callout-body d-flex">
-    <div class="callout-icon-container">
-      <i class="callout-icon no-icon"></i>
-    </div>
-    <div class="callout-content-container">
-      <p><strong>Found a typo or have a suggestion?</strong> Please let us know in the comments below! Your feedback helps improve these materials for everyone.</p>
-    </div>
-  </div>
+<div id="pw-backdrop" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 9998;" onclick="closePW()"></div>
+<div id="pw-overlay" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border: 2px solid #0d6efd; box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 9999; border-radius: 12px; text-align: center; min-width: 300px; font-family: sans-serif;">
+  <h5 style="margin-top:0; color: #0d6efd;">Unlock Session</h5>
+  <p>Please enter the code:</p>
+  <input type="password" id="pw-input" style="margin-bottom: 15px; text-align: center; width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" onkeydown="if(event.key==='Enter') checkPW()">
 </div>
-<br>
+
+<script>
+let currentTargetId = "";
+let currentLinks = "";
+let currentCorrectPW = ""; 
+
+function unlockSession(specificPW, elementId, linksHtml) {
+  currentCorrectPW = specificPW;
+  currentTargetId = elementId;
+  currentLinks = linksHtml;
+  document.getElementById('pw-backdrop').style.display = 'block';
+  document.getElementById('pw-overlay').style.display = 'block';
+  document.getElementById('pw-input').value = ''; 
+  document.getElementById('pw-input').focus();
+}
+
+function checkPW() {
+  const entered = document.getElementById('pw-input').value;
+  if (entered === currentCorrectPW) {
+    document.getElementById(currentTargetId).innerHTML = currentLinks;
+    closePW();
+  } else {
+    alert("Incorrect code.");
+    document.getElementById('pw-input').value = '';
+  }
+}
+
+function closePW() {
+  document.getElementById('pw-backdrop').style.display = 'none';
+  document.getElementById('pw-overlay').style.display = 'none';
+}
+
+document.addEventListener('keydown', (e) => { if(e.key === "Escape") closePW(); });
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
