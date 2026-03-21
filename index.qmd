@@ -4,7 +4,7 @@ format:
     link-external-icon: true
     link-external-newwindow: true
 from: markdown+autolink_bare_uris
-number-depth: 2
+number-depth: 1
 toc-depth: 2
 date: last-modified
 date-format: "MMMM D, YYYY"
