@@ -135,6 +135,8 @@ You have two ways to follow the course exercises:
 <details>
 <summary>[Click to expand]{style="color:blue"}</summary>
 
+::: {.panel-tabset}
+
 ### ☀️ Morning: Statistical analysis: main concepts and principles. Binomial distribution.
 
 ::: {layout-ncol="2"}
@@ -200,7 +202,7 @@ You have two ways to follow the course exercises:
 
 :::
 
-
+:::
 
 </details>
 
@@ -209,6 +211,7 @@ You have two ways to follow the course exercises:
 <details>
 <summary>[Click to expand]{style="color:blue"}</summary>
 
+::: {.panel-tabset}
 
 ### ☀️ Morning: Comparing continuous variables
 
@@ -277,6 +280,8 @@ You have two ways to follow the course exercises:
 
 :::
 
+:::
+
 </details>
 
 
@@ -285,6 +290,7 @@ You have two ways to follow the course exercises:
 <details>
 <summary>[Click to expand]{style="color:blue"}</summary>
 
+::: {.panel-tabset}
 
 ### ☀️ Morning: Multivariable linear regression
 
@@ -348,6 +354,8 @@ You have two ways to follow the course exercises:
   </button>
 </div>
 
+
+:::
 
 :::
 
