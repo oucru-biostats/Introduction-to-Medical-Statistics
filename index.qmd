@@ -137,7 +137,7 @@ You have two ways to follow the course exercises:
 
 ::: {.panel-tabset}
 
-### ☀️ Morning: Main principles. Binomial distribution.
+### ☀️ Morning: Main principles & Binomial
 
 ::: {layout-ncol="2"}
 #### Contents
@@ -169,7 +169,7 @@ You have two ways to follow the course exercises:
 
 :::
 
-### 🌤️ Afternoon: Normal Distribution; Confidence Intervals
+### 🌤️ Afternoon: Normal & Confidence Intervals
 
 ::: {layout-ncol="2"}
 #### Contents
