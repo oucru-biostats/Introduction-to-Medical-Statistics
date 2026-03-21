@@ -52,8 +52,7 @@ You have two ways to follow the course exercises:
 ## Day 1: Descriptive and Exploratory Data Analysis
 
 <details>
-<summary>Click to expand</summary>
-
+<summary>[Click to expand]{style="color:blue"}</summary>
 
 ### 🧑‍🏫 Lead instructors: Ronald
 
@@ -126,9 +125,9 @@ You have two ways to follow the course exercises:
 
 :::
 
-------------------------------------------------------------------------
-
 </details>
+
+
 
 ## Day 2: Statistical analysis principles, Distributions, Confidence Intervals
 
@@ -203,7 +202,6 @@ You have two ways to follow the course exercises:
 :::
 
 
-------------------------------------------------------------------------
 
 </details>
 
@@ -282,7 +280,7 @@ You have two ways to follow the course exercises:
 
 :::
 
-------------------------------------------------------------------------
+
 
 </details>
 
@@ -359,7 +357,7 @@ You have two ways to follow the course exercises:
 
 :::
 
------------------------------------------------------------------------
+
 
 </details>
 
