@@ -36,16 +36,14 @@ div.fig-rm-on-exit:not(.current-fragment) img {
 }
 
 
-<style>
-/* 1. Container styling */
+/* --- GLOBAL TABSET STYLING --- */
 .nav-tabs {
   border-bottom: 2px solid #dee2e6;
   margin-bottom: 1rem;
 }
 
-/* 2. Styling the Inactive Tabs */
 .nav-link {
-  color: #6c757d !important; /* Muted gray */
+  color: #6c757d !important;
   background-color: #f8f9fa !important;
   border: 1px solid #dee2e6 !important;
   margin-right: 4px;
@@ -53,19 +51,35 @@ div.fig-rm-on-exit:not(.current-fragment) img {
   border-radius: 6px 6px 0 0 !important;
 }
 
-/* 3. Styling the Active (Chosen) Tab */
 .nav-link.active {
-  color: #0d6efd !important; /* Bold blue text */
+  color: #0d6efd !important;
   background-color: #ffffff !important; 
-  border-bottom: 2px solid white !important; /* Blends into content */
-  border-top: 4px solid #0d6efd !important; /* Clear top accent line */
+  border-bottom: 2px solid white !important;
+  border-top: 4px solid #0d6efd !important;
   font-weight: 700 !important;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
 }
 
-/* 4. Hover effect for inactive tabs */
-.nav-link:hover:not(.active) {
-  background-color: #e9ecef !important;
-  color: #0d6efd !important;
+/* --- GLOBAL ACCORDION (DETAILS) STYLING --- */
+details {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 0.5rem;
 }
-</style>
+
+summary {
+  list-style: none;
+  color: #0d6efd;
+  cursor: pointer;
+  padding: 10px 5px;
+  font-size: 1.1rem;
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+details[open] summary {
+  color: #212529;
+  font-weight: 600;
+  border-left: 4px solid #0d6efd;
+  padding-left: 15px;
+}
