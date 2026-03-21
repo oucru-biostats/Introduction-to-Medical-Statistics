@@ -74,4 +74,4 @@ format:
     theme: cosmo
     include-after-body: comment-header.html
   revealjs:
-    css: ../styles.css
+    css: styles.css
