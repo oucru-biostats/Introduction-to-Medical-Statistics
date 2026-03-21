@@ -10,7 +10,7 @@ date: last-modified
 date-format: "MMMM D, YYYY"
 ---
 
-# Welcome {.unnumbered}
+# Welcome! {.unnumbered}
 
 Welcome to the **OUCRU Introduction to Medical Statistics 2026**. This course is designed to provide clinicians and researchers with the fundamental statistical tools required for medical research.
 
