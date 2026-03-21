@@ -54,9 +54,6 @@ You have two ways to follow the course exercises:
 <details>
 <summary>[Click to expand]{style="color:blue"}</summary>
 
-#### 🧑‍🏫 Lead instructors: Ronald
-
-
 ### ☀️ Morning: Descriptive Analysis
 
 ::: {layout-ncol="2"}
@@ -132,9 +129,7 @@ You have two ways to follow the course exercises:
 ## Day 2: Statistical analysis principles, Distributions, Confidence Intervals
 
 <details>
-<summary>Click to expand</summary>
-
-### 🧑‍🏫 Lead instructors: Ronald and Thuan
+<summary>[Click to expand]{style="color:blue"}</summary>
 
 ### ☀️ Morning: Statistical analysis: main concepts and principles. Binomial distribution.
 
@@ -208,9 +203,7 @@ You have two ways to follow the course exercises:
 ## Day 3: Comparing continuous variables and Simple linear regression
 
 <details>
-<summary>Click to expand</summary>
-
-### 🧑‍🏫 Lead instructors: Vuong
+<summary>[Click to expand]{style="color:blue"}</summary>
 
 
 ### ☀️ Morning: Comparing continuous variables
@@ -280,16 +273,13 @@ You have two ways to follow the course exercises:
 
 :::
 
-
-
 </details>
+
 
 ## Day 4: Multivariable linear and logistic regression
 
 <details>
-<summary>Click to expand</summary>
-
-### 🧑‍🏫 Lead instructors: Thuan and Vuong
+<summary>[Click to expand]{style="color:blue"}</summary>
 
 
 ### ☀️ Morning: Multivariable linear regression
@@ -356,8 +346,6 @@ You have two ways to follow the course exercises:
 
 
 :::
-
-
 
 </details>
 
