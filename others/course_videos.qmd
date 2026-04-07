@@ -16,6 +16,12 @@ date-format: "MMMM D, YYYY"
 These recordings are from the **2024 iteration** of the course. Links for the **2026 iteration** will be uploaded here shortly after the course concludes in March.
 :::
 
+## 2026 Lecture Recordings
+
+### Full series:
+[**Watch Session**](https://www.youtube.com/playlist?list=PLrVt1KgflEGuOPPSk0MCrHFS-6qiHqABq){.btn .btn-outline-primary .btn-sm}
+
+
 ## 📺 2024 Lecture Recordings
 
 ::: {layout-ncol=2}
