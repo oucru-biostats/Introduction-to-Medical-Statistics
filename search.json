@@ -28,15 +28,22 @@
     "text": "R Packages\nOnce R and RStudio are installed, you need to install the specific libraries we will use for data visualization and analysis.\nInstructions:\n\nOpen RStudio.\nCopy the code below and paste it into the Console (the bottom-left pane).\nPress Enter.\n\n# List of required packages\npkgs &lt;- c(\"ggplot2\", \"gtsummary\", \"ggrain\", \"GGally\", \"patchwork\", \n          \"ggExtra\", \"ggResidpanel\", \"performance\", \"see\", \"ggeffects\")\n\n# Install packages\ninstall.packages(pkgs)"
   },
   {
-    "objectID": "others/medical_statistics_2024.html",
-    "href": "others/medical_statistics_2024.html",
+    "objectID": "others/course_videos.html",
+    "href": "others/course_videos.html",
     "title": "Course Video Archive",
     "section": "",
     "text": "These recordings are from the 2024 iteration of the course. Links for the 2026 iteration will be uploaded here shortly after the course concludes in March."
   },
   {
-    "objectID": "others/medical_statistics_2024.html#lecture-recordings",
-    "href": "others/medical_statistics_2024.html#lecture-recordings",
+    "objectID": "others/course_videos.html#lecture-recordings",
+    "href": "others/course_videos.html#lecture-recordings",
+    "title": "Course Video Archive",
+    "section": "2026 Lecture Recordings",
+    "text": "2026 Lecture Recordings\n\nFull series:\nWatch Session"
+  },
+  {
+    "objectID": "others/course_videos.html#lecture-recordings-1",
+    "href": "others/course_videos.html#lecture-recordings-1",
     "title": "Course Video Archive",
     "section": "📺 2024 Lecture Recordings",
     "text": "📺 2024 Lecture Recordings\n\n\n\nDay 1: Descriptives & EDA\nWatch Session\n\n\nDay 2: Statistical Principles & Distributions\nWatch Session\n\n\n\n\nDay 3: Group Comparisons & Simple Modeling\nPart 1 Part 2\n\n\nDay 4: Multivariable & Logistic Regression\nPart 1 Part 2\n\n\n\n\nDay 5: Study Design & Research Methodology\nWatch Session"
