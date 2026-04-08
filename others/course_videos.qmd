@@ -16,13 +16,18 @@ date-format: "MMMM D, YYYY"
 These recordings are from the **2024 and 2026 iteration** of the course. Links for the **future iteration** will be uploaded here shortly after the course concludes.
 :::
 
-## 📺 2026 Lecture Recordings
+## 📺 2026 Medical Statistics Lecture Recordings
 
 ### Full series:
 [**Watch Session**](https://www.youtube.com/playlist?list=PLrVt1KgflEGuOPPSk0MCrHFS-6qiHqABq){.btn .btn-outline-primary .btn-sm}
 
+## 📺 2025 R training Lecture Recordings
 
-## 📺 2024 Lecture Recordings
+### Full series:
+[**Watch Session**](https://www.youtube.com/playlist?list=PLrVt1KgflEGvCbAlMwftGe3g_WoqaR13C){.btn .btn-outline-primary .btn-sm}
+
+
+## 📺 2024 Medical Statistics Lecture Recordings
 
 ::: {layout-ncol=2}
 
