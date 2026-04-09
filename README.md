@@ -5,7 +5,7 @@ Materials for the course in their quarto format are stored here
 
 ## For learners
 
-The course main webpage is here: https://tranhung93.github.io/Introduction-to-Medical-Statistics/
+The course main webpage is here: https://oucru-biostats.github.io/Introduction-to-Medical-Statistics/
 
 ## For instructors
 
