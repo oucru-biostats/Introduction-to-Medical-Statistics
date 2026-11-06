@@ -1,14 +1,24 @@
+name: Quarto render and publish
+
 on:
   push:
     branches: [ main ]
-  # Optional: allows you to run this manually from the Actions tab
-  workflow_dispatch: 
-
-name: Quarto render and publish
+  workflow_dispatch:   # allows running this manually from the Actions tab
 
 permissions:
   contents: write
   pages: write
+
+# Never run two deployments at once; a newer push supersedes an older one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+# The website pages (index.qmd, others/*.qmd) contain no executable code:
+# exercises and slides in handouts/ and slides/ are committed pre-rendered.
+# So only Quarto is needed here. If you ever add a page with R chunks to the
+# render list, add `r-lib/actions/setup-r@v2` and `r-lib/actions/setup-renv@v2`
+# steps before "Render and publish".
 
 jobs:
   build-deploy:
@@ -17,42 +27,12 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Install System Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            cmake \
-            libcurl4-openssl-dev \
-            libfftw3-dev \
-            libnode-dev \
-            pandoc \
-            libssl-dev \
-            libxml2-dev
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.4.0'
-          use-public-rspm: true # Speeds up package installation on Linux
-
-      - name: Setup renv
-        uses: r-lib/actions/setup-renv@v2
-        with:
-          cache-version: 2
-        env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Install TinyTeX
-        run: quarto install tinytex
-
-      - name: Render and Publish to GitHub Pages
+      - name: Render and publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          # We tell Quarto to render everything before pushing
-          render: true 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

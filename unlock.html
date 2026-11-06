@@ -1,0 +1,65 @@
+<!--
+  Unlock dialog for the course schedule (used by _filters/course-schedule.lua).
+
+  Markup expected on the page:
+    <div class="unlock-session" data-code="...">
+      <button type="button">Click to unlock ...</button>
+      <template> ...links revealed on success... </template>
+    </div>
+
+  Codes live in the page source: this hides links until a session starts,
+  it is not access control.
+-->
+<dialog id="unlock-dialog" class="unlock-dialog" aria-labelledby="unlock-title">
+  <form method="dialog">
+    <h5 id="unlock-title">Unlock session</h5>
+    <label for="unlock-input">Please enter the session code provided in class:</label>
+    <input type="password" id="unlock-input" autocomplete="off" required>
+    <p class="unlock-error" role="alert" hidden>Incorrect code, please try again.</p>
+    <div class="unlock-actions">
+      <button type="button" class="btn btn-outline-secondary btn-sm" value="cancel">Cancel</button>
+      <button type="submit" class="btn btn-primary btn-sm">Unlock</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+(function () {
+  const dialog = document.getElementById("unlock-dialog");
+  if (!dialog) return;
+  const form = dialog.querySelector("form");
+  const input = dialog.querySelector("#unlock-input");
+  const error = dialog.querySelector(".unlock-error");
+  let target = null;
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".unlock-session > button");
+    if (!button) return;
+    target = button.parentElement;
+    input.value = "";
+    error.hidden = true;
+    dialog.showModal();
+    input.focus();
+  });
+
+  dialog.querySelector('button[value="cancel"]').addEventListener("click", () => dialog.close());
+
+  // Close when clicking the backdrop.
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!target) return;
+    if (input.value === target.dataset.code) {
+      const links = target.querySelector("template").content.cloneNode(true);
+      target.replaceChildren(links);
+      dialog.close();
+    } else {
+      error.hidden = false;
+      input.select();
+    }
+  });
+})();
+</script>

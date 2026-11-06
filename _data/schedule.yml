@@ -1,0 +1,203 @@
+# =============================================================================
+# Course schedule — the single source of truth for the "Course Topics" section
+# of the home page (index.qmd). Rendered by _filters/course-schedule.lua.
+#
+# To prepare a new iteration of the course, edit this file only.
+#
+# Per-session keys (all optional except `title`):
+#   time          morning | afternoon        (sets the tab icon)
+#   title         tab title
+#   contents      list of topics
+#   qr            path to the session QR code image (locked behind `unlock-code`)
+#   slides        path to the lecture slides
+#   exercises     webr / rstudio / script    (paths)
+#   answers       webr / rstudio             (paths)
+#   answers-code  if set, answers are hidden behind this code instead of shown
+#
+# Missing files are reported as warnings when the site is rendered.
+# NOTE: unlock codes are visible in the page source; they only keep links out
+# of sight until the session starts, they are NOT a security mechanism.
+# =============================================================================
+
+unlock-code: "306"   # default code for the QR-code buttons
+
+schedule:
+  # ---------------------------------------------------------------------------
+  - day: 1
+    title: Descriptive and Exploratory Data Analysis
+    sessions:
+      - time: morning
+        title: Descriptive Analysis
+        contents:
+          - Data characteristics & Variable types
+          - Numerical & Graphical summaries
+          - Intro to R and RStudio
+        qr: handouts/QR_code/01.png
+        slides: slides/day_1/1.SlidesDescriptives.pdf
+        exercises:
+          webr: handouts/day_1/ExerciseWebr-1.html
+          rstudio: handouts/day_1/ExerciseRStudio-1.html
+          script: handouts/day_1/ExerciseCode-1.R
+        answers:
+          webr: handouts/day_1/ExerciseWebrAnswers-1.html
+          rstudio: handouts/day_1/ExerciseRStudioAnswers-1.html
+        # answers-code: "TooEasy?"
+
+      - time: afternoon
+        title: Exploratory Analysis
+        contents:
+          - Baseline tables
+          - Graphs for categorical variables
+          - Numeric variables by group
+          - 2-variable numeric plots
+        qr: handouts/QR_code/02.png
+        slides: slides/day_1/2.SlidesEDA.pdf
+        exercises:
+          webr: handouts/day_1/ExerciseWebr-2.html
+          rstudio: handouts/day_1/ExerciseRStudio-2.html
+          script: handouts/day_1/ExerciseCode-2.R
+        answers:
+          webr: handouts/day_1/ExerciseWebrAnswers-2.html
+          rstudio: handouts/day_1/ExerciseRStudioAnswers-2.html
+        # answers-code: "RealFun!"
+
+  # ---------------------------------------------------------------------------
+  - day: 2
+    title: Statistical analysis principles, Distributions, Confidence Intervals
+    sessions:
+      - time: morning
+        title: Main principles & Binomial
+        contents:
+          - Types of study questions
+          - Sampling variation
+          - Binomial distribution
+          - Testing hypotheses
+        qr: handouts/QR_code/03.png
+        slides: slides/day_2/3.SlidesStatisticsPrinciples.pdf
+        exercises:
+          webr: handouts/day_2/ExerciseWebr-3.html
+          rstudio: handouts/day_2/ExerciseRStudio-3.html
+          script: handouts/day_2/ExerciseCode-3.R
+        answers:
+          webr: handouts/day_2/ExerciseWebrAnswers-3.html
+          rstudio: handouts/day_2/ExerciseRStudioAnswers-3.html
+        # answers-code: "TheBasic"
+
+      - time: afternoon
+        title: Normal & Confidence Intervals
+        contents:
+          - The normal distribution
+          - Confidence intervals
+          - Hypothesis tests and p-values
+        qr: handouts/QR_code/04.png
+        slides: slides/day_2/4_MainConceptsPrinciples.pdf
+        exercises:
+          webr: handouts/day_2/Exercise4Webr.html
+          rstudio: handouts/day_2/Exercise4_RStudio.qmd   # Quarto source, downloaded and run locally
+        answers:
+          webr: handouts/day_2/Exercise4Answer_Webr.html
+          rstudio: handouts/day_2/Exercise4Answer_RStudio.html
+        # answers-code: "Useless?"
+
+  # ---------------------------------------------------------------------------
+  - day: 3
+    title: Comparing continuous variables and Simple linear regression
+    sessions:
+      - time: morning
+        title: Comparing continuous variables
+        contents:
+          - Student’s t-test vs. Wilcoxon rank-sum test
+          - Paired t-test vs. Wilcoxon signed-rank test
+        qr: handouts/QR_code/05.png
+        slides: slides/day_3/5_Group comparison_Slides.pdf
+        exercises:
+          webr: handouts/day_3/Exercise5_Webr.html
+          rstudio: handouts/day_3/Exercise5_RStudio.html
+          script: handouts/day_3/ExerciseCode.R
+        answers:
+          webr: handouts/day_3/Exercise5_Answers.html
+          rstudio: handouts/day_3/Exercise5_Answers.pdf
+        # answers-code: "Testing"
+
+      - time: afternoon
+        title: Simple linear regression
+        contents:
+          - Visualizing Relationships
+          - The Linear Regression Model
+          - Interpreting Results
+          - Regression Diagnostics
+        qr: handouts/QR_code/06.png
+        slides: slides/day_3/6.simpleLinearRegression_Slides.pdf
+        exercises:
+          webr: handouts/day_3/Exercise6_Webr.html
+          rstudio: handouts/day_3/Exercise6_RStudio.html
+          script: handouts/day_3/Exercise6Code.R
+        answers:
+          webr: handouts/day_3/Exercise6_Answers.html
+          rstudio: handouts/day_3/Exercise6_Answers.pdf
+        # answers-code: "LinearTrend"
+
+  # ---------------------------------------------------------------------------
+  - day: 4
+    title: Multivariable linear and logistic regression
+    sessions:
+      - time: morning
+        title: Multivariable linear regression
+        contents:
+          - Model formulation
+          - Estimation
+          - Testing
+        qr: handouts/QR_code/07.png
+        slides: slides/day_4/7.multipleRegression.pdf
+        exercises:
+          webr: handouts/day_4/Exercise7_Webr.html
+          rstudio: handouts/day_4/Exercise7_RStudio.html
+          script: handouts/day_4/Exercise7Code.R
+        answers:
+          webr: handouts/day_4/Exercise7-Answer-Webr.html
+        # answers-code: "MoreLinear"
+
+      - time: afternoon
+        title: Logistic regression
+        contents:
+          - Risk/odds, risk ratio (RR)/odds ratio (OR)
+          - Logistic regression model
+          - Interpreting Univariable Logistic Regression
+          - Interpreting Multivariable Logistic Regression
+        qr: handouts/QR_code/08.png
+        slides: slides/day_4/8.Logistic Regression_Slides.pdf
+        exercises:
+          webr: handouts/day_4/Exercise8_Webr.html
+          rstudio: handouts/day_4/Exercise8_RStudio.html
+          script: handouts/day_4/Exercise8Code.R
+        answers:
+          webr: handouts/day_4/Exercise8_Answers.html
+          rstudio: handouts/day_4/Exercise8_Answers.pdf
+        # answers-code: "LogOdds"
+
+  # ---------------------------------------------------------------------------
+  - day: 5
+    title: Study design, sample size calculation & Steps in quantitative research
+    sessions:
+      - time: morning
+        title: Study design, Sample size
+        contents:
+          - Study design
+          - Sample size calculation
+        qr: handouts/QR_code/09.png
+        slides: slides/day_5/9.SampleSize.pdf
+        exercises:
+          webr: handouts/day_5/ExerciseWebr-9.html
+          rstudio: handouts/day_5/ExerciseRStudio-9.html
+          script: handouts/day_5/ExerciseCode-9.R
+        answers:
+          webr: handouts/day_5/ExerciseWebrAnswers-9.html
+          rstudio: handouts/day_5/ExerciseRStudioAnswers-9.html
+        # answers-code: "ContactBiostat"
+
+      - time: afternoon
+        title: Quantitative research
+        contents:
+          - Quantitative research
+        qr: handouts/QR_code/10.png
+        slides: slides/day_5/10.CourseSlides.pdf

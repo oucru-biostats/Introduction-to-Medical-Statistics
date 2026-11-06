@@ -2,13 +2,8 @@
 title: "Pre-course setups and requirements"
 toc: false
 number-sections: false
-format: 
-  html:
-    link-external-newwindow: true
-    link-external-icon: true
 navbar: false
 date: last-modified
-date-format: "MMMM D, YYYY -- HH:mm:ss (z)"
 ---
 
 # About

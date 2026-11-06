@@ -1,15 +1,10 @@
 ---
 title: "Course Video Archive"
-subtitle: "Recordings from the 2024 Iteration"
+subtitle: "Recordings from previous iterations"
 toc: false
 number-sections: false
-format: 
-  html:
-    link-external-newwindow: true
-    link-external-icon: true
-    page-layout: full
+page-layout: full
 date: last-modified
-date-format: "MMMM D, YYYY"
 ---
 
 ::: {.callout-important appearance="simple"}

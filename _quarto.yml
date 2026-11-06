@@ -1,10 +1,10 @@
 project:
   type: website
   output-dir: _render
-  render:
-    - "*.qmd"
+  render:                       # handouts/ and slides/ hold pre-rendered files,
+    - "*.qmd"                   # copied as-is via `resources` below
     - "others/*.qmd"
-    - "!handouts/day_2/Exercise4_RStudio.qmd"
+    - "!handouts/day_2/Exercise4_RStudio.qmd"   # served as a download, not rendered
   resources:
     - "handouts/"
     - "slides/"
@@ -72,7 +72,7 @@ execute:
 format:
   html:
     theme: cosmo
-    css: custom_styles.css       # Links your CSS globally
+    css: custom_styles.css
     toc: true
     toc-location: left          # Global TOC on the left
     toc-depth: 2
@@ -80,5 +80,3 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     date-format: "MMMM D, YYYY"
-    include-after-body: 
-      - password_logic.html     # Injects the password popup globally
