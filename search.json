@@ -70,39 +70,39 @@
     "text": "Prof. Ronald Geskus\nDr. Duc Du Hong\nDr. Hoang Van Thuan\nDr. Nguyen Lam Vuong\nDr. Tran Thai Hung"
   },
   {
-    "objectID": "index.html#day-1-descriptive-and-exploratory-data-analysis",
-    "href": "index.html#day-1-descriptive-and-exploratory-data-analysis",
+    "objectID": "index.html#day-1",
+    "href": "index.html#day-1",
     "title": "Welcome!",
     "section": "Day 1: Descriptive and Exploratory Data Analysis",
-    "text": "Day 1: Descriptive and Exploratory Data Analysis\n\n\nClick to view the materials\n\n\n☀️ Morning: Descriptive Analysis🌤️ Afternoon: Exploratory Analysis\n\n\n\n\n\nContents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:       \n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n\n\n\nContents\n\nBaseline tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:       \n\nWeb-R version\nRStudio version"
+    "text": "Day 1: Descriptive and Exploratory Data Analysis\n\nClick to view the materials\n\n\n☀️ Morning: Descriptive Analysis\n\n\n\nContents\n\nData characteristics & Variable types\nNumerical & Graphical summaries\nIntro to R and RStudio\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n🌤️ Afternoon: Exploratory Analysis\n\n\n\nContents\n\nBaseline tables\nGraphs for categorical variables\nNumeric variables by group\n2-variable numeric plots\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\nRStudio version"
   },
   {
-    "objectID": "index.html#day-2-statistical-analysis-principles-distributions-confidence-intervals",
-    "href": "index.html#day-2-statistical-analysis-principles-distributions-confidence-intervals",
+    "objectID": "index.html#day-2",
+    "href": "index.html#day-2",
     "title": "Welcome!",
     "section": "Day 2: Statistical analysis principles, Distributions, Confidence Intervals",
-    "text": "Day 2: Statistical analysis principles, Distributions, Confidence Intervals\n\n\nClick to view the materials\n\n\n☀️ Morning: Main principles & Binomial🌤️ Afternoon: Normal & Confidence Intervals\n\n\n\n\n\nContents\n\nTypes of study questions\nSampling variation\nBinomial distribution\nTesting hypotheses\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:       \n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n\n\n\nContents\n\nThe normal distribution\nConfidence intervals\nHypothesis tests and p-values\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version\n\nAnswers:       \n\nWeb-R version\nRStudio version"
+    "text": "Day 2: Statistical analysis principles, Distributions, Confidence Intervals\n\nClick to view the materials\n\n\n☀️ Morning: Main principles & Binomial\n\n\n\nContents\n\nTypes of study questions\nSampling variation\nBinomial distribution\nTesting hypotheses\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n🌤️ Afternoon: Normal & Confidence Intervals\n\n\n\nContents\n\nThe normal distribution\nConfidence intervals\nHypothesis tests and p-values\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version\n\nAnswers:\n\nWeb-R version\nRStudio version"
   },
   {
-    "objectID": "index.html#day-3-comparing-continuous-variables-and-simple-linear-regression",
-    "href": "index.html#day-3-comparing-continuous-variables-and-simple-linear-regression",
+    "objectID": "index.html#day-3",
+    "href": "index.html#day-3",
     "title": "Welcome!",
     "section": "Day 3: Comparing continuous variables and Simple linear regression",
-    "text": "Day 3: Comparing continuous variables and Simple linear regression\n\n\nClick to view the materials\n\n\n☀️ Morning: Comparing continuous variables🌤️ Afternoon: Simple linear regression\n\n\n\n\n\nContents\n\nStudent’s t-test vs. Wilcoxon rank-sum test\nPaired t-test vs. Wilcoxon signed-rank test\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:       \n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n\n\n\nContents\n\nVisualizing Relationships\nThe Linear Regression Model\nInterpreting Results\nRegression Diagnostics\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:       \n\nWeb-R version\nRStudio version"
+    "text": "Day 3: Comparing continuous variables and Simple linear regression\n\nClick to view the materials\n\n\n☀️ Morning: Comparing continuous variables\n\n\n\nContents\n\nStudent’s t-test vs. Wilcoxon rank-sum test\nPaired t-test vs. Wilcoxon signed-rank test\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n🌤️ Afternoon: Simple linear regression\n\n\n\nContents\n\nVisualizing Relationships\nThe Linear Regression Model\nInterpreting Results\nRegression Diagnostics\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\nRStudio version"
   },
   {
-    "objectID": "index.html#day-4-multivariable-linear-and-logistic-regression",
-    "href": "index.html#day-4-multivariable-linear-and-logistic-regression",
+    "objectID": "index.html#day-4",
+    "href": "index.html#day-4",
     "title": "Welcome!",
     "section": "Day 4: Multivariable linear and logistic regression",
-    "text": "Day 4: Multivariable linear and logistic regression\n\n\nClick to view the materials\n\n\n☀️ Morning: Multivariable linear regression🌤️ Afternoon: Logistic regression\n\n\n\n\n\nContents\n\nModel formulation\nEstimation\nTesting\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\n\nAnswers:      \n\nWeb-R version\n\n\n\n\n\n\n\n\n\n\nContents\n\nRisk/odds, risk ratio (RR)/odds ratio (OR)\nLogistic regression model\nInterpreting Univariable Logistic Regression\nInterpreting Multivariable Logistic Regression\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:       \n\nWeb-R version\nRStudio version"
+    "text": "Day 4: Multivariable linear and logistic regression\n\nClick to view the materials\n\n\n☀️ Morning: Multivariable linear regression\n\n\n\nContents\n\nModel formulation\nEstimation\nTesting\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\n\n\n\n\n\n\n\n🌤️ Afternoon: Logistic regression\n\n\n\nContents\n\nRisk/odds, risk ratio (RR)/odds ratio (OR)\nLogistic regression model\nInterpreting Univariable Logistic Regression\nInterpreting Multivariable Logistic Regression\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\nRStudio version"
   },
   {
-    "objectID": "index.html#day-5-study-design-sample-size-calculation-steps-in-quantitative-research",
-    "href": "index.html#day-5-study-design-sample-size-calculation-steps-in-quantitative-research",
+    "objectID": "index.html#day-5",
+    "href": "index.html#day-5",
     "title": "Welcome!",
     "section": "Day 5: Study design, sample size calculation & Steps in quantitative research",
-    "text": "Day 5: Study design, sample size calculation & Steps in quantitative research\n\n\nClick to view the materials\n\n\n☀️ Morning: Study design, Sample size🌤️ Afternoon: Quantitative research\n\n\n\n\n\nContents\n\nStudy design\nSample size calculation\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\n\nAnswers:       \n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n\n\n\nContents\n\nQuantitative research\n\n Click to unlock QR code \n\n\n\n\nMaterials\n\nLecture: Slides"
+    "text": "Day 5: Study design, sample size calculation & Steps in quantitative research\n\nClick to view the materials\n\n\n☀️ Morning: Study design, Sample size\n\n\n\nContents\n\nStudy design\nSample size calculation\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides\nExercises:\n\nWeb-R version\nRStudio version Script\n\nAnswers:\n\nWeb-R version\nRStudio version\n\n\n\n\n\n\n\n🌤️ Afternoon: Quantitative research\n\n\n\nContents\n\nQuantitative research\n\n\n\n\n  Click to unlock QR code\n  \n\n\n\n\n\nMaterials\n\nLecture: Slides"
   },
   {
     "objectID": "others/other_resources.html",
